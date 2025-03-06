@@ -16,7 +16,7 @@ $(document).ready(function () {
 		centerMode: true,
 		slidesToShow: 1,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 10000,
 		arrows: false,
 		dots: true,
 		swipe: false,
