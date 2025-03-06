@@ -1,7 +1,8 @@
-.dg_container {
+.container {
     width: 100%;
     height: 100vh;
     position: relative;
+    background: #121212;
 }
 
 @media (width: 1080px) {
