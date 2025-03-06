@@ -4,3 +4,49 @@
   position: relative;
   background: url("../../img/media/etiquette_bg.png") no-repeat center center/cover;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 36px;
+  padding: 174px 122px 414px 122px
+}
+
+.item {
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.20);
+  box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(100px);
+  width: 940px;
+  height: 980px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  color: #2D2D2D;
+  text-align: center;
+  font-family: Pretendard-Bold, sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.8px;;
+}
+
+.description {
+  color: #5E5E5E;
+  text-align: center;
+  font-family: Pretendard-Medium, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 113px;
+}
