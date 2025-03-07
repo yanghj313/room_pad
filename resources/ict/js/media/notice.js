@@ -21,6 +21,5 @@ $(document).ready(function () {
 		dots: true,
 		swipe: false,
 		infinite: true,
-		cssEase: 'ease-in-out',
 	});
 });
