@@ -7,6 +7,7 @@
 		<meta content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1" name="viewport" />
 		<link href="../../../../../resources/ict/css/common/reset.css" rel="stylesheet" type="text/css" />
 		<link href="../../../../../resources/ict/css/common/font.css" rel="stylesheet" type="text/css" />
+		<script src="../../../../../resources/ict/plugin/jquery-3.7.1.min.js"></script>
 		<link href="../../../../../resources/ict/css/kiosk/kioskCommon.css" rel="stylesheet" type="text/css" />
 		<script src="../../../../../resources/ict/js/kiosk/kioskCommon.js" type="text/javascript"></script>
 	</head>
@@ -14,7 +15,17 @@
 		<link href="../../../../../resources/ict/css/kiosk/recommendedBooks.css" rel="stylesheet" type="text/css" />
 		<script src="../../../../../resources/ict/js/kiosk/recommendedBooks.js" type="text/javascript"></script>
 		<div class="container">
-			<div class="content">도서관 멀티 운영시스템 추천도서</div>
+			<!--		전체모드		-->
+			<div class="full_mode">
+				<div>화면을 올려보세요</div>
+				<img src="/resources/ict/img/kiosk/full_mode_handle.svg" alt="" />
+			</div>
+			<div class="content">
+				<!--		한손모드		-->
+				<div class="one_handed_mode">
+					<img src="/resources/ict/img/kiosk/one_handed_mode_handle.svg" alt="" />
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

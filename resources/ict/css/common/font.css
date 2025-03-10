@@ -161,6 +161,23 @@
     url(../../fonts/SeoulHangangEB.ttf) format('truetype');
 }
 
+@font-face {
+    font-family:'Galada-Regular';
+    font-style:normal;
+    font-weight:400;
+    src: local('Galada-Regular'), local('Galada-Regular'),
+    url(../../fonts/Galada-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'GangwonEduPower';
+    font-style:normal;
+    font-weight:400;
+    src: local('GangwonEduPower'), local('GangwonEduPower'),
+    url(../../fonts/강원교육튼튼.ttf) format('truetype');
+}
+
+
 
 
 
