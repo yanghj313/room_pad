@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   background: #121212;
+  overflow: hidden;
 }
 
 .header {
@@ -49,6 +50,40 @@
   width: 96px;
   height: 96px;
   animation: bounce 1s infinite ease-in-out;
+}
+
+.back {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 100px 100px 0;
+  background: rgba(255, 255, 255, 0.50);
+  width: 180px;
+  height: 200px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 480px;
+  left: 0;
+  gap: 28px;
+}
+
+.back img {
+  width: 64px;
+  height: 32px;
+  margin-top: 43px;
+  margin-left: 45px;
+}
+
+.back div {
+  color: #7A7A7A;
+  font-family: Pretendard-Bold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+  margin-left: 35px;
 }
 
 .navigation {
