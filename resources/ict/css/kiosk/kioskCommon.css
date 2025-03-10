@@ -12,7 +12,6 @@
   align-items: center;
   height: 360px;
   padding: 0 120px;
-  border: 1px solid red;
 }
 
 .status {
@@ -216,5 +215,132 @@
 }
 
 @media (width: 1080px) {
+  .header {
+    height: 180px;
+    padding: 0 60px;
+  }
 
+  .status {
+    padding: 9px;
+    border-radius: 250px;
+    gap: 10px;
+  }
+
+  .profile {
+    margin-right: 2px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .status div {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.48px;
+  }
+
+  .my_library {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.48px;
+    margin-right: 11px;
+  }
+
+  .status span {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    margin-left: 5px;
+  }
+
+
+  .logout {
+    width: 40px;
+    height: 40px;
+  }
+
+  .full_mode {
+    gap: 4px;
+    top: 831px;
+  }
+
+  .full_mode div {
+    font-size: 36px;
+    letter-spacing: -0.9px;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .full_mode img {
+    width: 48px;
+    height: 48px;
+    animation: bounce 1s infinite ease-in-out;
+  }
+
+  .back {
+    border-radius: 0 50px 50px 0;
+    width: 90px;
+    height: 100px;
+    bottom: 240px;
+    gap: 14px;
+  }
+
+  .back img {
+    width: 32px;
+    height: 16px;
+    margin-top: 21.5px;
+    margin-left: 22.5px;
+  }
+
+  .back div {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    margin-left: 17.5px;
+  }
+
+  .navigation {
+    padding: 30px 60px 30px 60px;
+    bottom: 60px;
+    width: 920px;
+    height: 160px;
+    stroke-width: 2px;
+    border: 2px solid #121212;
+    border-radius: 80px;
+    filter: drop-shadow(10px 20px 30px rgba(109, 81, 63, 0.30));
+  }
+
+  .navigation_item {
+    gap: 10px;
+  }
+
+  .navigation_item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navigation_item div {
+    font-size: 16px;
+  }
+
+  .ai {
+    width: 100px;
+    height: 100px;
+  }
+
+  .one_handed_mode {
+    width: 200px;
+    height: 40px;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .one_handed_mode img {
+    width: 25px;
+    height: 25px;
+  }
 }
