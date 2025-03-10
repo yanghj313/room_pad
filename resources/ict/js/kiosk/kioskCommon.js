@@ -1,5 +1,5 @@
-// 전체 & 한손 모드
 $(document).ready(function () {
+	// 한손 모드 클릭 이벤트
 	$('.one_handed_mode').click(function () {
 		const content = $('.content');
 		const image = $(this).find('img');
@@ -14,7 +14,26 @@ $(document).ready(function () {
 		});
 	});
 
+	// 전체 모드 클릭 이벤트
 	$('.full_mode').click(function () {
 		$('.content').css({ top: '0px' });
+	});
+
+	// 네비게이션 아이템 활성화
+	const currentPath = window.location.pathname.toLowerCase();
+
+	$('.navigation_item').each(function () {
+		var img = $(this).find('img');
+		var text = $(this).find('div');
+		var imgSrc = img.attr('src');
+
+		if (!imgSrc) return;
+
+		var iconName = imgSrc.split('/').pop().replace('.svg', '').toLowerCase();
+
+		if (currentPath.includes(iconName)) {
+			img.css('filter', 'brightness(0) invert(11%)');
+			text.css('color', '#121212');
+		}
 	});
 });
