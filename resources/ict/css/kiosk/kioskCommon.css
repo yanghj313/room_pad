@@ -214,6 +214,46 @@
   height: 50px;
 }
 
+.nodata {
+  width: 721.617px;
+  height: 1438.507px;
+  position: absolute;
+  top: 968.49px;
+  left: 644.57px;
+}
+
+.nodata div {
+  z-index: 9990;
+  color: #121212;
+  text-align: center;
+  font-family: Pretendard-Medium, sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -1.5px;
+  position: absolute;
+  top: 200px;
+  left: 170px;
+}
+
+.nodata_message {
+  position: absolute;
+  top: 5.98px;
+  left: 19.65px;
+  width: 700px;
+  height: 600px;
+}
+
+.nodata_character {
+  position: absolute;
+  width: 432px;
+  height: 874px;
+  top: 564.51px;
+  left: 292.43px
+}
+
+
 @media (width: 1080px) {
   .header {
     height: 180px;
@@ -342,5 +382,35 @@
   .one_handed_mode img {
     width: 25px;
     height: 25px;
+  }
+
+  .nodata {
+    width: 360px;
+    height: 719px;
+    top: 484px;
+    left: 322px;
+  }
+
+  .nodata div {
+    font-size: 30px;
+    letter-spacing: -0.75px;
+    top: 100px;
+    left: 85px;
+  }
+
+  .nodata_message {
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    width: 350px;
+    height: 300px;
+  }
+
+  .nodata_character {
+    position: absolute;
+    width: 216px;
+    height: 437px;
+    top: 282px;
+    left: 146px
   }
 }
