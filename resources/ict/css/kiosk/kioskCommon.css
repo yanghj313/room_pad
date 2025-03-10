@@ -8,10 +8,72 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 360px;
   padding: 0 120px;
+  border: 1px solid red;
+}
+
+.status {
+  padding: 18px;
+  display: flex;
+  border-radius: 500px;
+  background: #F7E4CF;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile {
+  margin-right: 4px;
+  width: 104px;
+  height: 104px;
+}
+
+.status div {
+  color: #121212;
+  text-align: right;
+  font-family: Pretendard-ExtraBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  text-decoration: underline solid;
+  cursor: pointer;
+}
+
+.my_library {
+  color: #121212;
+  text-align: right;
+  font-family: Pretendard-ExtraBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  text-decoration: underline solid;
+  cursor: pointer;
+  margin-right: 22px;
+}
+
+.status span {
+  font-family: Pretendard-Regular, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  display: inline-block;
+  text-decoration: none !important;
+  margin-left: 10px;
+}
+
+
+.logout {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
 
 .full_mode {
