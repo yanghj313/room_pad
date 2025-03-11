@@ -1,0 +1,48 @@
+// 슬릭 오류 방지
+jQuery.event.special.touchstart = {
+	setup: function (_, ns, handle) {
+		this.addEventListener('touchstart', handle, { passive: false });
+	},
+};
+jQuery.event.special.touchmove = {
+	setup: function (_, ns, handle) {
+		this.addEventListener('touchmove', handle, { passive: false });
+	},
+};
+
+// 신착도서 슬라이드 설정
+$(document).ready(function () {
+	const $bookItems = $('.book_item');
+	const itemsPerGrid = 9; // 한 그리드당 아이템 수
+
+	const $bookList = $('.book_list');
+
+	$bookList.empty();
+
+	const totalItems = $bookItems.length;
+	const gridCount = Math.ceil(totalItems / itemsPerGrid);
+	const bookItemsArray = $bookItems.toArray();
+
+	for (let i = 0; i < gridCount; i++) {
+		const $newGrid = $('<div class="grid"></div>');
+
+		const startIndex = i * itemsPerGrid;
+		const endIndex = Math.min(startIndex + itemsPerGrid, totalItems);
+
+		for (let j = startIndex; j < endIndex; j++) {
+			$newGrid.append(bookItemsArray[j]);
+		}
+
+		$bookList.append($newGrid);
+	}
+
+	$('.book_list').slick({
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 10000,
+		arrows: false,
+		dots: true,
+		swipe: false,
+		infinite: true,
+	});
+});
