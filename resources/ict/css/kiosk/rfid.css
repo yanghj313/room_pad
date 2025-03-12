@@ -46,6 +46,50 @@
   height: 769px;
 }
 
+.rfid {
+  width: 1984px;
+  height: 768px;
+  background: url("../../../ict/img/kiosk/rfid.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.rfid img:first-child {
+  width: 116px;
+  height: 204px;
+  position: absolute;
+  top: 165px;
+  left: 682px;
+  animation: moveLeftRight 0.5s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.rfid img:nth-child(2) {
+  width: 116px;
+  height: 204px;
+  position: absolute;
+  top: 165px;
+  right: 684px;
+  animation: moveRightLeft 0.5s infinite alternate;
+}
+
+@keyframes moveRightLeft {
+  0% {
+    transform: translateX(0) scaleX(-1);
+  }
+  100% {
+    transform: translateX(-20px) scaleX(-1);
+  }
+}
+
 @media (width: 1080px) {
   .rfid_content {
     padding-bottom: 50px;
@@ -64,8 +108,42 @@
     margin-bottom: 150px;
   }
 
-  .main_content img {
+  .rfid {
     width: 992px;
     height: 384px;
+  }
+
+  .rfid img:first-child {
+    width: 58px;
+    height: 102px;
+    top: 82px;
+    left: 341px;
+    animation: moveLeftRight 0.5s infinite alternate;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+  .rfid img:nth-child(2) {
+    width: 58px;
+    height: 102px;
+    top: 82px;
+    right: 342px;
+    animation: moveRightLeft 0.5s infinite alternate;
+  }
+
+  @keyframes moveRightLeft {
+    0% {
+      transform: translateX(0) scaleX(-1);
+    }
+    100% {
+      transform: translateX(-10px) scaleX(-1);
+    }
   }
 }
