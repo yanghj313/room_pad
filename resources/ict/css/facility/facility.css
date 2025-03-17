@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("../../img/facility/bg.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px 60px 100px;
+}
+
+.title {
+  color: #FFF;
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.date_and_time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.time {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 2px;
+}
+
+.date {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+
+.top_menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top_menu_item {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.top_menu_item:hover {
+  background: rgba(0, 0, 0, 0.60);
+}
+
+.top_menu_item img {
+  width: 78px;
+  height: 78px;
+}
