@@ -187,6 +187,22 @@
 }
 
 @font-face {
+    font-family:'Roboto-Light';
+    font-style:normal;
+    font-weight:400;
+    src: local('Roboto-Light'), local('Roboto-Light'),
+    url(../../fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'Roboto-Bold';
+    font-style:normal;
+    font-weight:400;
+    src: local('Roboto-Bold'), local('Roboto-Bold'),
+    url(../../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;

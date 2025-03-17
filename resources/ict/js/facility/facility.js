@@ -11,6 +11,47 @@ jQuery.event.special.touchmove = {
 };
 
 $(document).ready(function () {
+	// 한손 모드 클릭 이벤트
+	$('.one_handed_mode').click(function () {
+		const content = $('.content');
+		const scroll = $('.scroll');
+		const image = $(this).find('img');
+		const targetTop = $(window).width() > 1080 ? 1920 : 960;
+		const scrollHeight = $(window).width() > 1080 ? 1660 : 780;
+
+		const isAtTargetTop = parseInt(content.css('top')) === targetTop;
+		content.css({ top: isAtTargetTop ? '0px' : targetTop + 'px' });
+
+		image.css({
+			transform: isAtTargetTop ? 'rotate(0deg)' : 'rotate(180deg)',
+			transition: 'transform 0.3s ease',
+		});
+
+		if (!isAtTargetTop) {
+			scroll.css({
+				'overflow-y': 'scroll',
+				height: scrollHeight + 'px',
+			});
+		} else {
+			scroll.css({
+				'overflow-y': '',
+				height: '100%',
+			});
+		}
+	});
+
+	// 전체 모드 클릭 이벤트
+	$('.full_mode').click(function () {
+		const content = $('.content');
+		const scroll = $('.scroll');
+
+		content.css({ top: '0px' });
+		scroll.css({
+			'overflow-y': '',
+			height: '100%',
+		});
+	});
+
 	// 헤더 시간, 날짜 세팅
 	function updateTime() {
 		let now = new Date();
@@ -30,15 +71,15 @@ $(document).ready(function () {
 	updateTime();
 	setInterval(updateTime, 60000);
 
-	// 공지사항 슬라이드 설정
-	$('.center').slick({
-		centerMode: true,
+	// 메인 슬라이드 설정
+	$('.main_slide').slick({
 		slidesToShow: 1,
-		autoplay: true,
-		autoplaySpeed: 10000,
-		arrows: false,
-		dots: true,
-		swipe: false,
+		autoplay: false,
+		arrows: true,
+		dots: false,
+		swipe: true,
 		infinite: true,
+		prevArrow: '<button class="slick-prev"><img src="/resources/ict/img/facility/slide_arrow.svg" alt="이전"></button>',
+		nextArrow: '<button class="slick-next"><img src="/resources/ict/img/facility/slide_arrow.svg" alt="다음"></button>',
 	});
 });

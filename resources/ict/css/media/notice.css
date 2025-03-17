@@ -71,7 +71,7 @@
 
 .ticker div {
   color: #FFF;
-  font-family: Pretendard-Medium, sans-serif;
+  font-family: "Pretendard-Medium", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 500;
@@ -84,7 +84,7 @@
 
 @keyframes ticker {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
