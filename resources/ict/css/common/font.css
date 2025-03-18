@@ -195,6 +195,22 @@
 }
 
 @font-face {
+    font-family:'Roboto-Medium';
+    font-style:normal;
+    font-weight:400;
+    src: local('Roboto-Medium'), local('Roboto-Medium'),
+    url(../../fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:'roboto-semibold-webfont';
+    font-style:normal;
+    font-weight:400;
+    src: local('roboto-semibold-webfont'), local('roboto-semibold-webfont'),
+    url(../../fonts/roboto-semibold-webfont.ttf) format('truetype');
+}
+
+@font-face {
     font-family:'Roboto-Bold';
     font-style:normal;
     font-weight:400;

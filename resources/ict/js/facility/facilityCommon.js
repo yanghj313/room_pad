@@ -17,7 +17,7 @@ $(document).ready(function () {
 		const scroll = $('.scroll');
 		const image = $(this).find('img');
 		const targetTop = $(window).width() > 1080 ? 1920 : 960;
-		const scrollHeight = $(window).width() > 1080 ? 1660 : 780;
+		const scrollHeight = $(window).width() > 1080 ? 1700 : 850;
 
 		const isAtTargetTop = parseInt(content.css('top')) === targetTop;
 		content.css({ top: isAtTargetTop ? '0px' : targetTop + 'px' });

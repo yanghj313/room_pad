@@ -46,7 +46,7 @@
 
 .main_content {
   width: 100%;
-  height: 3040px;
+  height: 100%;
 }
 
 .scroll {
@@ -60,6 +60,7 @@
   align-items: center;
   padding: 60px 100px 60px 100px;
   width: 100%;
+  height: 220px;
   justify-content: space-between;
 }
 
@@ -231,11 +232,12 @@
   }
 
   .main_content {
-    height: 1520px;
+    height: 1600px;
   }
 
   .header {
     padding: 30px 50px 30px 50px;
+    height: 110px;
   }
 
   .title {
@@ -322,11 +324,12 @@
   }
 
   .main_content {
-    height: 1520px;
+    height: 1600px;
   }
 
   .header {
     padding: 30px 50px 30px 50px;
+    height: 110px;
   }
 
   .title {
@@ -414,6 +417,7 @@
 
   .header {
     padding: 17px 28px 17px 28px;
+    height: 70px;
   }
 
   .title {
@@ -497,6 +501,7 @@
 
   .header {
     padding: 17px 28px 17px 28px;
+    height: 70px;
   }
 
   .title {
@@ -580,6 +585,7 @@
 
   .header {
     padding: 13px 22px 13px 22px;
+    height: 70px;
   }
 
   .title {

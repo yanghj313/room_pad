@@ -12,9 +12,9 @@
 		<script src="../../../../../resources/ict/plugin/jquery-3.7.1.min.js"></script>
 		<script src="../../../../../resources/ict/plugin/slick.min.js"></script>
 		<link href="../../../../../resources/ict/css/facility/facilityCommon.css" rel="stylesheet" type="text/css" />
-		<link href="../../../../../resources/ict/css/facility/main.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../../resources/ict/css/facility/reservation.css" rel="stylesheet" type="text/css" />
 		<script src="../../../../../resources/ict/js/facility/facilityCommon.js" type="text/javascript"></script>
-		<script src="../../../../../resources/ict/js/facility/main.js" type="text/javascript"></script>
+		<script src="../../../../../resources/ict/js/facility/reservation.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -36,7 +36,7 @@
 						<div class="top_menu_item">
 							<img src="/resources/ict/img/facility/top_1.svg" alt="" />
 						</div>
-						<div class="top_menu_item">
+						<div class="top_menu_item" style="background: rgba(0, 0, 0, 0.6)">
 							<img src="/resources/ict/img/facility/top_2.svg" alt="" />
 						</div>
 						<div class="top_menu_item">
@@ -48,8 +48,126 @@
 					</div>
 				</div>
 
+				<!--			예약 컨턴츠			-->
 				<div class="main_content">
-					<div class="scroll"></div>
+					<div class="scroll">
+						<div class="box">
+							<img class="prev" src="/resources/ict/img/facility/prev.png" alt="" />
+							<img class="next" src="/resources/ict/img/facility/next.png" alt="" />
+							<!--				캘린더				-->
+							<div class="calendar">
+								<div class="calendar_header">
+									<div class="calendar_information">
+										<img src="/resources/ict/img/facility/information.svg" alt="" />
+										<div>예약 수 / 전체 예약가능 건수</div>
+									</div>
+									<div class="calendar_navigation">
+										<img id="prevMonth" src="/resources/ict/img/facility/calendar_nav.svg" alt="" />
+										<div id="currentMonth"></div>
+										<img id="nextMonth" src="/resources/ict/img/facility/calendar_nav.svg" alt="" />
+									</div>
+									<div class="calendar_badge">
+										<div class="today_badge">오늘</div>
+										<div class="choice_badge">선택</div>
+										<div class="not_available_badge">예약불가</div>
+									</div>
+								</div>
+								<div id="day_of_the_week"></div>
+								<div class="day"></div>
+							</div>
+							<!--				개인정보 수집 및 이용 동의				-->
+							<div class="Personal_data_consent">
+								<div class="Personal_data_consent_title">개인정보 수집 및 이용 동의</div>
+								<div class="Personal_data_consent_box">
+									<div class="Personal_data_consent_wrapper">
+										<div class="Personal_data_consent_left">
+											<div class="Personal_data_consent_label"><span>•</span>개인정보 공동이용(제공) 내역</div>
+											<div class="Personal_data_consent_more">
+												<div>내용보기</div>
+												<img src="/resources/ict/img/facility/more.svg" alt="" />
+											</div>
+										</div>
+										<div class="Personal_data_consent_right">
+											<img src="/resources/ict/img/facility/unchecked.png" alt="" class="toggle_img" />
+											<div>동의</div>
+										</div>
+									</div>
+									<div class="Personal_data_consent_wrapper">
+										<div class="Personal_data_consent_left">
+											<div class="Personal_data_consent_label"><span>•</span>개인정보 제3자 제공 내역</div>
+											<div class="Personal_data_consent_more">
+												<div>내용보기</div>
+												<img src="/resources/ict/img/facility/more.svg" alt="" />
+											</div>
+										</div>
+										<div class="Personal_data_consent_right">
+											<img src="/resources/ict/img/facility/unchecked.png" alt="" class="toggle_img" />
+											<div>동의</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--				이미지 슬라이드				-->
+							<div class="facility_slide">
+								<div class="facility_slide_item">
+									<div class="facility_slide_title">웹툰창작체험실</div>
+									<img class="bubble" src="/resources/ict/img/facility/bubble.png" alt="" />
+									<img class="facility_info" src="/resources/ict/img/facility/facility_info.png" alt="" />
+									<img class="slide_img" src="/resources/ict/img/facility/dummy.svg" alt="" />
+								</div>
+								<div class="facility_slide_item">
+									<div class="facility_slide_title">웹툰창작체험실</div>
+									<img class="bubble" src="/resources/ict/img/facility/bubble.png" alt="" />
+									<img class="facility_info" src="/resources/ict/img/facility/facility_info.png" alt="" />
+									<img class="slide_img" src="/resources/ict/img/facility/dummy.svg" alt="" />
+								</div>
+							</div>
+							<!--				form				-->
+							<form>
+								<div class="form_wrapper">
+									<label class="form_label" for="experienceSelect">실선택</label>
+									<select id="experienceSelect" required>
+										<option>웹툰창작체험</option>
+										<option>웹툰창작체험</option>
+									</select>
+								</div>
+								<div class="form_wrapper">
+									<label class="form_label" for="timeSelect">시간선택</label>
+									<select id="timeSelect" required>
+										<option>9:00 ~ 10:00</option>
+										<option>10:00 ~ 11:00</option>
+									</select>
+								</div>
+								<div class="form_wrapper">
+									<label class="form_label" for="name">예약자명</label>
+									<input id="name" type="text" placeholder="이름을 입력해주세요" />
+								</div>
+								<div class="form_wrapper">
+									<label class="form_label" for="personnel">사용인원</label>
+									<div class="personnel_wrapper">
+										<button class="minus">
+											<img src="/resources/ict/img/facility/minus.svg" alt="" />
+										</button>
+										<input id="personnel" type="number" />
+										<button class="plus">
+											<img src="/resources/ict/img/facility/plus.svg" alt="" />
+										</button>
+									</div>
+								</div>
+								<div class="form_wrapper">
+									<label class="form_label" for="phone1">연락처</label>
+									<div class="phone_wrapper">
+										<input class="phone" id="phone1" type="number" placeholder="010" />
+										<span class="dash">-</span>
+										<input class="phone" id="phone2" type="number" placeholder="0000" />
+										<span class="dash">-</span>
+										<input class="phone" id="phone3" type="number" placeholder="0000" />
+									</div>
+								</div>
+								<button class="submit">예약하기</button>
+							</form>
+						</div>
+					</div>
 				</div>
 
 				<!--	 네비게이션바		-->
