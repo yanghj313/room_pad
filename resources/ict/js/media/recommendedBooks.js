@@ -1,15 +1,3 @@
-// 슬릭 오류 방지
-jQuery.event.special.touchstart = {
-	setup: function (_, ns, handle) {
-		this.addEventListener('touchstart', handle, { passive: false });
-	},
-};
-jQuery.event.special.touchmove = {
-	setup: function (_, ns, handle) {
-		this.addEventListener('touchmove', handle, { passive: false });
-	},
-};
-
 // 신착도서 슬라이드 설정
 $(document).ready(function () {
 	const $bookItems = $('.book_item');

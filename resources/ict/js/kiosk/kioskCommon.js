@@ -1,3 +1,15 @@
+// 슬릭 오류 방지
+jQuery.event.special.touchstart = {
+	setup: function (_, ns, handle) {
+		this.addEventListener('touchstart', handle, { passive: false });
+	},
+};
+jQuery.event.special.touchmove = {
+	setup: function (_, ns, handle) {
+		this.addEventListener('touchmove', handle, { passive: false });
+	},
+};
+
 $(document).ready(function () {
 	// 한손 모드 클릭 이벤트
 	$('.one_handed_mode').click(function () {
