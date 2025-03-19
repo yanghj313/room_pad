@@ -461,7 +461,7 @@
 
   .ticker {
     position: fixed;
-    bottom: 127px;
+    bottom: 107px;
     height: 64px;
     z-index: 999;
   }
@@ -581,7 +581,7 @@
 
   .ticker {
     position: fixed;
-    bottom: 70px;
+    bottom: 107px;
     height: 36px;
     z-index: 999;
   }
@@ -701,7 +701,7 @@
 
   .ticker {
     position: fixed;
-    bottom: 70px;
+    bottom: 86px;
     height: 36px;
     z-index: 999;
   }
@@ -820,7 +820,7 @@
   }
 
   .ticker {
-    bottom: 67px;
+    bottom: 60px;
     height: 28px;
     position: fixed;
   }
