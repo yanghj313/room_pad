@@ -142,6 +142,7 @@
   background: #212741;
   box-shadow: 0 -2px 40px 0 rgba(0, 0, 0, 0.10);
   align-items: center;
+  z-index: 999;
 }
 
 .navigation_item {
@@ -232,7 +233,7 @@
   }
 
   .main_content {
-    height: 1600px;
+    height: 1612px;
   }
 
   .header {
@@ -317,87 +318,82 @@
   }
 }
 
-/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 */
+/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 0.711 */
 @media (min-width: 768px) and (max-width: 1079px) {
   .full_mode {
     display: none;
   }
 
-  .main_content {
-    height: 1600px;
+  .scroll {
+    padding-bottom: 170px;
+    height: 100%;
+    overflow: scroll;
+    transition: height 2s ease;
   }
 
   .header {
-    padding: 30px 50px 30px 50px;
-    height: 110px;
+    padding: 21px 36px 21px 36px;
+    height: 78px;
   }
 
   .title {
-    font-size: 24px;
+    font-size: 17px;
   }
 
   .date_and_time {
-    gap: 2px;
+    gap: 1px;
   }
 
   .time {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 28px;
     letter-spacing: 1px;
   }
 
   .date {
-    font-size: 12px;
-    letter-spacing: -0.3px;
+    font-size: 9px;
   }
 
   .top_menu {
-    gap: 10px;
+    gap: 7px;
   }
 
   .top_menu_item {
-    width: 70px;
-    height: 70px;
-  }
-
-  .top_menu_item:hover {
-    background: rgba(0, 0, 0, 0.60);
+    width: 50px;
+    height: 50px;
   }
 
   .top_menu_item img {
-    width: 39px;
-    height: 39px;
+    width: 28px;
+    height: 28px;
   }
 
   .navigation {
-    z-index: 999;
-    position: fixed;
-    height: 127px;
-    box-shadow: 0 -1px 20px 0 rgba(0, 0, 0, 0.10);
+    height: 107px;
+    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    gap: 10px;
-    width: 17%;
+    width: 128px;
+    gap: 1px;
   }
 
   .navigation_item img {
-    width: 60px;
-    height: 60px;
+    width: 43px;
+    height: 43px;
   }
 
   .navigation_item_active {
-    font-size: 16px;
+    font-size: 11px;
   }
 
   .navigation_item div {
-    font-size: 16px;
+    font-size: 11px;
   }
 
   .ai {
-    height: 127px;
-    width: 17%;
-    object-fit: cover;
+    width: 128px;
+    height: 107px;
   }
 
   .one_handed_mode {
@@ -405,23 +401,26 @@
   }
 }
 
-/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 */
+/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 0.783 */
 @media (min-width: 600px) and (max-width: 767px) {
   .full_mode {
     display: none;
   }
 
-  .main_content {
-    height: 845px;
+  .scroll {
+    padding-bottom: 170px;
+    height: 100%;
+    overflow: scroll;
+    transition: height 2s ease;
   }
 
   .header {
-    padding: 17px 28px 17px 28px;
-    height: 70px;
+    padding: 21px 36px 21px 36px;
+    height: 78px;
   }
 
   .title {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .date_and_time {
@@ -429,59 +428,55 @@
   }
 
   .time {
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 1px;
   }
 
   .date {
-    font-size: 7px;
-    letter-spacing: -0.2px;
+    font-size: 9px;
   }
 
   .top_menu {
-    gap: 6px;
+    gap: 7px;
   }
 
   .top_menu_item {
-    width: 39px;
-    height: 39px;
+    width: 50px;
+    height: 50px;
   }
 
   .top_menu_item img {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
   }
 
   .navigation {
-    z-index: 999;
-    position: fixed;
-    height: 70px;
-    box-shadow: 0 -0.6px 11px 0 rgba(0, 0, 0, 0.10);
+    height: 107px;
+    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    width: 20%;
-    gap: 3px;
+    width: 128px;
+    gap: 1px;
   }
 
   .navigation_item img {
-    width: 18px;
-    height: 18px;
+    width: 43px;
+    height: 43px;
   }
 
   .navigation_item_active {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .navigation_item div {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .ai {
-    width: 20%;
-    height: 70px;
-    object-fit: cover;
+    width: 128px;
+    height: 107px;
   }
 
   .one_handed_mode {
@@ -489,19 +484,22 @@
   }
 }
 
-/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
+/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 0.8 */
 @media (min-width: 480px) and (max-width: 599px) {
   .full_mode {
     display: none;
   }
 
-  .main_content {
-    height: 845px;
+  .scroll {
+    padding-bottom: 140px;
+    height: 100%;
+    overflow: scroll;
+    transition: height 2s ease;
   }
 
   .header {
-    padding: 17px 28px 17px 28px;
-    height: 70px;
+    padding: 17px 29px 17px 29px;
+    height: 62px;
   }
 
   .title {
@@ -515,12 +513,11 @@
   .time {
     font-size: 22px;
     line-height: 22px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
   }
 
   .date {
     font-size: 7px;
-    letter-spacing: -0.2px;
   }
 
   .top_menu {
@@ -528,30 +525,28 @@
   }
 
   .top_menu_item {
-    width: 39px;
-    height: 39px;
+    width: 27px;
+    height: 27px;
   }
 
   .top_menu_item img {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
   }
 
   .navigation {
-    z-index: 999;
-    position: fixed;
-    height: 70px;
-    box-shadow: 0 -0.6px 11px 0 rgba(0, 0, 0, 0.10);
+    height: 86px;
+    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    width: 20%;
-    gap: 3px;
+    width: 102px;
+    gap: 1px;
   }
 
   .navigation_item img {
-    width: 18px;
-    height: 18px;
+    width: 34px;
+    height: 34px;
   }
 
   .navigation_item_active {
@@ -563,9 +558,8 @@
   }
 
   .ai {
-    width: 20%;
-    height: 70px;
-    object-fit: cover;
+    width: 102px;
+    height: 86px;
   }
 
   .one_handed_mode {
@@ -573,23 +567,26 @@
   }
 }
 
-/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 */
+/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 0.7 */
 @media (max-width: 479px) {
   .full_mode {
     display: none;
   }
 
-  .main_content {
-    height: 674px;
+  .scroll {
+    padding-bottom: 100px;
+    height: 100%;
+    overflow: scroll;
+    transition: height 2s ease;
   }
 
   .header {
-    padding: 13px 22px 13px 22px;
-    height: 70px;
+    padding: 12px 20px 14px 20px;
+    height: 43px;
   }
 
   .title {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .date_and_time {
@@ -597,14 +594,13 @@
   }
 
   .time {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 15px;
     letter-spacing: 1px;
   }
 
   .date {
-    font-size: 5px;
-    letter-spacing: -0.1px;
+    font-size: 4px;
   }
 
   .top_menu {
@@ -612,42 +608,41 @@
   }
 
   .top_menu_item {
-    width: 31px;
-    height: 31px;
+    width: 19px;
+    height: 19px;
   }
 
   .top_menu_item img {
-    width: 17px;
-    height: 17px;
+    width: 13px;
+    height: 13px;
   }
 
   .navigation {
-    position: fixed;
-    height: 67px;
-    box-shadow: 0 -0.4px 9px 0 rgba(0, 0, 0, 0.10);
+    height: 60px;
+    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    width: 80px;
-    gap: 4px;
+    width: 71px;
+    gap: 1px;
   }
 
   .navigation_item img {
-    width: 27px;
-    height: 27px;
+    width: 24px;
+    height: 24px;
   }
 
   .navigation_item_active {
-    font-size: 7px;
+    font-size: 6px;
   }
 
   .navigation_item div {
-    font-size: 7px;
+    font-size: 6px;
   }
 
   .ai {
-    width: 80px;
-    height: 67px;
+    width: 71px;
+    height: 60px;
   }
 
   .one_handed_mode {

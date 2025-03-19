@@ -23,6 +23,9 @@ $(document).ready(function () {
 			itemCount++;
 		}
 
+		// 1080px 이상일 때 border-radius 값을 8px로 설정
+		const borderRadiusValue = window.matchMedia('(max-width: 1080px)').matches ? 8 : 15;
+
 		for (let i = 1; i <= lastDate; i++) {
 			itemCount++;
 			const isToday = year === today.getFullYear() && month === today.getMonth() && i === today.getDate();
@@ -32,9 +35,9 @@ $(document).ready(function () {
 
 			let style = '';
 			if (itemCount === 36) {
-				style = ' style="border-radius: 0 0 0 15px;"';
+				style = ` style="border-radius: 0 0 0 ${borderRadiusValue}px;"`;
 			} else if (itemCount === 42) {
-				style = ' style="border-radius: 0 0 15px 0;"';
+				style = ` style="border-radius: 0 0 ${borderRadiusValue}px 0;"`;
 			}
 
 			$('.day').append(`<div class="${classes}" data-day="${i}"${style}><div>${i}</div><div>0/8</div></div>`);
@@ -102,8 +105,8 @@ $(document).ready(function () {
 		}
 	});
 
-	// 사용인원 컨트롤, 임시로 최대 인원 8명로 리밋
-	$('#personnel').val(0);
+	// 사용인원 컨트롤, 임시로 최소 1, 최대 인원 8명로 리밋
+	$('#personnel').val(1);
 
 	$('.plus').click(function () {
 		let currentVal = parseInt($('#personnel').val());
@@ -114,15 +117,15 @@ $(document).ready(function () {
 
 	$('.minus').click(function () {
 		let currentVal = parseInt($('#personnel').val());
-		if (currentVal > 0) {
+		if (currentVal > 1) {
 			$('#personnel').val(currentVal - 1);
 		}
 	});
 
 	$('#personnel').on('input', function () {
 		let value = parseInt($(this).val());
-		if (isNaN(value) || value < 0) {
-			$(this).val(0);
+		if (isNaN(value) || value < 1) {
+			$(this).val(1);
 		} else if (value > 8) {
 			$(this).val(8);
 		}
