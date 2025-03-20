@@ -1,0 +1,638 @@
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../img/facility/bg.png") no-repeat center center;
+  background-size: cover;
+  transition: top 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border-radius: 30px;
+  background: #FFF;
+  margin: 20px 100px 100px 100px;
+  height: 3200px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search_box {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #B8B8B8;
+  background: #F7F8FA;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.search_box_label {
+  color: #191F28;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin-right: 42px;
+  width: 138px;
+}
+
+.inquiry_period {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.month_btn_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+
+.month_btn_wrapper div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid #7A7A7A;
+  background: #FFF;
+  width: 180px;
+  height: 100px;
+  color: #7A7A7A;
+  text-align: center;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.month_btn_active {
+  border: 2px solid #191F28 !important;
+  color: #191F28 !important;
+  font-family: "Pretendard-SemiBold", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.reservation_status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  margin-left: 28px;
+}
+
+.date_wrapper input {
+  padding: 0 24px 0 24px;
+  border-radius: 20px;
+  border: 1px solid #7A7A7A;
+  width: 420px;
+  height: 100px;
+  color: #191F28;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #FFF url('../../img/facility/calendar.svg') no-repeat right 24px center;
+  background-size: 48px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.date_wrapper input:hover, .date_wrapper input:focus {outline: none}
+.date_wrapper input[type="date"]::-webkit-calendar-picker-indicator,
+.date_wrapper input[type="date"]::-webkit-inner-spin-button { opacity: 0; appearance: none; }
+
+.date_wrapper span {
+  color: #191F28;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reservation_status_wrapper {
+  display: flex;
+  gap: 28px;
+}
+
+.reservation_status_wrapper div {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #7A7A7A;
+  background: #FFF;
+  width: 315px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7A7A7A;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+}
+
+.reservation_status_btn_active {
+  border: 2px solid #191F28 !important;
+  color: #191F28 !important;
+  font-family: "Pretendard-SemiBold", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.reservation_status input {
+  height: 100px;
+  margin-left: 24px;
+  border-radius: 20px;
+  border: 1px solid #7A7A7A;
+  background: #FFF;
+  padding: 0 40px;
+  width: 838px;
+  color: #191F28;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reservation_status input::placeholder {
+  color: #7A7A7A;
+}
+
+.reservation_status input:focus, .reservation_status input:hover {
+  outline: none;
+}
+
+.inquiry {
+  cursor: pointer;
+  border-radius: 20px;
+  background: #191F28;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.list_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_header div:first-child {
+  color: #6B7684;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.list_header div:first-child span {
+  color: #191F28;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.list_header div:nth-child(2) {
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid #EC4746;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 84px;
+  color: #EC4746;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 20px 0 20px 0;
+}
+
+.list_wrapper {
+  overflow-y: scroll;
+  height: 2280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.no_data {
+  color: #000;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+}
+
+.list_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 60px 45px 60px;
+  border-radius: 20px;
+  border: 1px solid #B8B8B8;
+  background: #FFF;
+  height: 420px;
+  min-height: 420px;
+}
+
+.right_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.content_area {
+  display: flex;
+  flex-direction: column;
+}
+
+.check_area img {
+  width: 76px;
+  height: 76px;
+  cursor: pointer;
+}
+
+.content_area div:first-child {
+  color: #4E5968;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  margin-bottom: 20px;
+}
+
+.content_area div:nth-child(2) {
+  color: #6B7684;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.1px;
+  margin-bottom: 40px;
+}
+
+.content_area div:nth-child(3) {
+  color: #000;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  margin-bottom: 40px;
+}
+
+.content_area div:nth-child(3) span,
+.content_area div:nth-child(4) span {
+  color: #000;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+.content_area div:nth-child(4) {
+  color: #000;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+}
+
+.badge_area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.status_1,  .status_2, .status_3 {
+  border-radius: 20px;
+  border: 1px solid #229829;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 100px;
+}
+
+.status_1 img, .status_2 img, .status_3 img, .status_4 img,  .status_5 img {
+  width: 40px;
+  height: 40px;
+}
+
+.status_1 div, .status_2 div, .status_3 div {
+  color: #229829;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.status_4 {
+  border-radius: 20px;
+  border: 1px solid #0D65F8;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 100px;
+}
+
+.status_4 div {
+  color: #0D65F8;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.status_5 {
+  border-radius: 20px;
+  border: 1px solid #454545;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 100px;
+}
+
+.status_5 div {
+  color: #454545;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.status_6 {
+  border-radius: 20px;
+  background: #229829;
+  display: flex;
+  width: 260px;
+  height: 100px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.status_7, .status_8, .status_9 {
+  display: flex;
+  width: 260px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  background: #454545;
+  color: #FFF;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.done {
+  border: 1px solid #B8B8B8 !important;
+  background: #E8E8E8 !important;
+}
+
+.prev {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  top: 1606px;
+  left: -100px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.next {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  top: 1606px;
+  right: -100px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 130px;
+}
+
+.pagination div {
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #E5E8EB;
+  background: #FFF;
+  display: flex;
+  width: 76px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  color: #6B7684;
+  text-align: center;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.pagination div img {
+  width: 40px;
+  height: 40px;
+}
+
+.current_page {
+  color: #191F28 !important;
+  font-weight: 700 !important;
+  font-family: "Pretendard-Bold", sans-serif !important;
+  border: 1px solid #191F28 !important;
+}
+
+@media (width: 1080px) {
+  .box {
+    border-radius: 15px;
+    margin: 10px 50px 50px 50px;
+    height: 1600px;
+    padding: 30px;
+  }
+
+  .prev {
+    height: 74px;
+    width: 74px;
+    top: 803px;
+    left: -50px;
+  }
+
+  .next {
+    height: 74px;
+    width: 74px;
+    top: 803px;
+    right: -50px;
+  }
+}
+
+/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 0.711  */
+@media (min-width: 768px) and (max-width: 1079px) {
+  .box {
+    border-radius: 11px;
+    margin: 7px 36px 36px 36px;
+    height: 1560px;
+    padding: 21px;
+  }
+
+  .prev {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    left: -32px;
+  }
+
+  .next {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    right: -32px;
+  }
+}
+
+/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 0.783 */
+@media (min-width: 600px) and (max-width: 767px) {
+  .box {
+    border-radius: 11px;
+    margin: 7px 36px 36px 36px;
+    height: 1560px;
+    padding: 21px;
+  }
+
+  .prev {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    left: -32px;
+  }
+
+  .next {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    right: -32px;
+  }
+}
+
+/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
+@media (min-width: 480px) and (max-width: 599px) {
+  .box {
+    border-radius: 11px;
+    margin: 6px 29px 29px 29px;
+    height: 1355px;
+    padding: 17px;
+  }
+
+  .prev {
+    height: 42px;
+    width: 42px;
+    top: 803px;
+    left: -27px;
+  }
+
+  .next {
+    height: 42px;
+    width: 42px;
+    top: 803px;
+    right: -27px;
+  }
+}
+
+/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 0.7 */
+@media (max-width: 479px) {
+  .box {
+    border-radius: 11px;
+    margin: 4px 20px 20px 20px;
+    height: 1040px;
+    padding: 17px;
+  }
+
+  .prev {
+    height: 29px;
+    width: 29px;
+    top: 50%;
+    left: -15px;
+  }
+
+  .next {
+    height: 29px;
+    width: 29px;
+    top: 50%;
+    right: -15px;
+  }
+}

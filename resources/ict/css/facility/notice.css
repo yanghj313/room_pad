@@ -1,0 +1,163 @@
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../img/facility/bg.png") no-repeat center center;
+  background-size: cover;
+  transition: top 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border-radius: 30px;
+  background: #FFF;
+  margin: 20px 100px 100px 100px;
+  height: 3200px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.prev {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  top: 1606px;
+  left: -100px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.next {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  top: 1606px;
+  right: -100px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media (width: 1080px) {
+  .box {
+    border-radius: 15px;
+    margin: 10px 50px 50px 50px;
+    height: 1600px;
+    padding: 30px;
+  }
+
+  .prev {
+    height: 74px;
+    width: 74px;
+    top: 803px;
+    left: -50px;
+  }
+
+  .next {
+    height: 74px;
+    width: 74px;
+    top: 803px;
+    right: -50px;
+  }
+}
+
+/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 0.711  */
+@media (min-width: 768px) and (max-width: 1079px) {
+  .box {
+    border-radius: 11px;
+    margin: 7px 36px 36px 36px;
+    height: 1560px;
+    padding: 21px;
+  }
+
+  .prev {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    left: -32px;
+  }
+
+  .next {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    right: -32px;
+  }
+}
+
+/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 0.783 */
+@media (min-width: 600px) and (max-width: 767px) {
+  .box {
+    border-radius: 11px;
+    margin: 7px 36px 36px 36px;
+    height: 1560px;
+    padding: 21px;
+  }
+
+  .prev {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    left: -32px;
+  }
+
+  .next {
+    height: 53px;
+    width: 53px;
+    top: 803px;
+    right: -32px;
+  }
+}
+
+/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
+@media (min-width: 480px) and (max-width: 599px) {
+  .box {
+    border-radius: 11px;
+    margin: 6px 29px 29px 29px;
+    height: 1355px;
+    padding: 17px;
+  }
+
+  .prev {
+    height: 42px;
+    width: 42px;
+    top: 803px;
+    left: -27px;
+  }
+
+  .next {
+    height: 42px;
+    width: 42px;
+    top: 803px;
+    right: -27px;
+  }
+}
+
+/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 0.7 */
+@media (max-width: 479px) {
+  .box {
+    border-radius: 11px;
+    margin: 4px 20px 20px 20px;
+    height: 1040px;
+    padding: 17px;
+  }
+
+  .prev {
+    height: 29px;
+    width: 29px;
+    top: 50%;
+    left: -15px;
+  }
+
+  .next {
+    height: 29px;
+    width: 29px;
+    top: 50%;
+    right: -15px;
+  }
+}
