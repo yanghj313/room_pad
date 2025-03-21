@@ -207,6 +207,69 @@
   height: 72px;
 }
 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1240px;
+  background: #fff;
+  border-radius: 60px;
+  z-index: 1000;
+  padding: 160px 120px 100px 120px;
+}
+
+.popup_content {
+  color: #454545;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -1.04px;
+}
+
+.action_wrapper {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  margin-top: 80px;
+}
+
+.first_btn {
+  background: #FFF !important;
+  color: #7A7A7A !important;
+  border: 2px solid #D6D6D6 !important;
+}
+
+.popup_close {
+  border-radius: 24px;
+  background: #242424;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.60);
+  z-index: 999;
+}
+
 @media (width: 1080px) {
   .full_mode {
     gap: 4px;
@@ -312,6 +375,32 @@
     width: 36px;
     height: 36px;
   }
+
+  .popup {
+    width: 620px;
+    border-radius: 30px;
+    padding: 80px 60px 50px 60px;
+  }
+
+  .popup_content {
+    font-size: 26px;
+    letter-spacing: -1px;
+  }
+
+  .action_wrapper {
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .first_btn {
+    border: 1px solid #D6D6D6 !important;
+  }
+
+  .popup_close {
+    border-radius: 12px;
+    height: 80px;
+    font-size: 26px;
+  }
 }
 
 /* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 */
@@ -399,6 +488,32 @@
 
   .one_handed_mode {
     display: none;
+  }
+
+  .popup {
+    width: 434px;
+    border-radius: 21px;
+    padding: 56px 42px 35px 42px;
+  }
+
+  .popup_content {
+    font-size: 18px;
+    letter-spacing: -0.7px;
+  }
+
+  .action_wrapper {
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .first_btn {
+    border: 1px solid #D6D6D6 !important;
+  }
+
+  .popup_close {
+    border-radius: 8px;
+    height: 56px;
+    font-size: 18px;
   }
 }
 
@@ -488,6 +603,32 @@
   .one_handed_mode {
     display: none;
   }
+
+  .popup {
+    width: 304px;
+    border-radius: 15px;
+    padding: 39px 29px 25px 29px;
+  }
+
+  .popup_content {
+    font-size: 13px;
+    letter-spacing: -0.49px;
+  }
+
+  .action_wrapper {
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+  .first_btn {
+    border: 1px solid #D6D6D6 !important;
+  }
+
+  .popup_close {
+    border-radius: 6px;
+    height: 39px;
+    font-size: 13px;
+  }
 }
 
 /* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
@@ -576,6 +717,32 @@
   .one_handed_mode {
     display: none;
   }
+
+  .popup {
+    width: 213px;
+    border-radius: 11px;
+    padding: 27px 20px 18px 20px;
+  }
+
+  .popup_content {
+    font-size: 9px;
+    letter-spacing: -0.34px;
+  }
+
+  .action_wrapper {
+    gap: 4px;
+    margin-top: 14px;
+  }
+
+  .first_btn {
+    border: 1px solid #D6D6D6 !important;
+  }
+
+  .popup_close {
+    border-radius: 4px;
+    height: 27px;
+    font-size: 9px;
+  }
 }
 
 /* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 */
@@ -663,5 +830,31 @@
 
   .one_handed_mode {
     display: none;
+  }
+
+  .popup {
+    width: 149px;
+    border-radius: 8px;
+    padding: 19px 14px 13px 14px;
+  }
+
+  .popup_content {
+    font-size: 6px;
+    letter-spacing: -0.24px;
+  }
+
+  .action_wrapper {
+    gap: 3px;
+    margin-top: 10px;
+  }
+
+  .first_btn {
+    border: 1px solid #D6D6D6 !important;
+  }
+
+  .popup_close {
+    border-radius: 3px;
+    height: 19px;
+    font-size: 6px;
   }
 }
