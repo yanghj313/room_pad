@@ -461,26 +461,6 @@
   background: #E8E8E8 !important;
 }
 
-.prev {
-  height: 148px;
-  width: 148px;
-  position: absolute;
-  top: 1606px;
-  left: -100px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.next {
-  height: 148px;
-  width: 148px;
-  position: absolute;
-  top: 1606px;
-  right: -100px;
-  z-index: 1;
-  cursor: pointer;
-}
-
 .pagination {
   display: flex;
   align-items: center;
@@ -522,12 +502,267 @@
   border: 1px solid #191F28 !important;
 }
 
+.prev {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  top: 1606px;
+  left: -100px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.next {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  top: 1606px;
+  right: -100px;
+  z-index: 1;
+  cursor: pointer;
+}
+
 @media (width: 1080px) {
   .box {
     border-radius: 15px;
     margin: 10px 50px 50px 50px;
     height: 1600px;
     padding: 30px;
+  }
+
+  .search_box {
+    border-radius: 10px;
+    padding: 30px;
+    gap: 12px;
+  }
+
+  .search_box_label {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    margin-right: 21px;
+    width: 69px;
+  }
+
+  .month_btn_wrapper {
+    gap: 8px;
+  }
+
+  .month_btn_wrapper div {
+    border-radius: 10px;
+    border: 1px solid #7A7A7A;
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  .month_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .date_wrapper {
+    gap: 15px;
+    margin-left: 14px;
+  }
+
+  .date_wrapper input {
+    padding: 0 12px 0 12px;
+    border-radius: 10px;
+    border: 1px solid #7A7A7A;
+    width: 210px;
+    height: 50px;
+    font-size: 20px;
+    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 12px center;
+    background-size: 24px;
+  }
+
+  .date_wrapper span {
+    font-size: 18px;
+  }
+
+  .reservation_status_wrapper {
+    gap: 14px;
+  }
+
+  .reservation_status_wrapper div {
+    border-radius: 10px;
+    border: 1px solid #7A7A7A;
+    background: #FFF;
+    width: 158px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .reservation_status_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .reservation_status input {
+    height: 50px;
+    margin-left: 12px;
+    border-radius: 10px;
+    border: 1px solid #7A7A7A;
+    padding: 0 20px;
+    width: 419px;
+    font-size: 20px;
+  }
+
+  .inquiry {
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+
+  .list_header {
+    margin: 10px 0 10px 0;
+  }
+
+  .list_header div:first-child {
+    font-size: 16px;
+  }
+
+  .list_header div:nth-child(2) {
+    border-radius: 8px;
+    border: 1px solid #EC4746;
+    width: 100px;
+    height: 42px;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+  }
+
+  .list_wrapper {
+    height: 1140px;
+    gap: 10px;
+  }
+
+  .no_data {
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+  }
+
+  .list_item {
+    padding: 23px 30px 23px 30px;
+    border-radius: 10px;
+    border: 1px solid #B8B8B8;
+    height: 210px;
+    min-height: 210px;
+  }
+
+  .right_wrapper {
+    gap: 21px;
+  }
+
+  .check_area img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .content_area div:first-child {
+    font-size: 16px;
+    letter-spacing: -0.4px;
+    margin-bottom: 10px;
+  }
+
+  .content_area div:nth-child(2) {
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: -0.55px;
+    margin-bottom: 20px;
+  }
+
+  .content_area div:nth-child(3) {
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+    margin-bottom: 20px;
+  }
+
+  .content_area div:nth-child(4) {
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: -0.6px;
+  }
+
+  .badge_area {
+    gap: 8px;
+  }
+
+  .status_1,  .status_2, .status_3 {
+    border-radius: 10px;
+    border: 1px solid #229829;
+    gap: 4px;
+    width: 130px;
+    height: 50px;
+  }
+
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img,  .status_5 img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .status_1 div, .status_2 div, .status_3 div {
+    font-size: 18px;
+  }
+
+  .status_4 {
+    border-radius: 10px;
+    border: 1px solid #0D65F8;
+    gap: 4px;
+    width: 130px;
+    height: 50px;
+  }
+
+  .status_4 div {
+    font-size: 18px;
+  }
+
+  .status_5 {
+    border-radius: 10px;
+    border: 1px solid #454545;
+    gap: 4px;
+    width: 130px;
+    height: 50px;
+  }
+
+  .status_5 div {
+    font-size: 18px;
+  }
+
+  .status_6 {
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    padding: 10px 12px;
+    font-size: 18px;
+  }
+
+  .status_7, .status_8, .status_9 {
+    width: 130px;
+    height: 50px;
+    gap: 4px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  .pagination {
+    gap: 8px;
+    margin-top: 45px;
+  }
+
+  .pagination div {
+    border-radius: 4px;
+    border: 1px solid #E5E8EB;
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+  }
+
+  .pagination div img {
+    width: 20px;
+    height: 20px;
   }
 
   .prev {
@@ -550,21 +785,256 @@
   .box {
     border-radius: 11px;
     margin: 7px 36px 36px 36px;
-    height: 1560px;
+    height: 1130px;
     padding: 21px;
+  }
+
+  .search_box {
+    border-radius: 7px;
+    padding: 21px;
+    gap: 8px;
+  }
+
+  .search_box_label {
+    font-size: 14px;
+    letter-spacing: -0.35px;
+    margin-right: 15px;
+    width: 48px;
+  }
+
+  .month_btn_wrapper {
+    gap: 6px;
+  }
+
+  .month_btn_wrapper div {
+    border-radius: 7px;
+    border: 1px solid #7A7A7A;
+    width: 63px;
+    height: 35px;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+  }
+
+  .month_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .date_wrapper {
+    gap: 11px;
+    margin-left: 10px;
+  }
+
+  .date_wrapper input {
+    padding: 0 8px 0 8px;
+    border-radius: 7px;
+    border: 1px solid #7A7A7A;
+    width: 147px;
+    height: 35px;
+    font-size: 14px;
+    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 8px center;
+    background-size: 17px;
+  }
+
+  .date_wrapper span {
+    font-size: 13px;
+  }
+
+  .reservation_status_wrapper {
+    gap: 10px;
+  }
+
+  .reservation_status_wrapper div {
+    border-radius: 7px;
+    border: 1px solid #7A7A7A;
+    background: #FFF;
+    width: 111px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .reservation_status_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .reservation_status input {
+    height: 35px;
+    margin-left: 8px;
+    border-radius: 7px;
+    border: 1px solid #7A7A7A;
+    padding: 0 14px;
+    width: 293px;
+    font-size: 14px;
+  }
+
+  .inquiry {
+    border-radius: 7px;
+    height: 35px;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+  }
+
+  .list_header {
+    margin: 7px 0 7px 0;
+  }
+
+  .list_header div:first-child {
+    font-size: 11px;
+  }
+
+  .list_header div:nth-child(2) {
+    border-radius: 6px;
+    border: 1px solid #EC4746;
+    width: 70px;
+    height: 29px;
+    font-size: 13px;
+    margin: 7px 0 7px 0;
+  }
+
+  .list_wrapper {
+    height: 798px;
+    gap: 7px;
+  }
+
+  .no_data {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: -0.42px;
+  }
+
+  .list_item {
+    padding: 16px 21px 16px 21px;
+    border-radius: 7px;
+    border: 1px solid #B8B8B8;
+    height: 147px;
+    min-height: 147px;
+  }
+
+  .right_wrapper {
+    gap: 15px;
+  }
+
+  .check_area img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .content_area div:first-child {
+    font-size: 11px;
+    letter-spacing: -0.28px;
+    margin-bottom: 7px;
+  }
+
+  .content_area div:nth-child(2) {
+    font-size: 15px;
+    line-height: 13px;
+    letter-spacing: -0.385px;
+    margin-bottom: 14px;
+  }
+
+  .content_area div:nth-child(3) {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: -0.42px;
+    margin-bottom: 14px;
+  }
+
+  .content_area div:nth-child(4) {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: -0.42px;
+  }
+
+  .badge_area {
+    gap: 6px;
+  }
+
+  .status_1,  .status_2, .status_3 {
+    border-radius: 7px;
+    border: 1px solid #229829;
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+  }
+
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img,  .status_5 img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .status_1 div, .status_2 div, .status_3 div {
+    font-size: 13px;
+  }
+
+  .status_4 {
+    border-radius: 7px;
+    border: 1px solid #0D65F8;
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+  }
+
+  .status_4 div {
+    font-size: 13px;
+  }
+
+  .status_5 {
+    border-radius: 7px;
+    border: 1px solid #454545;
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+  }
+
+  .status_5 div {
+    font-size: 13px;
+  }
+
+  .status_6 {
+    border-radius: 7px;
+    width: 91px;
+    height: 35px;
+    padding: 7px 8px;
+    font-size: 13px;
+  }
+
+  .status_7, .status_8, .status_9 {
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+    border-radius: 7px;
+    font-size: 13px;
+  }
+
+  .pagination {
+    gap: 8px;
+    margin-top: 42px;
+  }
+
+  .pagination div {
+    border-radius: 3px;
+    border: 1px solid #E5E8EB;
+    width: 27px;
+    height: 27px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
+  }
+
+  .pagination div img {
+    width: 14px;
+    height: 14px;
   }
 
   .prev {
     height: 53px;
     width: 53px;
-    top: 803px;
+    top: 50%;
     left: -32px;
   }
 
   .next {
     height: 53px;
     width: 53px;
-    top: 803px;
+    top: 50%;
     right: -32px;
   }
 }
@@ -574,21 +1044,255 @@
   .box {
     border-radius: 11px;
     margin: 7px 36px 36px 36px;
-    height: 1560px;
+    height: 1080px;
     padding: 21px;
+  }
+
+  .search_box {
+    border-radius: 7px;
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .search_box_label {
+    font-size: 10px;
+    letter-spacing: -0.2px;
+    margin-right: 11px;
+    width: 34px;
+  }
+
+  .month_btn_wrapper {
+    gap: 4px;
+  }
+
+  .month_btn_wrapper div {
+    border-radius: 5px;
+    border: 1px solid #7A7A7A;
+    width: 44px;
+    height: 25px;
+    font-size: 10px;
+    letter-spacing: -0.2px;
+  }
+
+  .month_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .date_wrapper {
+    gap: 8px;
+    margin-left: 7px;
+  }
+
+  .date_wrapper input {
+    padding: 0 6px 0 6px;
+    border-radius: 5px;
+    border: 1px solid #7A7A7A;
+    width: 103px;
+    height: 25px;
+    font-size: 10px;
+    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 6px center;
+    background-size: 12px;
+  }
+
+  .date_wrapper span {
+    font-size: 9px;
+  }
+
+  .reservation_status_wrapper {
+    gap: 7px;
+  }
+
+  .reservation_status_wrapper div {
+    border-radius: 5px;
+    border: 1px solid #7A7A7A;
+    width: 78px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .reservation_status_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .reservation_status input {
+    height: 25px;
+    margin-left: 6px;
+    border-radius: 5px;
+    border: 1px solid #7A7A7A;
+    padding: 0 10px;
+    width: 205px;
+    font-size: 10px;
+  }
+
+  .inquiry {
+    border-radius: 5px;
+    height: 25px;
+    font-size: 10px;
+    letter-spacing: -0.5px;
+  }
+
+  .list_header {
+    margin: 7px 0 7px 0;
+  }
+
+  .list_header div:first-child {
+    font-size: 11px;
+  }
+
+  .list_header div:nth-child(2) {
+    border-radius: 6px;
+    border: 1px solid #EC4746;
+    width: 70px;
+    height: 29px;
+    font-size: 13px;
+    margin: 7px 0 7px 0;
+  }
+
+  .list_wrapper {
+    height: 798px;
+    gap: 7px;
+  }
+
+  .no_data {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: -0.42px;
+  }
+
+  .list_item {
+    padding: 16px 21px 16px 21px;
+    border-radius: 7px;
+    border: 1px solid #B8B8B8;
+    height: 147px;
+    min-height: 147px;
+  }
+
+  .right_wrapper {
+    gap: 15px;
+  }
+
+  .check_area img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .content_area div:first-child {
+    font-size: 11px;
+    letter-spacing: -0.28px;
+    margin-bottom: 7px;
+  }
+
+  .content_area div:nth-child(2) {
+    font-size: 15px;
+    line-height: 13px;
+    letter-spacing: -0.385px;
+    margin-bottom: 14px;
+  }
+
+  .content_area div:nth-child(3) {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: -0.42px;
+    margin-bottom: 14px;
+  }
+
+  .content_area div:nth-child(4) {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: -0.42px;
+  }
+
+  .badge_area {
+    gap: 6px;
+  }
+
+  .status_1,  .status_2, .status_3 {
+    border-radius: 7px;
+    border: 1px solid #229829;
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+  }
+
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img,  .status_5 img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .status_1 div, .status_2 div, .status_3 div {
+    font-size: 13px;
+  }
+
+  .status_4 {
+    border-radius: 7px;
+    border: 1px solid #0D65F8;
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+  }
+
+  .status_4 div {
+    font-size: 13px;
+  }
+
+  .status_5 {
+    border-radius: 7px;
+    border: 1px solid #454545;
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+  }
+
+  .status_5 div {
+    font-size: 13px;
+  }
+
+  .status_6 {
+    border-radius: 7px;
+    width: 91px;
+    height: 35px;
+    padding: 7px 8px;
+    font-size: 13px;
+  }
+
+  .status_7, .status_8, .status_9 {
+    gap: 3px;
+    width: 91px;
+    height: 35px;
+    border-radius: 7px;
+    font-size: 13px;
+  }
+
+  .pagination {
+    gap: 8px;
+    margin-top: 42px;
+  }
+
+  .pagination div {
+    border-radius: 3px;
+    border: 1px solid #E5E8EB;
+    width: 27px;
+    height: 27px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
+  }
+
+  .pagination div img {
+    width: 14px;
+    height: 14px;
   }
 
   .prev {
     height: 53px;
     width: 53px;
-    top: 803px;
+    top: 50%;
     left: -32px;
   }
 
   .next {
     height: 53px;
     width: 53px;
-    top: 803px;
+    top: 50%;
     right: -32px;
   }
 }
@@ -598,21 +1302,255 @@
   .box {
     border-radius: 11px;
     margin: 6px 29px 29px 29px;
-    height: 1355px;
+    height: 770px;
     padding: 17px;
+  }
+
+  .search_box {
+    border-radius: 5px;
+    padding: 11px;
+    gap: 6px;
+  }
+
+  .search_box_label {
+    font-size: 7px;
+    letter-spacing: 0px;
+    margin-right: 8px;
+    width: 24px;
+  }
+
+  .month_btn_wrapper {
+    gap: 3px;
+  }
+
+  .month_btn_wrapper div {
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    width: 31px;
+    height: 18px;
+    font-size: 7px;
+    letter-spacing: 0px;
+  }
+
+  .month_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .date_wrapper {
+    gap: 6px;
+    margin-left: 5px;
+  }
+
+  .date_wrapper input {
+    padding: 0 4px 0 4px;
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    width: 72px;
+    height: 18px;
+    font-size: 7px;
+    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 4px center;
+    background-size: 8px;
+  }
+
+  .date_wrapper span {
+    font-size: 6px;
+  }
+
+  .reservation_status_wrapper {
+    gap: 5px;
+  }
+
+  .reservation_status_wrapper div {
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    width: 55px;
+    height: 18px;
+    font-size: 7px;
+  }
+
+  .reservation_status_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .reservation_status input {
+    height: 18px;
+    margin-left: 4px;
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    padding: 0 7px;
+    width: 144px;
+    font-size: 7px;
+  }
+
+  .inquiry {
+    border-radius: 4px;
+    height: 18px;
+    font-size: 7px;
+    letter-spacing: 0px;
+  }
+
+  .list_header {
+    margin: 5px 0 5px 0;
+  }
+
+  .list_header div:first-child {
+    font-size: 8px;
+  }
+
+  .list_header div:nth-child(2) {
+    border-radius: 4px;
+    border: 1px solid #EC4746;
+    width: 49px;
+    height: 20px;
+    font-size: 9px;
+    margin: 5px 0 5px 0;
+  }
+
+  .list_wrapper {
+    height: 559px;
+    gap: 5px;
+  }
+
+  .no_data {
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0px;
+  }
+
+  .list_item {
+    padding: 11px 15px 11px 15px;
+    border-radius: 5px;
+    border: 1px solid #B8B8B8;
+    height: 103px;
+    min-height: 103px;
+  }
+
+  .right_wrapper {
+    gap: 11px;
+  }
+
+  .check_area img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .content_area div:first-child {
+    font-size: 8px;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+  }
+
+  .content_area div:nth-child(2) {
+    font-size: 11px;
+    line-height: 9px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+
+  .content_area div:nth-child(3) {
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+
+  .content_area div:nth-child(4) {
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0px;
+  }
+
+  .badge_area {
+    gap: 4px;
+  }
+
+  .status_1, .status_2, .status_3 {
+    border-radius: 5px;
+    border: 1px solid #229829;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+  }
+
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .status_1 div, .status_2 div, .status_3 div {
+    font-size: 9px;
+  }
+
+  .status_4 {
+    border-radius: 5px;
+    border: 1px solid #0D65F8;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+  }
+
+  .status_4 div {
+    font-size: 9px;
+  }
+
+  .status_5 {
+    border-radius: 5px;
+    border: 1px solid #454545;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+  }
+
+  .status_5 div {
+    font-size: 9px;
+  }
+
+  .status_6 {
+    border-radius: 5px;
+    width: 64px;
+    height: 25px;
+    padding: 5px 6px;
+    font-size: 9px;
+  }
+
+  .status_7, .status_8, .status_9 {
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 9px;
+  }
+
+  .pagination {
+    gap: 6px;
+    margin-top: 29px;
+  }
+
+  .pagination div {
+    border-radius: 2px;
+    border: 1px solid #E5E8EB;
+    width: 19px;
+    height: 19px;
+    font-size: 8px;
+    letter-spacing: 0px;
+  }
+
+  .pagination div img {
+    width: 10px;
+    height: 10px;
   }
 
   .prev {
     height: 42px;
     width: 42px;
-    top: 803px;
+    top: 50%;
     left: -27px;
   }
 
   .next {
     height: 42px;
     width: 42px;
-    top: 803px;
+    top: 50%;
     right: -27px;
   }
 }
@@ -621,22 +1559,256 @@
 @media (max-width: 479px) {
   .box {
     border-radius: 11px;
-    margin: 4px 20px 20px 20px;
-    height: 1040px;
+    margin: 6px 29px 29px 29px;
+    height: 770px;
     padding: 17px;
   }
 
+  .search_box {
+    border-radius: 5px;
+    padding: 11px;
+    gap: 6px;
+  }
+
+  .search_box_label {
+    font-size: 7px;
+    letter-spacing: 0px;
+    margin-right: 3px;
+    width: 25px;
+  }
+
+  .month_btn_wrapper {
+    gap: 3px;
+  }
+
+  .month_btn_wrapper div {
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    width: 25px;
+    height: 18px;
+    font-size: 7px;
+    letter-spacing: 0px;
+  }
+
+  .month_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .date_wrapper {
+    gap: 2px;
+    margin-left: 2px;
+  }
+
+  .date_wrapper input {
+    padding: 0 4px 0 4px;
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    width: 55px;
+    height: 18px;
+    font-size: 7px;
+    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 4px center;
+    background-size: 8px;
+  }
+
+  .date_wrapper span {
+    font-size: 6px;
+  }
+
+  .reservation_status_wrapper {
+    gap: 2px;
+  }
+
+  .reservation_status_wrapper div {
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    width: 40px;
+    height: 18px;
+    font-size: 7px;
+  }
+
+  .reservation_status_btn_active {
+    border: 1px solid #191F28 !important;
+  }
+
+  .reservation_status input {
+    height: 18px;
+    margin-left: 2px;
+    border-radius: 4px;
+    border: 1px solid #7A7A7A;
+    padding: 0 7px;
+    width: 110px;
+    font-size: 7px;
+  }
+
+  .inquiry {
+    border-radius: 4px;
+    height: 18px;
+    font-size: 7px;
+    letter-spacing: 0px;
+  }
+
+  .list_header {
+    margin: 5px 0 5px 0;
+  }
+
+  .list_header div:first-child {
+    font-size: 8px;
+  }
+
+  .list_header div:nth-child(2) {
+    border-radius: 4px;
+    border: 1px solid #EC4746;
+    width: 49px;
+    height: 20px;
+    font-size: 9px;
+    margin: 5px 0 5px 0;
+  }
+
+  .list_wrapper {
+    height: 559px;
+    gap: 5px;
+  }
+
+  .no_data {
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: 0px;
+  }
+
+  .list_item {
+    padding: 11px 15px 11px 15px;
+    border-radius: 5px;
+    border: 1px solid #B8B8B8;
+    height: 103px;
+    min-height: 103px;
+  }
+
+  .right_wrapper {
+    gap: 11px;
+  }
+
+  .check_area img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .content_area div:first-child {
+    font-size: 8px;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+  }
+
+  .content_area div:nth-child(2) {
+    font-size: 11px;
+    line-height: 9px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+
+  .content_area div:nth-child(3) {
+    font-size: 10px;
+    line-height: 9px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+
+  .content_area div:nth-child(4) {
+    font-size: 10px;
+    line-height: 9px;
+    letter-spacing: 0px;
+  }
+
+  .badge_area {
+    gap: 4px;
+  }
+
+  .status_1, .status_2, .status_3 {
+    border-radius: 5px;
+    border: 1px solid #229829;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+  }
+
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .status_1 div, .status_2 div, .status_3 div {
+    font-size: 9px;
+  }
+
+  .status_4 {
+    border-radius: 5px;
+    border: 1px solid #0D65F8;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+  }
+
+  .status_4 div {
+    font-size: 9px;
+  }
+
+  .status_5 {
+    border-radius: 5px;
+    border: 1px solid #454545;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+  }
+
+  .status_5 div {
+    font-size: 9px;
+  }
+
+  .status_6 {
+    border-radius: 5px;
+    width: 64px;
+    height: 25px;
+    padding: 5px 6px;
+    font-size: 9px;
+  }
+
+  .status_7, .status_8, .status_9 {
+    gap: 2px;
+    width: 64px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 9px;
+  }
+
+  .pagination {
+    gap: 6px;
+    margin-top: 29px;
+  }
+
+  .pagination div {
+    border-radius: 2px;
+    border: 1px solid #E5E8EB;
+    width: 19px;
+    height: 19px;
+    font-size: 8px;
+    letter-spacing: 0px;
+  }
+
+  .pagination div img {
+    width: 10px;
+    height: 10px;
+  }
+
   .prev {
-    height: 29px;
-    width: 29px;
+    height: 42px;
+    width: 42px;
     top: 50%;
-    left: -15px;
+    left: -27px;
   }
 
   .next {
-    height: 29px;
-    width: 29px;
+    height: 42px;
+    width: 42px;
     top: 50%;
-    right: -15px;
+    right: -27px;
   }
 }
