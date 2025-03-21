@@ -1009,7 +1009,6 @@ form {
     height: 70px;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #B8B8B8;
     font-size: 22px;
     letter-spacing: -0.55px;
     background: url("../../img/facility/select_arrow.svg") no-repeat right 20px center;
@@ -1021,7 +1020,6 @@ form {
     height: 70px;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #B8B8B8;
     font-size: 22px;
     letter-spacing: -0.55px;
   }
@@ -1029,7 +1027,6 @@ form {
   .personnel_wrapper {
     width: 783px;
     height: 70px;
-    border: 1px solid #B1B1B1;
     border-radius: 10px;
   }
 
@@ -1047,8 +1044,6 @@ form {
   #personnel {
     width: 276px;
     padding: 20px;
-    border-right: 1px solid #B1B1B1;
-    border-left: 1px solid #B1B1B1;
     font-size: 22px;
     letter-spacing: -0.55px;
   }
@@ -1073,7 +1068,6 @@ form {
     height: 70px;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #B8B8B8;
     font-size: 22px;
     letter-spacing: -0.55px;
   }
@@ -1093,19 +1087,25 @@ form {
   }
 }
 
-/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 0.711  */
+/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하  */
 @media (min-width: 768px) and (max-width: 1079px) {
+  .content {
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .box {
     border-radius: 11px;
-    margin: 7px 36px 36px 36px;
-    height: 1560px;
+    margin: 7px 35px 35px 35px;
+    height: 1120px;
     padding: 21px;
   }
 
   .calendar {
-    height: 606px;
-    padding-top: 16px;
-    border-radius: 8px;
+    height: 437px;
+    padding-top: 15px;
+    border-radius: 6px;
   }
 
   .calendar_header {
@@ -1117,13 +1117,13 @@ form {
   }
 
   .calendar_information img {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
   }
 
   .calendar_information div {
     font-size: 11px;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.28px;
   }
 
   .calendar_navigation {
@@ -1142,9 +1142,11 @@ form {
   .calendar_navigation img:nth-child(3) {
     width: 17px;
     height: 17px;
+    cursor: pointer;
   }
 
   .calendar_badge {
+    display: flex;
     gap: 4px
   }
 
@@ -1152,1168 +1154,19 @@ form {
     padding: 4px 14px 4px 15px;
     border: 1px solid #121212;
     font-size: 11px;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.28px;
   }
 
   .choice_badge {
     padding: 4px 14px 4px 15px;
     font-size: 11px;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.28px;
   }
 
   .not_available_badge {
     padding: 4px 4px;
     font-size: 11px;
-    letter-spacing: -0.3px;
-  }
-
-  #day_of_the_week {
-    margin-top: 24px;
-  }
-
-  #day_of_the_week div {
-    padding: 11px 0 11px 0;
-    font-size: 24px;
-    letter-spacing: -0.6px;
-    height: 50px;
-  }
-
-  .day {
-    border-radius: 8px;
-  }
-
-  .day_item {
-    width: 93px;
-    height: 81px;
-    padding: 23px 0;
-  }
-
-  .day_item div:first-child {
-    font-size: 24px;
-    letter-spacing: -0.6px;
-  }
-
-  .day_item div:nth-child(2) {
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .today {
-    border: 1px solid #121212;
-    width: 93px;
-    height: 81px;
-    padding: 23px 0;
-  }
-
-  .today div:first-child {
-    font-size: 24px;
-    letter-spacing: -0.6px;
-  }
-
-  .today div:nth-child(2) {
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .choice {
-    width: 93px;
-    height: 81px;
-    padding: 23px 0;
-    border: none;
-  }
-
-  .choice div:first-child {
-    font-size: 24px;
-    letter-spacing: -0.6px;
-  }
-
-  .choice div:nth-child(2) {
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .not_available {
-    width: 93px;
-    height: 81px;
-    padding: 23px 0;
-  }
-
-  .not_available div:first-child {
-    font-size: 24px;
-    letter-spacing: -0.6px;
-  }
-
-  .not_available div:nth-child(2) {
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .Personal_data_consent {
-    gap: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .Personal_data_consent_title {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-    margin-left: 10px;
-  }
-
-  .Personal_data_consent_box {
-    border-radius: 10px;
-    padding: 20px 30px;
-    gap: 8px;
-  }
-
-  .Personal_data_consent_left {
-    gap: 10px;
-  }
-
-  .Personal_data_consent_more div {
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .Personal_data_consent_more img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .Personal_data_consent_label {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .Personal_data_consent_label span {
-    margin-right: 10px;
-  }
-
-  .Personal_data_consent_right {
-    gap: 7px;
-  }
-
-  .Personal_data_consent_right img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .Personal_data_consent_right div {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .facility_slide {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .facility_slide_item .slide_img {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .facility_slide_item::after {
-    border-radius: 10px;
-  }
-
-  .facility_slide_title {
-    bottom: 17px;
-    left: 30px;
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .facility_slide .slick-dots {
-    gap: 4px;
-    bottom: 15px;
-  }
-
-  .slick-dots li {
-    margin: 0 !important;
-  }
-
-  .facility_slide .slick-dots li button:before {
-    font-size: 10px;
-  }
-
-  .facility_info {
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    right: 16px;
-  }
-
-  .bubble {
-    width: 95px;
-    height: 30px;
-    bottom: 30px;
-    right: 76px;
-    animation: moveLeftRight 1.3s infinite;
-  }
-
-  @keyframes moveLeftRight {
-    0% {
-      right: 76px;
-    }
-    50% {
-      right: 79px;
-    }
-    100% {
-      right: 76px;
-    }
-  }
-
-  form {
-    gap: 12px;
-    margin-top: 40px;
-  }
-
-  .form_wrapper {
-    width: 100%;
-  }
-
-  .form_label {
-    font-size: 22px;
-    letter-spacing: -0.55px;
-    width: 20%;
-  }
-
-  .submit {
-    height: 70px;
-    border-radius: 10px;
-    font-size: 24px;
-    margin-top: 20px;
-  }
-
-  #experienceSelect, #timeSelect {
-    width: 80%;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-    background: url("../../img/facility/select_arrow.svg") no-repeat right 20px center;
-    background-size: 36px;
-  }
-
-  #name {
-    width: 80%;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-  }
-
-  .personnel_wrapper {
-    width: 80%;
-    height: 70px;
-    border: 1px solid #B1B1B1;
-    border-radius: 10px;
-  }
-
-  .minus {
-    width: 33%;
-    padding: 20px;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .minus img, .plus img {
-    width: 25px;
-    height: 25px;
-  }
-
-  #personnel {
-    width: 34%;
-    padding: 20px;
-    border-right: 1px solid #B1B1B1;
-    border-left: 1px solid #B1B1B1;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-  }
-
-  .plus {
-    width: 33%;
-    padding: 20px;
-    border-radius: 0 10px 10px 0;
-  }
-
-  .phone_wrapper {
-    gap: 11px;
-    width: 80%;
-  }
-
-  .dash {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .phone {
-    width: 33%;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-  }
-
-  .prev {
-    height: 53px;
-    width: 53px;
-    top: 803px;
-    left: -32px;
-  }
-
-  .next {
-    height: 53px;
-    width: 53px;
-    top: 803px;
-    right: -32px;
-  }
-}
-
-/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 0.783 */
-@media (min-width: 600px) and (max-width: 767px) {
-  .box {
-    border-radius: 11px;
-    margin: 7px 36px 36px 36px;
-    height: 1560px;
-    padding: 21px;
-  }
-
-  .calendar {
-    height: 606px;
-    padding-top: 16px;
-    border-radius: 8px;
-  }
-
-  .calendar_header {
-    padding: 0 21px 0 16px;
-  }
-
-  .calendar_information {
-    gap: 3px;
-  }
-
-  .calendar_information img {
-    width: 16px;
-    height: 16px;
-  }
-
-  .calendar_information div {
-    font-size: 11px;
-    letter-spacing: -0.3px;
-  }
-
-  .calendar_navigation {
-    gap: 7px;
-  }
-
-  .calendar_navigation img:first-child {
-    width: 17px;
-    height: 17px;
-  }
-
-  .calendar_navigation div {
-    font-size: 24px;
-  }
-
-  .calendar_navigation img:nth-child(3) {
-    width: 17px;
-    height: 17px;
-  }
-
-  .calendar_badge {
-    gap: 4px
-  }
-
-  .today_badge {
-    padding: 4px 14px 4px 15px;
-    border: 1px solid #121212;
-    font-size: 11px;
-    letter-spacing: -0.3px;
-  }
-
-  .choice_badge {
-    padding: 4px 14px 4px 15px;
-    font-size: 11px;
-    letter-spacing: -0.3px;
-  }
-
-  .not_available_badge {
-    padding: 4px 4px;
-    font-size: 11px;
-    letter-spacing: -0.3px;
-  }
-
-  #day_of_the_week {
-    margin-top: 24px;
-  }
-
-  #day_of_the_week div {
-    padding: 11px 0 11px 0;
-    font-size: 24px;
-    letter-spacing: -0.6px;
-    height: 50px;
-  }
-
-  .day {
-    border-radius: 8px;
-  }
-
-  .day_item {
-    width: 69px;
-    height: 81px;
-    padding: 23px 0;
-  }
-
-  .day_item div:first-child {
-    font-size: 19px;
-    letter-spacing: -0.6px;
-  }
-
-  .day_item div:nth-child(2) {
-    font-size: 13px;
-    letter-spacing: -0.4px;
-  }
-
-  .today {
-    border: 1px solid #121212;
-    width: 69px;
-    height: 81px;
-    padding: 23px 0;
-  }
-
-  .today div:first-child {
-    font-size: 19px;
-    letter-spacing: -0.6px;
-  }
-
-  .today div:nth-child(2) {
-    font-size: 13px;
-    letter-spacing: -0.4px;
-  }
-
-  .choice {
-    width: 69px;
-    height: 81px;
-    padding: 23px 0;
-    border: none;
-  }
-
-  .choice div:first-child {
-    font-size: 19px;
-    letter-spacing: -0.6px;
-  }
-
-  .choice div:nth-child(2) {
-    font-size: 13px;
-    letter-spacing: -0.4px;
-  }
-
-  .not_available {
-    width: 69px;
-    height: 81px;
-    padding: 23px 0;
-  }
-
-  .not_available div:first-child {
-    font-size: 19px;
-    letter-spacing: -0.6px;
-  }
-
-  .not_available div:nth-child(2) {
-    font-size: 13px;
-    letter-spacing: -0.4px;
-  }
-
-  .Personal_data_consent {
-    gap: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .Personal_data_consent_title {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-    margin-left: 10px;
-  }
-
-  .Personal_data_consent_box {
-    border-radius: 10px;
-    padding: 20px 30px;
-    gap: 8px;
-  }
-
-  .Personal_data_consent_left {
-    gap: 10px;
-  }
-
-  .Personal_data_consent_more div {
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .Personal_data_consent_more img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .Personal_data_consent_label {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .Personal_data_consent_label span {
-    margin-right: 10px;
-  }
-
-  .Personal_data_consent_right {
-    gap: 7px;
-  }
-
-  .Personal_data_consent_right img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .Personal_data_consent_right div {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .facility_slide {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .facility_slide_item .slide_img {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .facility_slide_item::after {
-    border-radius: 10px;
-  }
-
-  .facility_slide_title {
-    bottom: 17px;
-    left: 30px;
-    font-size: 16px;
-    letter-spacing: -0.4px;
-  }
-
-  .facility_slide .slick-dots {
-    gap: 4px;
-    bottom: 15px;
-  }
-
-  .slick-dots li {
-    margin: 0 !important;
-  }
-
-  .facility_slide .slick-dots li button:before {
-    font-size: 10px;
-  }
-
-  .facility_info {
-    width: 50px;
-    height: 50px;
-    bottom: 20px;
-    right: 16px;
-  }
-
-  .bubble {
-    width: 95px;
-    height: 30px;
-    bottom: 30px;
-    right: 76px;
-    animation: moveLeftRight 1.3s infinite;
-  }
-
-  @keyframes moveLeftRight {
-    0% {
-      right: 76px;
-    }
-    50% {
-      right: 79px;
-    }
-    100% {
-      right: 76px;
-    }
-  }
-
-  form {
-    gap: 12px;
-    margin-top: 40px;
-  }
-
-  .form_wrapper {
-    width: 100%;
-  }
-
-  .form_label {
-    font-size: 22px;
-    letter-spacing: -0.55px;
-    width: 20%;
-  }
-
-  .submit {
-    height: 70px;
-    border-radius: 10px;
-    font-size: 24px;
-    margin-top: 20px;
-  }
-
-  #experienceSelect, #timeSelect {
-    width: 80%;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-    background: url("../../img/facility/select_arrow.svg") no-repeat right 20px center;
-    background-size: 36px;
-  }
-
-  #name {
-    width: 80%;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-  }
-
-  .personnel_wrapper {
-    width: 80%;
-    height: 70px;
-    border: 1px solid #B1B1B1;
-    border-radius: 10px;
-  }
-
-  .minus {
-    width: 33%;
-    padding: 20px;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .minus img, .plus img {
-    width: 25px;
-    height: 25px;
-  }
-
-  #personnel {
-    width: 34%;
-    padding: 20px;
-    border-right: 1px solid #B1B1B1;
-    border-left: 1px solid #B1B1B1;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-  }
-
-  .plus {
-    width: 33%;
-    padding: 20px;
-    border-radius: 0 10px 10px 0;
-  }
-
-  .phone_wrapper {
-    gap: 11px;
-    width: 80%;
-  }
-
-  .dash {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .phone {
-    width: 33%;
-    height: 70px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 22px;
-    letter-spacing: -0.55px;
-  }
-
-  .prev {
-    height: 53px;
-    width: 53px;
-    top: 803px;
-    left: -32px;
-  }
-
-  .next {
-    height: 53px;
-    width: 53px;
-    top: 803px;
-    right: -32px;
-  }
-}
-
-/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
-@media (min-width: 480px) and (max-width: 599px) {
-  .box {
-    border-radius: 11px;
-    margin: 6px 29px 29px 29px;
-    height: 1355px;
-    padding: 17px;
-  }
-
-  .calendar {
-    height: 528px;
-    padding-top: 16px;
-    border-radius: 8px;
-  }
-
-  .calendar_header {
-    padding: 0 19px 0 12px;
-  }
-
-  .calendar_information {
-    gap: 1px;
-  }
-
-  .calendar_information img {
-    width: 12px;
-    height: 12px;
-  }
-
-  .calendar_information div {
-    font-size: 8px;
-    letter-spacing: -1px;
-  }
-
-  .calendar_navigation {
-    gap: 7px;
-  }
-
-  .calendar_navigation img:first-child {
-    width: 14px;
-    height: 14px;
-  }
-
-  .calendar_navigation div {
-    font-size: 19px;
-  }
-
-  .calendar_navigation img:nth-child(3) {
-    width: 14px;
-    height: 14px;
-  }
-
-  .calendar_badge {
-    gap: 2px
-  }
-
-  .today_badge {
-    padding: 3px 11px 3px 12px;
-    border: 1px solid #121212;
-    font-size: 9px;
-    letter-spacing: -0.3px;
-  }
-
-  .choice_badge {
-    padding: 3px 11px 3px 12px;
-    font-size: 9px;
-    letter-spacing: -0.3px;
-  }
-
-  .not_available_badge {
-    padding: 3px 3px;
-    font-size: 9px;
-    letter-spacing: -0.3px;
-  }
-
-  #day_of_the_week {
-    margin-top: 24px;
-  }
-
-  #day_of_the_week div {
-    padding: 11px 0 11px 0;
-    font-size: 19px;
-    letter-spacing: -0.6px;
-    height: 50px;
-  }
-
-  .day {
-    border-radius: 8px;
-  }
-
-  .day_item {
-    width: 56px;
-    height: 69px;
-    padding: 23px 0;
-  }
-
-  .day_item div:first-child {
-    font-size: 15px;
-    letter-spacing: -0.6px;
-  }
-
-  .day_item div:nth-child(2) {
-    font-size: 10px;
-    letter-spacing: -0.4px;
-  }
-
-  .today {
-    border: 1px solid #121212;
-    width: 56px;
-    height: 69px;
-    padding: 23px 0;
-  }
-
-  .today div:first-child {
-    font-size: 15px;
-    letter-spacing: -0.6px;
-  }
-
-  .today div:nth-child(2) {
-    font-size: 10px;
-    letter-spacing: -0.4px;
-  }
-
-  .choice {
-    width: 56px;
-    height: 69px;
-    padding: 23px 0;
-    border: none;
-  }
-
-  .choice div:first-child {
-    font-size: 15px;
-    letter-spacing: -0.6px;
-  }
-
-  .choice div:nth-child(2) {
-    font-size: 10px;
-    letter-spacing: -0.4px;
-  }
-
-  .not_available {
-    width: 56px;
-    height: 69px;
-    padding: 23px 0;
-  }
-
-  .not_available div:first-child {
-    font-size: 15px;
-    letter-spacing: -0.6px;
-  }
-
-  .not_available div:nth-child(2) {
-    font-size: 10px;
-    letter-spacing: -0.4px;
-  }
-
-  .Personal_data_consent {
-    gap: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .Personal_data_consent_title {
-    font-size: 16px;
-    letter-spacing: -0.5px;
-    margin-left: 10px;
-  }
-
-  .Personal_data_consent_box {
-    border-radius: 10px;
-    padding: 16px 24px;
-    gap: 8px;
-  }
-
-  .Personal_data_consent_left {
-    gap: 10px;
-  }
-
-  .Personal_data_consent_more div {
-    font-size: 13px;
-    letter-spacing: -0.4px;
-  }
-
-  .Personal_data_consent_more img {
-    width: 19px;
-    height: 19px;
-  }
-
-  .Personal_data_consent_label {
-    font-size: 16px;
-    letter-spacing: -1px;
-  }
-
-  .Personal_data_consent_label span {
-    margin-right: 10px;
-  }
-
-  .Personal_data_consent_right {
-    gap: 7px;
-  }
-
-  .Personal_data_consent_right img {
-    width: 19px;
-    height: 19px;
-  }
-
-  .Personal_data_consent_right div {
-    font-size: 16px;
-    letter-spacing: -0.5px;
-  }
-
-  .facility_slide {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .facility_slide_item .slide_img {
-    height: 200px;
-    border-radius: 10px;
-  }
-
-  .facility_slide_item::after {
-    border-radius: 10px;
-  }
-
-  .facility_slide_title {
-    bottom: 14px;
-    left: 24px;
-    font-size: 13px;
-    letter-spacing: -0.4px;
-  }
-
-  .facility_slide .slick-dots {
-    gap: 1px;
-    bottom: 12px;
-  }
-
-  .slick-dots li {
-    margin: 0 !important;
-  }
-
-  .facility_slide .slick-dots li button:before {
-    font-size: 8px;
-  }
-
-  .facility_info {
-    width: 40px;
-    height: 40px;
-    bottom: 16px;
-    right: 13px;
-  }
-
-  .bubble {
-    width: 76px;
-    height: 24px;
-    bottom: 24px;
-    right: 61px;
-    animation: moveLeftRight 1.3s infinite;
-  }
-
-  @keyframes moveLeftRight {
-    0% {
-      right: 61px;
-    }
-    50% {
-      right: 59px;
-    }
-    100% {
-      right: 61px;
-    }
-  }
-
-  form {
-    gap: 12px;
-    margin-top: 32px;
-  }
-
-  .form_wrapper {
-    width: 100%;
-  }
-
-  .form_label {
-    font-size: 18px;
-    letter-spacing: -0.55px;
-    width: 20%;
-  }
-
-  .submit {
-    height: 56px;
-    border-radius: 10px;
-    font-size: 19px;
-    margin-top: 16px;
-  }
-
-  #experienceSelect, #timeSelect {
-    width: 80%;
-    height: 56px;
-    padding: 16px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 18px;
-    letter-spacing: -0.55px;
-    background: url("../../img/facility/select_arrow.svg") no-repeat right 16px center;
-    background-size: 29px;
-  }
-
-  #name {
-    width: 80%;
-    height: 56px;
-    padding: 16px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 18px;
-    letter-spacing: -0.55px;
-  }
-
-  .personnel_wrapper {
-    width: 80%;
-    height: 56px;
-    border: 1px solid #B1B1B1;
-    border-radius: 10px;
-  }
-
-  .minus {
-    width: 33%;
-    padding: 20px;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .minus img, .plus img {
-    width: 20px;
-    height: 20px;
-  }
-
-  #personnel {
-    width: 34%;
-    padding: 20px;
-    border-right: 1px solid #B1B1B1;
-    border-left: 1px solid #B1B1B1;
-    font-size: 18px;
-    letter-spacing: -0.55px;
-  }
-
-  .plus {
-    width: 33%;
-    padding: 20px;
-    border-radius: 0 10px 10px 0;
-  }
-
-  .phone_wrapper {
-    gap: 11px;
-    width: 80%;
-  }
-
-  .dash {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-  }
-
-  .phone {
-    width: 33%;
-    height: 56px;
-    padding: 16px;
-    border-radius: 10px;
-    border: 1px solid #B8B8B8;
-    font-size: 18px;
-    letter-spacing: -0.55px;
-  }
-
-  .prev {
-    height: 42px;
-    width: 42px;
-    top: 803px;
-    left: -27px;
-  }
-
-  .next {
-    height: 42px;
-    width: 42px;
-    top: 803px;
-    right: -27px;
-  }
-}
-
-/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 0.7 */
-@media (max-width: 479px) {
-  .box {
-    border-radius: 11px;
-    margin: 4px 20px 20px 20px;
-    height: 1040px;
-    padding: 17px;
-  }
-
-  .calendar {
-    height: 364px;
-    padding-top: 16px;
-    border-radius: 8px;
-  }
-
-  .calendar_header {
-    padding: 0 13px 0 8px;
-  }
-
-  .calendar_information {
-    gap: 1px;
-  }
-
-  .calendar_information img {
-    width: 12px;
-    height: 12px;
-  }
-
-  .calendar_information div {
-    font-size: 8px;
-    letter-spacing: -1px;
-  }
-
-  .calendar_navigation {
-    gap: 7px;
-  }
-
-  .calendar_navigation img:first-child {
-    width: 10px;
-    height: 10px;
-  }
-
-  .calendar_navigation div {
-    font-size: 13px;
-  }
-
-  .calendar_navigation img:nth-child(3) {
-    width: 10px;
-    height: 10px;
-  }
-
-  .calendar_badge {
-    gap: 2px
-  }
-
-  .today_badge {
-    padding: 1px;
-    border: 1px solid #121212;
-    font-size: 6px;
-    letter-spacing: -0.3px;
-  }
-
-  .choice_badge {
-    padding: 1px;
-    font-size: 6px;
-    letter-spacing: -0.3px;
-  }
-
-  .not_available_badge {
-    padding: 1px;
-    font-size: 6px;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.28px;
   }
 
   #day_of_the_week {
@@ -2322,79 +1175,79 @@ form {
 
   #day_of_the_week div {
     padding: 8px 0 8px 0;
-    font-size: 13px;
-    letter-spacing: -0.6px;
+    font-size: 17px;
+    letter-spacing: -0.42px;
     height: 35px;
   }
 
   .day {
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   .day_item {
-    width: 35px;
-    height: 20px;
-    padding: 23px 0;
+    width: 92px;
+    height: 57px;
+    padding: 16px 0;
   }
 
   .day_item div:first-child {
-    font-size: 10px;
-    letter-spacing: -0.6px;
+    font-size: 17px;
+    letter-spacing: -0.42px;
   }
 
   .day_item div:nth-child(2) {
-    font-size: 7px;
-    letter-spacing: -0.4px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
   }
 
   .today {
     border: 1px solid #121212;
-    width: 35px;
-    height: 20px;
-    padding: 23px 0;
+    width: 100%;
+    height: 57px;
+    padding: 16px 0;
   }
 
   .today div:first-child {
-    font-size: 10px;
-    letter-spacing: -0.6px;
+    font-size: 17px;
+    letter-spacing: -0.42px;
   }
 
   .today div:nth-child(2) {
-    font-size: 7px;
-    letter-spacing: -0.4px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
   }
 
   .choice {
-    width: 35px;
-    height: 20px;
-    padding: 23px 0;
+    width: 100%;
+    height: 57px;
+    padding: 16px 0;
     border: none;
   }
 
   .choice div:first-child {
-    font-size: 10px;
-    letter-spacing: -0.6px;
+    font-size: 17px;
+    letter-spacing: -0.42px;
   }
 
   .choice div:nth-child(2) {
-    font-size: 7px;
-    letter-spacing: -0.4px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
   }
 
   .not_available {
-    width: 35px;
-    height: 20px;
-    padding: 23px 0;
+    width: 100%;
+    height: 57px;
+    padding: 16px 0;
   }
 
   .not_available div:first-child {
-    font-size: 10px;
-    letter-spacing: -0.6px;
+    font-size: 17px;
+    letter-spacing: -0.42px;
   }
 
   .not_available div:nth-child(2) {
-    font-size: 7px;
-    letter-spacing: -0.4px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
   }
 
   .Personal_data_consent {
@@ -2404,14 +1257,14 @@ form {
   }
 
   .Personal_data_consent_title {
-    font-size: 11px;
-    letter-spacing: -0.5px;
+    font-size: 14px;
+    letter-spacing: -0.35px;
     margin-left: 7px;
   }
 
   .Personal_data_consent_box {
-    border-radius: 10px;
-    padding: 11px 17px;
+    border-radius: 7px;
+    padding: 14px 21px;
     gap: 6px;
   }
 
@@ -2420,18 +1273,18 @@ form {
   }
 
   .Personal_data_consent_more div {
-    font-size: 9px;
-    letter-spacing: -0.4px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
   }
 
   .Personal_data_consent_more img {
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
   }
 
   .Personal_data_consent_label {
-    font-size: 11px;
-    letter-spacing: -1px;
+    font-size: 14px;
+    letter-spacing: -0.35px;
   }
 
   .Personal_data_consent_label span {
@@ -2443,38 +1296,425 @@ form {
   }
 
   .Personal_data_consent_right img {
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
   }
 
   .Personal_data_consent_right div {
-    font-size: 11px;
-    letter-spacing: -0.5px;
+    font-size: 14px;
+    letter-spacing: -0.35px;
   }
 
   .facility_slide {
-    height: 200px;
-    border-radius: 10px;
+    height: 140px;
+    border-radius: 7px;
   }
 
   .facility_slide_item .slide_img {
-    height: 200px;
-    border-radius: 10px;
+    height: 140px;
+    border-radius: 7px;
   }
 
   .facility_slide_item::after {
-    border-radius: 10px;
+    border-radius: 7px;
   }
 
   .facility_slide_title {
-    bottom: 10px;
-    left: 17px;
-    font-size: 9px;
-    letter-spacing: -0.4px;
+    bottom: 12px;
+    left: 21px;
+    font-size: 11px;
+    letter-spacing: -0.28px;
   }
 
   .facility_slide .slick-dots {
-    gap: 1px;
+    gap: 3px;
+    bottom: 11px;
+  }
+
+  .slick-dots li {
+    margin: 0 !important;
+  }
+
+  .facility_slide .slick-dots li button:before {
+    font-size: 7px;
+  }
+
+  .facility_info {
+    width: 35px;
+    height: 35px;
+    bottom: 14px;
+    right: 11px;
+  }
+
+  .bubble {
+    width: 67px;
+    height: 21px;
+    bottom: 21px;
+    right: 53px;
+    animation: moveLeftRight 1.3s infinite;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      right: 53px;
+    }
+    50% {
+      right: 55px;
+    }
+    100% {
+      right: 53px;
+    }
+  }
+
+  form {
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .form_label {
+    font-size: 15px;
+    letter-spacing: -0.39px;
+    width: 10%;
+  }
+
+  .submit {
+    height: 49px;
+    border-radius: 7px;
+    font-size: 17px;
+    margin-top: 14px;
+  }
+
+  #experienceSelect, #timeSelect {
+    width: 90%;
+    height: 49px;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 15px;
+    letter-spacing: -0.39px;
+    background: url("../../img/facility/select_arrow.svg") no-repeat right 14px center;
+    background-size: 25px;
+    border: 1px solid #B8B8B8;
+  }
+
+  #name {
+    width: 90%;
+    height: 49px;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 15px;
+    letter-spacing: -0.39px;
+    border: 1px solid #B8B8B8;
+  }
+
+  .personnel_wrapper {
+    width: 90%;
+    height: 49px;
+    border-radius: 7px;
+    border: 1px solid #B8B8B8;
+  }
+
+  .minus {
+    width: 33%;
+    padding: 14px;
+    border-radius: 7px 0 0 7px;
+  }
+
+  .minus img, .plus img {
+    width: 25px;
+    height: 25px;
+  }
+
+  #personnel {
+    width: 34%;
+    padding: 14px;
+    font-size: 15px;
+    letter-spacing: -0.39px;
+    border-right: 1px solid #B1B1B1;
+    border-left: 1px solid #B1B1B1;
+  }
+
+  .plus {
+    width: 33%;
+    padding: 14px;
+    border-radius: 0 7px 7px 0;
+  }
+
+  .phone_wrapper {
+    gap: 8px;
+    width: 90%;
+  }
+
+  .dash {
+    font-size: 14px;
+    letter-spacing: -0.35px;
+  }
+
+  .phone {
+    border: 1px solid #B1B1B1;
+    width: 33%;
+    height: 49px;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 15px;
+    letter-spacing: -0.39px;
+  }
+
+  .prev {
+    height: 52px;
+    width: 52px;
+    top: 562px;
+    left: -35px;
+  }
+
+  .next {
+    height: 52px;
+    width: 52px;
+    top: 562px;
+    right: -35px;
+  }
+}
+
+/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 */
+@media (min-width: 600px) and (max-width: 767px) {
+  .content {
+    padding-bottom: 35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .box {
+    border-radius: 8px;
+    margin: 5px 25px 25px 25px;
+    height: 784px;
+    padding: 15px;
+  }
+
+  .calendar {
+    height: 306px;
+    padding-top: 11px;
+    border-radius: 4px;
+  }
+
+  .calendar_header {
+    padding: 0 19px 0 15px;
+  }
+
+  .calendar_information {
+    gap: 2px;
+  }
+
+  .calendar_information img {
+    width: 11px;
+    height: 11px;
+  }
+
+  .calendar_information div {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .calendar_navigation {
+    gap: 5px;
+  }
+
+  .calendar_navigation img:first-child {
+    width: 12px;
+    height: 12px;
+  }
+
+  .calendar_navigation div {
+    font-size: 17px;
+  }
+
+  .calendar_navigation img:nth-child(3) {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+
+  .calendar_badge {
+    display: flex;
+    gap: 3px
+  }
+
+  .today_badge {
+    padding: 3px 10px 3px 11px;
+    border: 1px solid #121212;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .choice_badge {
+    padding: 3px 10px 3px 11px;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .not_available_badge {
+    padding: 3px 3px;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  #day_of_the_week {
+    margin-top: 12px;
+  }
+
+  #day_of_the_week div {
+    padding: 6px 0 6px 0;
+    font-size: 12px;
+    letter-spacing: -0.29px;
+    height: 25px;
+  }
+
+  .day {
+    border-radius: 4px;
+  }
+
+  .day_item {
+    width: 64px;
+    height: 40px;
+    padding: 11px 0;
+  }
+
+  .day_item div:first-child {
+    font-size: 12px;
+    letter-spacing: -0.29px;
+  }
+
+  .day_item div:nth-child(2) {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  Today {
+    border: 1px solid #121212;
+    width: 100%;
+    height: 40px;
+    padding: 11px 0;
+  }
+
+  .today div:first-child {
+    font-size: 12px;
+    letter-spacing: -0.29px;
+  }
+
+  .today div:nth-child(2) {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .choice {
+    width: 100%;
+    height: 40px;
+    padding: 11px 0;
+    border: none;
+  }
+
+  .choice div:first-child {
+    font-size: 12px;
+    letter-spacing: -0.29px;
+  }
+
+  .choice div:nth-child(2) {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .not_available {
+    width: 100%;
+    height: 40px;
+    padding: 11px 0;
+  }
+
+  .not_available div:first-child {
+    font-size: 12px;
+    letter-spacing: -0.29px;
+  }
+
+  .not_available div:nth-child(2) {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .Personal_data_consent {
+    gap: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Personal_data_consent_title {
+    font-size: 10px;
+    letter-spacing: -0.25px;
+    margin-left: 5px;
+  }
+
+  .Personal_data_consent_box {
+    border-radius: 5px;
+    padding: 10px 15px;
+    gap: 4px;
+  }
+
+  .Personal_data_consent_left {
+    gap: 5px;
+  }
+
+  .Personal_data_consent_more div {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .Personal_data_consent_more img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .Personal_data_consent_label {
+    font-size: 10px;
+    letter-spacing: -0.25px;
+  }
+
+  .Personal_data_consent_label span {
+    margin-right: 5px;
+  }
+
+  .Personal_data_consent_right {
+    gap: 4px;
+  }
+
+  .Personal_data_consent_right img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .Personal_data_consent_right div {
+    font-size: 10px;
+    letter-spacing: -0.25px;
+  }
+
+  .facility_slide {
+    height: 98px;
+    border-radius: 5px;
+  }
+
+  .facility_slide_item .slide_img {
+    height: 98px;
+    border-radius: 5px;
+  }
+
+  .facility_slide_item::after {
+    border-radius: 5px;
+  }
+
+  .facility_slide_title {
+    bottom: 8px;
+    left: 15px;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .facility_slide .slick-dots {
+    gap: 2px;
     bottom: 8px;
   }
 
@@ -2483,144 +1723,914 @@ form {
   }
 
   .facility_slide .slick-dots li button:before {
-    font-size: 6px;
+    font-size: 5px;
   }
 
   .facility_info {
-    width: 28px;
-    height: 28px;
-    bottom: 11px;
-    right: 9px;
+    width: 25px;
+    height: 25px;
+    bottom: 10px;
+    right: 8px;
   }
 
   .bubble {
-    width: 53px;
-    height: 17px;
-    bottom: 17px;
-    right: 43px;
+    width: 47px;
+    height: 15px;
+    bottom: 15px;
+    right: 37px;
     animation: moveLeftRight 1.3s infinite;
   }
 
   @keyframes moveLeftRight {
     0% {
-      right: 43px;
+      right: 37px;
     }
     50% {
-      right: 40px;
+      right: 39px;
     }
     100% {
-      right: 43px;
+      right: 37px;
     }
   }
 
   form {
-    gap: 12px;
-    margin-top: 22px;
-  }
-
-  .form_wrapper {
-    width: 100%;
+    gap: 6px;
+    margin-top: 20px;
   }
 
   .form_label {
-    font-size: 13px;
-    letter-spacing: -0.55px;
-    width: 20%;
+    width: 10%;
+    font-size: 11px;
+    letter-spacing: -0.27px;
   }
 
   .submit {
-    height: 39px;
-    border-radius: 10px;
-    font-size: 13px;
-    margin-top: 16px;
+    height: 34px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 
   #experienceSelect, #timeSelect {
-    width: 80%;
-    height: 39px;
-    padding: 11px;
-    border-radius: 7px;
+    width: 90%;
+    height: 34px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    letter-spacing: -0.27px;
+    background: url("../../img/facility/select_arrow.svg") no-repeat right 10px center;
+    background-size: 18px;
     border: 1px solid #B8B8B8;
-    font-size: 13px;
-    letter-spacing: -0.55px;
-    background: url("../../img/facility/select_arrow.svg") no-repeat right 11px center;
-    background-size: 20px;
   }
 
   #name {
-    width: 80%;
-    height: 39px;
-    padding: 11px;
-    border-radius: 7px;
+    width: 90%;
+    height: 34px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    letter-spacing: -0.27px;
     border: 1px solid #B8B8B8;
-    font-size: 13px;
-    letter-spacing: -0.55px;
   }
 
   .personnel_wrapper {
-    width: 80%;
-    height: 39px;
-    border: 1px solid #B1B1B1;
-    border-radius: 7px;
+    width: 90%;
+    height: 34px;
+    border-radius: 5px;
+    border: 1px solid #B8B8B8;
   }
 
   .minus {
     width: 33%;
-    padding: 11px;
-    border-radius: 7px 0 0 7px;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
   }
 
   .minus img, .plus img {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
   }
 
   #personnel {
     width: 34%;
-    padding: 11px;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: -0.27px;
     border-right: 1px solid #B1B1B1;
     border-left: 1px solid #B1B1B1;
-    font-size: 18px;
-    letter-spacing: -0.55px;
   }
 
   .plus {
     width: 33%;
-    padding: 11px;
-    border-radius: 0 7px 7px 0;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
   }
 
   .phone_wrapper {
-    gap: 11px;
-    width: 80%;
+    gap: 6px;
+    width: 90%;
   }
 
   .dash {
-    font-size: 20px;
-    letter-spacing: -0.5px;
+    font-size: 10px;
+    letter-spacing: -0.25px;
   }
 
   .phone {
+    border: 1px solid #B1B1B1;
     width: 33%;
-    height: 39px;
+    height: 34px;
     padding: 10px;
-    border-radius: 7px;
-    border: 1px solid #B8B8B8;
-    font-size: 10px;
-    letter-spacing: -0.55px;
+    border-radius: 5px;
+    font-size: 11px;
+    letter-spacing: -0.27px;
   }
 
   .prev {
-    height: 29px;
-    width: 29px;
-    top: 50%;
-    left: -15px;
+    height: 36px;
+    width: 36px;
+    top: 393px;
+    left: -25px;
   }
 
   .next {
-    height: 29px;
-    width: 29px;
-    top: 50%;
-    right: -15px;
+    height: 36px;
+    width: 36px;
+    top: 393px;
+    right: -25px;
+  }
+}
+
+/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
+@media (min-width: 480px) and (max-width: 599px) {
+  .content {
+    padding-bottom: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .box {
+    border-radius: 6px;
+    margin: 4px 18px 18px 18px;
+    height: 549px;
+    padding: 11px;
+  }
+
+  .calendar {
+    height: 214px;
+    padding-top: 8px;
+    border-radius: 3px;
+  }
+
+  .calendar_header {
+    padding: 0 13px 0 11px;
+  }
+
+  .calendar_information {
+    gap: 1px;
+  }
+
+  .calendar_information img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .calendar_information div {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .calendar_navigation {
+    gap: 4px;
+  }
+
+  .calendar_navigation img:first-child {
+    width: 8px;
+    height: 8px;
+  }
+
+  .calendar_navigation div {
+    font-size: 12px;
+  }
+
+  .calendar_navigation img:nth-child(3) {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+  }
+
+  .calendar_badge {
+    display: flex;
+    gap: 2px
+  }
+
+  .today_badge {
+    padding: 2px 7px 2px 8px;
+    border: 1px solid #121212;
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .choice_badge {
+    padding: 2px 7px 2px 8px;
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .not_available_badge {
+    padding: 2px 2px;
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  #day_of_the_week {
+    margin-top: 8px;
+  }
+
+  #day_of_the_week div {
+    padding: 4px 0 4px 0;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+    height: 18px;
+  }
+
+  .day {
+    border-radius: 3px;
+  }
+
+  .day_item {
+    width: 45px;
+    height: 28px;
+    padding: 8px 0;
+  }
+
+  .day_item div:first-child {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .day_item div:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .today {
+    border: 1px solid #121212;
+    width: 100%;
+    height: 28px;
+    padding: 8px 0;
+  }
+
+  .today div:first-child {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .today div:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .choice {
+    width: 100%;
+    height: 28px;
+    padding: 8px 0;
+    border: none;
+  }
+
+  .choice div:first-child {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .choice div:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .not_available {
+    width: 100%;
+    height: 28px;
+    padding: 8px 0;
+  }
+
+  .not_available div:first-child {
+    font-size: 8px;
+    letter-spacing: -0.2px;
+  }
+
+  .not_available div:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .Personal_data_consent {
+    gap: 4px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  .Personal_data_consent_title {
+    font-size: 7px;
+    letter-spacing: -0.18px;
+    margin-left: 4px;
+  }
+
+  .Personal_data_consent_box {
+    border-radius: 4px;
+    padding: 7px 11px;
+    gap: 3px;
+  }
+
+  .Personal_data_consent_left {
+    gap: 4px;
+  }
+
+  .Personal_data_consent_more div {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .Personal_data_consent_more img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .Personal_data_consent_label {
+    font-size: 7px;
+    letter-spacing: -0.18px;
+  }
+
+  .Personal_data_consent_label span {
+    margin-right: 4px;
+  }
+
+  .Personal_data_consent_right {
+    gap: 3px;
+  }
+
+  .Personal_data_consent_right img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .Personal_data_consent_right div {
+    font-size: 7px;
+    letter-spacing: -0.18px;
+  }
+
+  .facility_slide {
+    height: 69px;
+    border-radius: 4px;
+  }
+
+  .facility_slide_item .slide_img {
+    height: 69px;
+    border-radius: 4px;
+  }
+
+  .facility_slide_item::after {
+    border-radius: 4px;
+  }
+
+  .facility_slide_title {
+    bottom: 6px;
+    left: 11px;
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .facility_slide .slick-dots {
+    gap: 1px;
+    bottom: 6px;
+  }
+
+  .slick-dots li {
+    margin: 0 !important;
+  }
+
+  .facility_slide .slick-dots li button:before {
+    font-size: 4px;
+  }
+
+  .facility_info {
+    width: 18px;
+    height: 18px;
+    bottom: 7px;
+    right: 6px;
+  }
+
+  .bubble {
+    width: 33px;
+    height: 11px;
+    bottom: 11px;
+    right: 26px;
+    animation: moveLeftRight 1.3s infinite;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      right: 26px;
+    }
+    50% {
+      right: 27px;
+    }
+    100% {
+      right: 26px;
+    }
+  }
+
+  form {
+    gap: 4px;
+    margin-top: 14px;
+  }
+
+  .form_label {
+    width: 10%;
+    font-size: 8px;
+    letter-spacing: -0.19px;
+  }
+
+  .submit {
+    height: 24px;
+    border-radius: 4px;
+    font-size: 8px;
+    margin-top: 7px;
+  }
+
+  #experienceSelect, #timeSelect {
+    width: 90%;
+    height: 24px;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 8px;
+    letter-spacing: -0.19px;
+    background: url("../../img/facility/select_arrow.svg") no-repeat right 7px center;
+    background-size: 13px;
+    border: 1px solid #B8B8B8;
+  }
+
+  #name {
+    width: 90%;
+    height: 24px;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 8px;
+    letter-spacing: -0.19px;
+    border: 1px solid #B8B8B8;
+  }
+
+  .personnel_wrapper {
+    width: 90%;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #B8B8B8;
+  }
+
+  .minus {
+    width: 33%;
+    padding: 7px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .minus img, .plus img {
+    width: 13px;
+    height: 13px;
+  }
+
+  #personnel {
+    width: 34%;
+    padding: 7px;
+    font-size: 8px;
+    letter-spacing: -0.19px;
+    border-right: 1px solid #B1B1B1;
+    border-left: 1px solid #B1B1B1;
+  }
+
+  .plus {
+    width: 33%;
+    padding: 7px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .phone_wrapper {
+    gap: 4px;
+    width: 90%;
+  }
+
+  .dash {
+    font-size: 7px;
+    letter-spacing: -0.18px;
+  }
+
+  .phone {
+    border: 1px solid #B1B1B1;
+    width: 33%;
+    height: 24px;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 8px;
+    letter-spacing: -0.19px;
+  }
+
+  .prev {
+    height: 25px;
+    width: 25px;
+    top: 275px;
+    left: -18px;
+  }
+
+  .next {
+    height: 25px;
+    width: 25px;
+    top: 275px;
+    right: -18px;
+  }
+}
+
+/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 */
+@media (max-width: 479px) {
+  .content {
+    padding-bottom: 18px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .box {
+    border-radius: 4px;
+    margin: 3px 13px 13px 13px;
+    height: 384px;
+    padding: 8px;
+  }
+
+  .calendar {
+    height: 150px;
+    padding-top: 6px;
+    border-radius: 2px;
+  }
+
+  .calendar_header {
+    padding: 0 9px 0 8px;
+  }
+
+  .calendar_information {
+    gap: 1px;
+  }
+
+  .calendar_information img {
+    width: 6px;
+    height: 6px;
+  }
+
+  .calendar_information div {
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .calendar_navigation {
+    gap: 3px;
+  }
+
+  .calendar_navigation img:first-child {
+    width: 6px;
+    height: 6px;
+  }
+
+  .calendar_navigation div {
+    font-size: 8px;
+  }
+
+  .calendar_navigation img:nth-child(3) {
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+  }
+
+  .calendar_badge {
+    display: flex;
+    gap: 1px
+  }
+
+  .today_badge {
+    padding: 1px 5px 1px 6px;
+    border: 1px solid #121212;
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .choice_badge {
+    padding: 1px 5px 1px 6px;
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .not_available_badge {
+    padding: 1px 1px;
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  #day_of_the_week {
+    margin-top: 6px;
+  }
+
+  #day_of_the_week div {
+    padding: 3px 0 3px 0;
+    font-size: 6px;
+    letter-spacing: -0.14px;
+    height: 13px;
+  }
+
+  .day {
+    border-radius: 2px;
+  }
+
+  .day_item {
+    width: 32px;
+    height: 20px;
+    padding: 6px 0;
+  }
+
+  .day_item div:first-child {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .day_item div:nth-child(2) {
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .today {
+    border: 1px solid #121212;
+    width: 100%;
+    height: 20px;
+    padding: 6px 0;
+  }
+
+  .today div:first-child {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .today div:nth-child(2) {
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .choice {
+    width: 100%;
+    height: 20px;
+    padding: 6px 0;
+    border: none;
+  }
+
+  .choice div:first-child {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .choice div:nth-child(2) {
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .not_available {
+    width: 100%;
+    height: 20px;
+    padding: 6px 0;
+  }
+
+  .not_available div:first-child {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .not_available div:nth-child(2) {
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .Personal_data_consent {
+    gap: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .Personal_data_consent_title {
+    font-size: 5px;
+    letter-spacing: -0.13px;
+    margin-left: 3px;
+  }
+
+  .Personal_data_consent_box {
+    border-radius: 3px;
+    padding: 5px 8px;
+    gap: 2px;
+  }
+
+  .Personal_data_consent_left {
+    gap: 3px;
+  }
+
+  .Personal_data_consent_more div {
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .Personal_data_consent_more img {
+    width: 6px;
+    height: 6px;
+  }
+
+  .Personal_data_consent_label {
+    font-size: 5px;
+    letter-spacing: -0.13px;
+  }
+
+  .Personal_data_consent_label span {
+    margin-right: 3px;
+  }
+
+  .Personal_data_consent_right {
+    gap: 2px;
+  }
+
+  .Personal_data_consent_right img {
+    width: 6px;
+    height: 6px;
+  }
+
+  .Personal_data_consent_right div {
+    font-size: 5px;
+    letter-spacing: -0.13px;
+  }
+
+  .facility_slide {
+    height: 48px;
+    border-radius: 3px;
+  }
+
+  .facility_slide_item .slide_img {
+    height: 48px;
+    border-radius: 3px;
+  }
+
+  .facility_slide_item::after {
+    border-radius: 3px;
+  }
+
+  .facility_slide_title {
+    bottom: 4px;
+    left: 8px;
+    font-size: 4px;
+    letter-spacing: -0.1px;
+  }
+
+  .facility_slide .slick-dots {
+    gap: 1px;
+    bottom: 4px;
+  }
+
+  .slick-dots li {
+    margin: 0 !important;
+  }
+
+  .facility_slide .slick-dots li button:before {
+    font-size: 3px;
+  }
+
+  .facility_info {
+    width: 13px;
+    height: 13px;
+    bottom: 5px;
+    right: 4px;
+  }
+
+  .bubble {
+    width: 23px;
+    height: 8px;
+    bottom: 8px;
+    right: 18px;
+    animation: moveLeftRight 1.3s infinite;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      right: 18px;
+    }
+    50% {
+      right: 19px;
+    }
+    100% {
+      right: 18px;
+    }
+  }
+
+  form {
+    gap: 3px;
+    margin-top: 10px;
+  }
+
+  .form_label {
+    width: 10%;
+    font-size: 6px;
+    letter-spacing: -0.13px;
+  }
+
+  .submit {
+    height: 17px;
+    border-radius: 3px;
+    font-size: 6px;
+    margin-top: 5px;
+  }
+
+  #experienceSelect, #timeSelect {
+    width: 90%;
+    height: 17px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 6px;
+    letter-spacing: -0.13px;
+    background: url("../../img/facility/select_arrow.svg") no-repeat right 5px center;
+    background-size: 9px;
+    border: 1px solid #B8B8B8;
+  }
+
+  #name {
+    width: 90%;
+    height: 17px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 6px;
+    letter-spacing: -0.13px;
+    border: 1px solid #B8B8B8;
+  }
+
+  .personnel_wrapper {
+    width: 90%;
+    height: 17px;
+    border-radius: 3px;
+    border: 1px solid #B8B8B8;
+  }
+
+  .minus {
+    width: 33%;
+    padding: 5px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .minus img, .plus img {
+    width: 9px;
+    height: 9px;
+  }
+
+  #personnel {
+    width: 34%;
+    padding: 5px;
+    font-size: 6px;
+    letter-spacing: -0.13px;
+    border-right: 1px solid #B1B1B1;
+    border-left: 1px solid #B1B1B1;
+  }
+
+  .plus {
+    width: 33%;
+    padding: 5px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .phone_wrapper {
+    width: 90%;
+    gap: 3px;
+  }
+
+  .dash {
+    font-size: 5px;
+    letter-spacing: -0.13px;
+  }
+
+  .phone {
+    border: 1px solid #B1B1B1;
+    width: 33%;
+    height: 17px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 6px;
+    letter-spacing: -0.13px;
+  }
+
+  .prev {
+    height: 18px;
+    width: 18px;
+    top: 193px;
+    left: -13px;
+  }
+
+  .next {
+    height: 18px;
+    width: 18px;
+    top: 193px;
+    right: -13px;
   }
 }

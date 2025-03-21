@@ -355,6 +355,8 @@
 @media (min-width: 768px) and (max-width: 1079px) {
   .content {
     padding-bottom: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .main_title {
@@ -458,6 +460,7 @@
   }
 
   .ticker {
+    position: fixed;
     bottom: 105px;
     height: 45px;
   }
@@ -471,6 +474,8 @@
 @media (min-width: 600px) and (max-width: 767px) {
   .content {
     padding-bottom: 105px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .main_title {
@@ -574,6 +579,7 @@
   }
 
   .ticker {
+    position: fixed;
     bottom: 74px;
     height: 32px;
   }
@@ -587,6 +593,8 @@
 @media (min-width: 480px) and (max-width: 599px) {
   .content {
     padding-bottom: 74px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .main_title {
@@ -690,6 +698,7 @@
   }
 
   .ticker {
+    position: fixed;
     bottom: 52px;
     height: 22px;
   }
@@ -703,6 +712,8 @@
 @media (max-width: 479px) {
   .content {
     padding-bottom: 52px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .main_title {
@@ -806,6 +817,7 @@
   }
 
   .ticker {
+    position: fixed;
     bottom: 36px;
     height: 15px;
   }
