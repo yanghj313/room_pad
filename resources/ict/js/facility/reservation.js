@@ -39,7 +39,7 @@ $(document).ready(function () {
 			} else if (itemCount === 42) {
 				style = ` style="border-radius: 0 0 ${borderRadiusValue}px 0;"`;
 			}
-
+			// 예약가능 인원 임시로 0/8로 설정
 			$('.day').append(`<div class="${classes}" data-day="${i}"${style}><div>${i}</div><div>0/8</div></div>`);
 		}
 

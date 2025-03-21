@@ -24,6 +24,7 @@
 			</div>
 
 			<div class="content">
+				<!--		헤더 공통으로 빼지말아주세요! 공통 아님 각 페이지마다 소스 다름!		-->
 				<div class="header">
 					<div class="title">연제만화도서관</div>
 					<div class="date_and_time">
@@ -46,13 +47,13 @@
 					</div>
 				</div>
 
-				<!--	 컨텐츠		-->
 				<div class="main_content">
 					<div class="scroll">
+						<!--	 컨텐츠		-->
 						<div class="box">
 							<img class="prev" src="/resources/ict/img/facility/prev.png" alt="" />
 							<img class="next" src="/resources/ict/img/facility/next.png" alt="" />
-							<!--				캘린더				-->
+							<!--				캘린더 + reservation.js 참고해주세요!			-->
 							<div class="calendar">
 								<div class="calendar_header">
 									<div class="calendar_information">
@@ -113,12 +114,6 @@
 									<img class="facility_info" src="/resources/ict/img/facility/facility_info.png" alt="" />
 									<img class="slide_img" src="/resources/ict/img/facility/dummy.svg" alt="" />
 								</div>
-								<div class="facility_slide_item">
-									<div class="facility_slide_title">웹툰창작체험실</div>
-									<img class="bubble" src="/resources/ict/img/facility/bubble.png" alt="" />
-									<img class="facility_info" src="/resources/ict/img/facility/facility_info.png" alt="" />
-									<img class="slide_img" src="/resources/ict/img/facility/dummy.svg" alt="" />
-								</div>
 							</div>
 							<!--				form				-->
 							<form>
@@ -126,14 +121,12 @@
 									<label class="form_label" for="experienceSelect">실선택</label>
 									<select id="experienceSelect" required>
 										<option>웹툰창작체험</option>
-										<option>웹툰창작체험</option>
 									</select>
 								</div>
 								<div class="form_wrapper">
 									<label class="form_label" for="timeSelect">시간선택</label>
 									<select id="timeSelect" required>
 										<option>9:00 ~ 10:00</option>
-										<option>10:00 ~ 11:00</option>
 									</select>
 								</div>
 								<div class="form_wrapper">
@@ -168,7 +161,7 @@
 					</div>
 				</div>
 
-				<!--	 네비게이션바		-->
+				<!--	 공통 네비게이션바		-->
 				<div class="navigation">
 					<div class="one_handed_mode">
 						<img src="/resources/ict/img/facility/handle.svg" alt="" />

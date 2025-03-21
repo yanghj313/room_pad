@@ -23,9 +23,8 @@
 				<div>화면을 올려보세요</div>
 			</div>
 
-			<!--	 컨텐츠		-->
 			<div class="content">
-				<!--	 헤더		-->
+				<!--		헤더 공통으로 빼지말아주세요! 공통 아님 각 페이지마다 소스 다름!		-->
 				<div class="header">
 					<div class="title">연제만화도서관</div>
 					<div class="date_and_time">
@@ -48,9 +47,9 @@
 					</div>
 				</div>
 
-				<!--			예약 내역 컨턴츠			-->
 				<div class="main_content">
 					<div class="scroll">
+						<!--	 컨텐츠		-->
 						<div class="box">
 							<img class="prev" src="/resources/ict/img/facility/prev.png" alt="" />
 							<img class="next" src="/resources/ict/img/facility/next.png" alt="" />
@@ -99,6 +98,7 @@
 											<div><span>예약시간 </span>오전 09:10 ~ 오전 09:50</div>
 										</div>
 									</div>
+									<!--				우측 뱃지 상태 1, 2, 3	(뱃지 별 클래스 status_n 으로 표기)			-->
 									<div class="badge_area">
 										<div class="status_1">
 											<img src="/resources/ict/img/facility/status_1.svg" alt="" />
@@ -126,6 +126,7 @@
 											<div><span>예약시간 </span>오전 09:10 ~ 오전 09:50</div>
 										</div>
 									</div>
+									<!--				우측 뱃지 상태 4, 5, 6	(뱃지 별 클래스 status_n 으로 표기)			-->
 									<div class="badge_area">
 										<div class="status_4">
 											<img src="/resources/ict/img/facility/status_4.svg" alt="" />
@@ -152,6 +153,7 @@
 											<div><span>예약시간 </span>오전 09:10 ~ 오전 09:50</div>
 										</div>
 									</div>
+									<!--				우측 뱃지 상태 7, 8, 9	(뱃지 별 클래스 status_n 으로 표기)			-->
 									<div class="badge_area">
 										<div class="status_7">
 											<div>기간만료</div>
@@ -164,48 +166,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="list_item">
-									<div class="right_wrapper">
-										<div class="check_area">
-											<img src="/resources/ict/img/facility/list_unchecked.svg" alt="" />
-										</div>
-										<div class="content_area">
-											<div>연제만화도서관</div>
-											<div>2025-03-20</div>
-											<div><span>시설물 </span>동아리 1</div>
-											<div><span>예약시간 </span>오전 09:10 ~ 오전 09:50</div>
-										</div>
-									</div>
-									<div class="badge_area">
-										<div class="status_7">
-											<div>기간만료</div>
-										</div>
-										<div class="status_8">
-											<div>취소완료</div>
-										</div>
-										<div class="status_9">
-											<div>사용완료</div>
-										</div>
-									</div>
-								</div>
-								<div class="list_item done">
-									<div class="right_wrapper">
-										<div class="check_area">
-											<img src="/resources/ict/img/facility/list_checked.svg" alt="" />
-										</div>
-										<div class="content_area">
-											<div>연제만화도서관</div>
-											<div>2025-03-20</div>
-											<div><span>시설물 </span>동아리 1</div>
-											<div><span>예약시간 </span>오전 09:10 ~ 오전 09:50</div>
-										</div>
-									</div>
-									<div class="badge_area">
-										<div class="status_7">
-											<div>기간만료</div>
-										</div>
-									</div>
-								</div>
+								<!--				기간만료 아이템의 경우 클래스에 아래와 같이 "done" 추가			-->
 								<div class="list_item done">
 									<div class="right_wrapper">
 										<div class="check_area">
@@ -218,21 +179,16 @@
 											<div><span>예약시간 </span>오전 09:10 ~ 오전 09:50</div>
 										</div>
 									</div>
+									<!--				우측 뱃지 상태 7	(뱃지 별 클래스 status_n 으로 표기)			-->
 									<div class="badge_area">
 										<div class="status_7">
 											<div>기간만료</div>
-										</div>
-										<div class="status_8">
-											<div>취소완료</div>
-										</div>
-										<div class="status_9">
-											<div>사용완료</div>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<!--			페이지네이션				-->
+							<!--			페이지네이션	+ 데이터 없을때 pagination 없음			-->
 							<div class="pagination">
 								<div>
 									<img src="/resources/ict/img/facility/pagination_first.svg" alt="" />
@@ -253,7 +209,7 @@
 					</div>
 				</div>
 
-				<!--	 네비게이션바		-->
+				<!--	 공통 네비게이션바		-->
 				<div class="navigation">
 					<div class="one_handed_mode">
 						<img src="/resources/ict/img/facility/handle.svg" alt="" />
