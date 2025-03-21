@@ -780,12 +780,18 @@
   }
 }
 
-/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 0.711  */
+/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하  */
 @media (min-width: 768px) and (max-width: 1079px) {
+  .content {
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .box {
     border-radius: 11px;
-    margin: 7px 36px 36px 36px;
-    height: 1130px;
+    margin: 7px 35px 35px 35px;
+    height: 1120px;
     padding: 21px;
   }
 
@@ -927,7 +933,7 @@
   .content_area div:nth-child(2) {
     font-size: 15px;
     line-height: 13px;
-    letter-spacing: -0.385px;
+    letter-spacing: -0.39px;
     margin-bottom: 14px;
   }
 
@@ -948,7 +954,7 @@
     gap: 6px;
   }
 
-  .status_1,  .status_2, .status_3 {
+  .status_1, .status_2, .status_3 {
     border-radius: 7px;
     border: 1px solid #229829;
     gap: 3px;
@@ -956,7 +962,7 @@
     height: 35px;
   }
 
-  .status_1 img, .status_2 img, .status_3 img, .status_4 img,  .status_5 img {
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
     width: 14px;
     height: 14px;
   }
@@ -998,16 +1004,16 @@
   }
 
   .status_7, .status_8, .status_9 {
-    gap: 3px;
     width: 91px;
     height: 35px;
+    gap: 3px;
     border-radius: 7px;
     font-size: 13px;
   }
 
   .pagination {
-    gap: 8px;
-    margin-top: 42px;
+    gap: 6px;
+    margin-top: 32px;
   }
 
   .pagination div {
@@ -1025,38 +1031,44 @@
   }
 
   .prev {
-    height: 53px;
-    width: 53px;
-    top: 50%;
-    left: -32px;
+    height: 52px;
+    width: 52px;
+    top: 562px;
+    left: -35px;
   }
 
   .next {
-    height: 53px;
-    width: 53px;
-    top: 50%;
-    right: -32px;
+    height: 52px;
+    width: 52px;
+    top: 562px;
+    right: -35px;
   }
 }
 
-/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 0.783 */
+/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 */
 @media (min-width: 600px) and (max-width: 767px) {
+  .content {
+    padding-bottom: 35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .box {
-    border-radius: 11px;
-    margin: 7px 36px 36px 36px;
-    height: 1080px;
-    padding: 21px;
+    border-radius: 8px;
+    margin: 5px 25px 25px 25px;
+    height: 784px;
+    padding: 15px;
   }
 
   .search_box {
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 15px;
-    gap: 8px;
+    gap: 6px;
   }
 
   .search_box_label {
     font-size: 10px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.25px;
     margin-right: 11px;
     width: 34px;
   }
@@ -1071,7 +1083,7 @@
     width: 44px;
     height: 25px;
     font-size: 10px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.25px;
   }
 
   .month_btn_active {
@@ -1105,6 +1117,7 @@
   .reservation_status_wrapper div {
     border-radius: 5px;
     border: 1px solid #7A7A7A;
+    background: #FFF;
     width: 78px;
     height: 25px;
     font-size: 10px;
@@ -1128,193 +1141,199 @@
     border-radius: 5px;
     height: 25px;
     font-size: 10px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.49px;
   }
 
   .list_header {
-    margin: 7px 0 7px 0;
+    margin: 5px 0 5px 0;
   }
 
   .list_header div:first-child {
-    font-size: 11px;
+    font-size: 8px;
   }
 
   .list_header div:nth-child(2) {
-    border-radius: 6px;
+    border-radius: 4px;
     border: 1px solid #EC4746;
-    width: 70px;
-    height: 29px;
-    font-size: 13px;
-    margin: 7px 0 7px 0;
+    width: 49px;
+    height: 20px;
+    font-size: 9px;
+    margin: 5px 0 5px 0;
   }
 
   .list_wrapper {
-    height: 798px;
-    gap: 7px;
+    height: 559px;
+    gap: 5px;
   }
 
   .no_data {
-    font-size: 17px;
-    line-height: 13px;
-    letter-spacing: -0.42px;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: -0.29px;
   }
 
   .list_item {
-    padding: 16px 21px 16px 21px;
-    border-radius: 7px;
+    padding: 11px 15px 11px 15px;
+    border-radius: 5px;
     border: 1px solid #B8B8B8;
-    height: 147px;
-    min-height: 147px;
+    height: 103px;
+    min-height: 103px;
   }
 
   .right_wrapper {
-    gap: 15px;
+    gap: 11px;
   }
 
   .check_area img {
-    width: 27px;
-    height: 27px;
+    width: 19px;
+    height: 19px;
   }
 
   .content_area div:first-child {
-    font-size: 11px;
-    letter-spacing: -0.28px;
-    margin-bottom: 7px;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+    margin-bottom: 5px;
   }
 
   .content_area div:nth-child(2) {
-    font-size: 15px;
-    line-height: 13px;
-    letter-spacing: -0.385px;
-    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 9px;
+    letter-spacing: -0.27px;
+    margin-bottom: 10px;
   }
 
   .content_area div:nth-child(3) {
-    font-size: 17px;
-    line-height: 13px;
-    letter-spacing: -0.42px;
-    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: -0.29px;
+    margin-bottom: 10px;
   }
 
   .content_area div:nth-child(4) {
-    font-size: 17px;
-    line-height: 13px;
-    letter-spacing: -0.42px;
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: -0.29px;
   }
 
   .badge_area {
-    gap: 6px;
+    gap: 4px;
   }
 
-  .status_1,  .status_2, .status_3 {
-    border-radius: 7px;
+  .status_1, .status_2, .status_3 {
+    border-radius: 5px;
     border: 1px solid #229829;
-    gap: 3px;
-    width: 91px;
-    height: 35px;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
   }
 
-  .status_1 img, .status_2 img, .status_3 img, .status_4 img,  .status_5 img {
-    width: 14px;
-    height: 14px;
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
+    width: 10px;
+    height: 10px;
   }
 
   .status_1 div, .status_2 div, .status_3 div {
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .status_4 {
-    border-radius: 7px;
+    border-radius: 5px;
     border: 1px solid #0D65F8;
-    gap: 3px;
-    width: 91px;
-    height: 35px;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
   }
 
   .status_4 div {
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .status_5 {
-    border-radius: 7px;
+    border-radius: 5px;
     border: 1px solid #454545;
-    gap: 3px;
-    width: 91px;
-    height: 35px;
+    gap: 2px;
+    width: 64px;
+    height: 25px;
   }
 
   .status_5 div {
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .status_6 {
-    border-radius: 7px;
-    width: 91px;
-    height: 35px;
-    padding: 7px 8px;
-    font-size: 13px;
+    border-radius: 5px;
+    width: 64px;
+    height: 25px;
+    padding: 5px 6px;
+    font-size: 9px;
   }
 
   .status_7, .status_8, .status_9 {
-    gap: 3px;
-    width: 91px;
-    height: 35px;
-    border-radius: 7px;
-    font-size: 13px;
+    width: 64px;
+    height: 25px;
+    gap: 2px;
+    border-radius: 5px;
+    font-size: 9px;
   }
 
   .pagination {
-    gap: 8px;
-    margin-top: 42px;
+    gap: 4px;
+    margin-top: 22px;
   }
 
   .pagination div {
-    border-radius: 3px;
+    border-radius: 2px;
     border: 1px solid #E5E8EB;
-    width: 27px;
-    height: 27px;
-    font-size: 11px;
-    letter-spacing: -0.28px;
+    width: 19px;
+    height: 19px;
+    font-size: 8px;
+    letter-spacing: -0.2px;
   }
 
   .pagination div img {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
   }
 
   .prev {
-    height: 53px;
-    width: 53px;
-    top: 50%;
-    left: -32px;
+    height: 36px;
+    width: 36px;
+    top: 393px;
+    left: -25px;
   }
 
   .next {
-    height: 53px;
-    width: 53px;
-    top: 50%;
-    right: -32px;
+    height: 36px;
+    width: 36px;
+    top: 393px;
+    right: -25px;
   }
 }
 
 /* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
 @media (min-width: 480px) and (max-width: 599px) {
+  .content {
+    padding-bottom: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .box {
-    border-radius: 11px;
-    margin: 6px 29px 29px 29px;
-    height: 770px;
-    padding: 17px;
+    border-radius: 6px;
+    margin: 4px 18px 18px 18px;
+    height: 549px;
+    padding: 11px;
   }
 
   .search_box {
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 11px;
-    gap: 6px;
+    gap: 4px;
   }
 
   .search_box_label {
     font-size: 7px;
-    letter-spacing: 0px;
+    letter-spacing: -0.18px;
     margin-right: 8px;
     width: 24px;
   }
@@ -1329,7 +1348,7 @@
     width: 31px;
     height: 18px;
     font-size: 7px;
-    letter-spacing: 0px;
+    letter-spacing: -0.18px;
   }
 
   .month_btn_active {
@@ -1363,6 +1382,7 @@
   .reservation_status_wrapper div {
     border-radius: 4px;
     border: 1px solid #7A7A7A;
+    background: #FFF;
     width: 55px;
     height: 18px;
     font-size: 7px;
@@ -1386,208 +1406,214 @@
     border-radius: 4px;
     height: 18px;
     font-size: 7px;
-    letter-spacing: 0px;
+    letter-spacing: -0.34px;
   }
 
   .list_header {
-    margin: 5px 0 5px 0;
+    margin: 4px 0 4px 0;
   }
 
   .list_header div:first-child {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .list_header div:nth-child(2) {
-    border-radius: 4px;
+    border-radius: 3px;
     border: 1px solid #EC4746;
-    width: 49px;
-    height: 20px;
-    font-size: 9px;
-    margin: 5px 0 5px 0;
+    width: 34px;
+    height: 14px;
+    font-size: 6px;
+    margin: 4px 0 4px 0;
   }
 
   .list_wrapper {
-    height: 559px;
-    gap: 5px;
-  }
-
-  .no_data {
-    font-size: 12px;
-    line-height: 9px;
-    letter-spacing: 0px;
-  }
-
-  .list_item {
-    padding: 11px 15px 11px 15px;
-    border-radius: 5px;
-    border: 1px solid #B8B8B8;
-    height: 103px;
-    min-height: 103px;
-  }
-
-  .right_wrapper {
-    gap: 11px;
-  }
-
-  .check_area img {
-    width: 19px;
-    height: 19px;
-  }
-
-  .content_area div:first-child {
-    font-size: 8px;
-    letter-spacing: 0px;
-    margin-bottom: 5px;
-  }
-
-  .content_area div:nth-child(2) {
-    font-size: 11px;
-    line-height: 9px;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
-  }
-
-  .content_area div:nth-child(3) {
-    font-size: 12px;
-    line-height: 9px;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
-  }
-
-  .content_area div:nth-child(4) {
-    font-size: 12px;
-    line-height: 9px;
-    letter-spacing: 0px;
-  }
-
-  .badge_area {
+    height: 391px;
     gap: 4px;
   }
 
-  .status_1, .status_2, .status_3 {
-    border-radius: 5px;
-    border: 1px solid #229829;
-    gap: 2px;
-    width: 64px;
-    height: 25px;
-  }
-
-  .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
-    width: 10px;
-    height: 10px;
-  }
-
-  .status_1 div, .status_2 div, .status_3 div {
-    font-size: 9px;
-  }
-
-  .status_4 {
-    border-radius: 5px;
-    border: 1px solid #0D65F8;
-    gap: 2px;
-    width: 64px;
-    height: 25px;
-  }
-
-  .status_4 div {
-    font-size: 9px;
-  }
-
-  .status_5 {
-    border-radius: 5px;
-    border: 1px solid #454545;
-    gap: 2px;
-    width: 64px;
-    height: 25px;
-  }
-
-  .status_5 div {
-    font-size: 9px;
-  }
-
-  .status_6 {
-    border-radius: 5px;
-    width: 64px;
-    height: 25px;
-    padding: 5px 6px;
-    font-size: 9px;
-  }
-
-  .status_7, .status_8, .status_9 {
-    gap: 2px;
-    width: 64px;
-    height: 25px;
-    border-radius: 5px;
-    font-size: 9px;
-  }
-
-  .pagination {
-    gap: 6px;
-    margin-top: 29px;
-  }
-
-  .pagination div {
-    border-radius: 2px;
-    border: 1px solid #E5E8EB;
-    width: 19px;
-    height: 19px;
+  .no_data {
     font-size: 8px;
-    letter-spacing: 0px;
+    line-height: 6px;
+    letter-spacing: -0.2px;
   }
 
-  .pagination div img {
-    width: 10px;
-    height: 10px;
+  .list_item {
+    padding: 8px 11px 8px 11px;
+    border-radius: 4px;
+    border: 1px solid #B8B8B8;
+    height: 72px;
+    min-height: 72px;
   }
 
-  .prev {
-    height: 42px;
-    width: 42px;
-    top: 50%;
-    left: -27px;
+  .right_wrapper {
+    gap: 8px;
   }
 
-  .next {
-    height: 42px;
-    width: 42px;
-    top: 50%;
-    right: -27px;
-  }
-}
-
-/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 0.7 */
-@media (max-width: 479px) {
-  .box {
-    border-radius: 11px;
-    margin: 6px 29px 29px 29px;
-    height: 770px;
-    padding: 17px;
+  .check_area img {
+    width: 13px;
+    height: 13px;
   }
 
-  .search_box {
-    border-radius: 5px;
-    padding: 11px;
-    gap: 6px;
+  .content_area div:first-child {
+    font-size: 6px;
+    letter-spacing: -0.14px;
+    margin-bottom: 4px;
   }
 
-  .search_box_label {
-    font-size: 7px;
-    letter-spacing: 0px;
-    margin-right: 3px;
-    width: 25px;
+  .content_area div:nth-child(2) {
+    font-size: 8px;
+    line-height: 6px;
+    letter-spacing: -0.19px;
+    margin-bottom: 7px;
   }
 
-  .month_btn_wrapper {
+  .content_area div:nth-child(3) {
+    font-size: 8px;
+    line-height: 6px;
+    letter-spacing: -0.2px;
+    margin-bottom: 7px;
+  }
+
+  .content_area div:nth-child(4) {
+    font-size: 8px;
+    line-height: 6px;
+    letter-spacing: -0.2px;
+  }
+
+  .badge_area {
     gap: 3px;
   }
 
-  .month_btn_wrapper div {
+  .status_1, .status_2, .status_3 {
     border-radius: 4px;
-    border: 1px solid #7A7A7A;
-    width: 25px;
+    border: 1px solid #229829;
+    gap: 1px;
+    width: 45px;
     height: 18px;
-    font-size: 7px;
-    letter-spacing: 0px;
+  }
+
+  .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
+    width: 7px;
+    height: 7px;
+  }
+
+  .status_1 div, .status_2 div, .status_3 div {
+    font-size: 6px;
+  }
+
+  .status_4 {
+    border-radius: 4px;
+    border: 1px solid #0D65F8;
+    gap: 1px;
+    width: 45px;
+    height: 18px;
+  }
+
+  .status_4 div {
+    font-size: 6px;
+  }
+
+  .status_5 {
+    border-radius: 4px;
+    border: 1px solid #454545;
+    gap: 1px;
+    width: 45px;
+    height: 18px;
+  }
+
+  .status_5 div {
+    font-size: 6px;
+  }
+
+  .status_6 {
+    border-radius: 4px;
+    width: 45px;
+    height: 18px;
+    padding: 4px 4px;
+    font-size: 6px;
+  }
+
+  .status_7, .status_8, .status_9 {
+    width: 45px;
+    height: 18px;
+    gap: 1px;
+    border-radius: 4px;
+    font-size: 6px;
+  }
+
+  .pagination {
+    gap: 3px;
+    margin-top: 15px;
+  }
+
+  .pagination div {
+    border-radius: 1px;
+    border: 1px solid #E5E8EB;
+    width: 13px;
+    height: 13px;
+    font-size: 6px;
+    letter-spacing: -0.14px;
+  }
+
+  .pagination div img {
+    width: 7px;
+    height: 7px;
+  }
+
+  .prev {
+    height: 25px;
+    width: 25px;
+    top: 275px;
+    left: -18px;
+  }
+
+  .next {
+    height: 25px;
+    width: 25px;
+    top: 275px;
+    right: -18px;
+  }
+}
+
+/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 */
+@media (max-width: 479px) {
+  .content {
+    padding-bottom: 18px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .box {
+    border-radius: 4px;
+    margin: 3px 13px 13px 13px;
+    height: 384px;
+    padding: 8px;
+  }
+
+  .search_box {
+    border-radius: 3px;
+    padding: 8px;
+    gap: 3px;
+  }
+
+  .search_box_label {
+    font-size: 5px;
+    letter-spacing: -0.13px;
+    margin-right: 6px;
+    width: 17px;
+  }
+
+  .month_btn_wrapper {
+    gap: 2px;
+  }
+
+  .month_btn_wrapper div {
+    border-radius: 3px;
+    border: 1px solid #7A7A7A;
+    width: 22px;
+    height: 13px;
+    font-size: 5px;
+    letter-spacing: -0.13px;
   }
 
   .month_btn_active {
@@ -1595,35 +1621,36 @@
   }
 
   .date_wrapper {
-    gap: 2px;
-    margin-left: 2px;
+    gap: 4px;
+    margin-left: 4px;
   }
 
   .date_wrapper input {
-    padding: 0 4px 0 4px;
-    border-radius: 4px;
+    padding: 0 3px 0 3px;
+    border-radius: 3px;
     border: 1px solid #7A7A7A;
-    width: 55px;
-    height: 18px;
-    font-size: 7px;
-    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 4px center;
-    background-size: 8px;
+    width: 50px;
+    height: 13px;
+    font-size: 5px;
+    background: #FFF url('../../img/facility/calendar.svg') no-repeat right 3px center;
+    background-size: 6px;
   }
 
   .date_wrapper span {
-    font-size: 6px;
+    font-size: 4px;
   }
 
   .reservation_status_wrapper {
-    gap: 2px;
+    gap: 4px;
   }
 
   .reservation_status_wrapper div {
-    border-radius: 4px;
+    border-radius: 3px;
     border: 1px solid #7A7A7A;
-    width: 40px;
-    height: 18px;
-    font-size: 7px;
+    background: #FFF;
+    width: 39px;
+    height: 13px;
+    font-size: 5px;
   }
 
   .reservation_status_btn_active {
@@ -1631,184 +1658,184 @@
   }
 
   .reservation_status input {
-    height: 18px;
-    margin-left: 2px;
-    border-radius: 4px;
+    height: 13px;
+    margin-left: 3px;
+    border-radius: 3px;
     border: 1px solid #7A7A7A;
-    padding: 0 7px;
-    width: 110px;
-    font-size: 7px;
+    padding: 0 5px;
+    width: 101px;
+    font-size: 5px;
   }
 
   .inquiry {
-    border-radius: 4px;
-    height: 18px;
-    font-size: 7px;
-    letter-spacing: 0px;
+    border-radius: 3px;
+    height: 13px;
+    font-size: 5px;
+    letter-spacing: -0.24px;
   }
 
   .list_header {
-    margin: 5px 0 5px 0;
+    margin: 3px 0 3px 0;
   }
 
   .list_header div:first-child {
-    font-size: 8px;
+    font-size: 4px;
   }
 
   .list_header div:nth-child(2) {
-    border-radius: 4px;
+    border-radius: 2px;
     border: 1px solid #EC4746;
-    width: 49px;
-    height: 20px;
-    font-size: 9px;
-    margin: 5px 0 5px 0;
+    width: 24px;
+    height: 10px;
+    font-size: 4px;
+    margin: 3px 0 3px 0;
   }
 
   .list_wrapper {
-    height: 559px;
-    gap: 5px;
+    height: 274px;
+    gap: 3px;
   }
 
   .no_data {
-    font-size: 12px;
-    line-height: 9px;
-    letter-spacing: 0px;
+    font-size: 6px;
+    line-height: 4px;
+    letter-spacing: -0.14px;
   }
 
   .list_item {
-    padding: 11px 15px 11px 15px;
-    border-radius: 5px;
+    padding: 6px 8px 6px 8px;
+    border-radius: 3px;
     border: 1px solid #B8B8B8;
-    height: 103px;
-    min-height: 103px;
+    height: 50px;
+    min-height: 50px;
   }
 
   .right_wrapper {
-    gap: 11px;
+    gap: 6px;
   }
 
   .check_area img {
-    width: 19px;
-    height: 19px;
+    width: 9px;
+    height: 9px;
   }
 
   .content_area div:first-child {
-    font-size: 8px;
-    letter-spacing: 0px;
-    margin-bottom: 5px;
+    font-size: 4px;
+    letter-spacing: -0.1px;
+    margin-bottom: 3px;
   }
 
   .content_area div:nth-child(2) {
-    font-size: 11px;
-    line-height: 9px;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
+    font-size: 6px;
+    line-height: 4px;
+    letter-spacing: -0.13px;
+    margin-bottom: 5px;
   }
 
   .content_area div:nth-child(3) {
-    font-size: 10px;
-    line-height: 9px;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
+    font-size: 6px;
+    line-height: 4px;
+    letter-spacing: -0.14px;
+    margin-bottom: 5px;
   }
 
   .content_area div:nth-child(4) {
-    font-size: 10px;
-    line-height: 9px;
-    letter-spacing: 0px;
+    font-size: 6px;
+    line-height: 4px;
+    letter-spacing: -0.14px;
   }
 
   .badge_area {
-    gap: 4px;
+    gap: 2px;
   }
 
   .status_1, .status_2, .status_3 {
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #229829;
-    gap: 2px;
-    width: 64px;
-    height: 25px;
+    gap: 1px;
+    width: 32px;
+    height: 13px;
   }
 
   .status_1 img, .status_2 img, .status_3 img, .status_4 img, .status_5 img {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
 
   .status_1 div, .status_2 div, .status_3 div {
-    font-size: 9px;
+    font-size: 4px;
   }
 
   .status_4 {
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #0D65F8;
-    gap: 2px;
-    width: 64px;
-    height: 25px;
+    gap: 1px;
+    width: 32px;
+    height: 13px;
   }
 
   .status_4 div {
-    font-size: 9px;
+    font-size: 4px;
   }
 
   .status_5 {
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #454545;
-    gap: 2px;
-    width: 64px;
-    height: 25px;
+    gap: 1px;
+    width: 32px;
+    height: 13px;
   }
 
   .status_5 div {
-    font-size: 9px;
+    font-size: 4px;
   }
 
   .status_6 {
-    border-radius: 5px;
-    width: 64px;
-    height: 25px;
-    padding: 5px 6px;
-    font-size: 9px;
+    border-radius: 3px;
+    width: 32px;
+    height: 13px;
+    padding: 3px 3px;
+    font-size: 4px;
   }
 
   .status_7, .status_8, .status_9 {
-    gap: 2px;
-    width: 64px;
-    height: 25px;
-    border-radius: 5px;
-    font-size: 9px;
+    width: 32px;
+    height: 13px;
+    gap: 1px;
+    border-radius: 3px;
+    font-size: 4px;
   }
 
   .pagination {
-    gap: 6px;
-    margin-top: 29px;
+    gap: 2px;
+    margin-top: 11px;
   }
 
   .pagination div {
-    border-radius: 2px;
+    border-radius: 1px;
     border: 1px solid #E5E8EB;
-    width: 19px;
-    height: 19px;
-    font-size: 8px;
-    letter-spacing: 0px;
+    width: 9px;
+    height: 9px;
+    font-size: 4px;
+    letter-spacing: -0.1px;
   }
 
   .pagination div img {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
 
   .prev {
-    height: 42px;
-    width: 42px;
-    top: 50%;
-    left: -27px;
+    height: 18px;
+    width: 18px;
+    top: 193px;
+    left: -13px;
   }
 
   .next {
-    height: 42px;
-    width: 42px;
-    top: 50%;
-    right: -27px;
+    height: 18px;
+    width: 18px;
+    top: 193px;
+    right: -13px;
   }
 }
