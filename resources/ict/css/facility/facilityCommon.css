@@ -269,10 +269,6 @@
     height: 70px;
   }
 
-  .top_menu_item:hover {
-    background: rgba(0, 0, 0, 0.60);
-  }
-
   .top_menu_item img {
     width: 39px;
     height: 39px;
@@ -318,22 +314,19 @@
   }
 }
 
-/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 0.711 */
+/* 태블릿 (가로) - 화면 크기 768px 이상 1200px 이하 */
 @media (min-width: 768px) and (max-width: 1079px) {
   .full_mode {
     display: none;
   }
 
-  .scroll {
-    padding-bottom: 170px;
-    height: 100%;
-    overflow: scroll;
-    transition: height 2s ease;
+  .main_content {
+    height: 1128px;
   }
 
   .header {
-    padding: 21px 36px 21px 36px;
-    height: 78px;
+    padding: 21px 35px 21px 35px;
+    height: 77px;
   }
 
   .title {
@@ -347,11 +340,12 @@
   .time {
     font-size: 28px;
     line-height: 28px;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
   }
 
   .date {
-    font-size: 9px;
+    font-size: 8px;
+    letter-spacing: -0.21px;
   }
 
   .top_menu {
@@ -359,28 +353,28 @@
   }
 
   .top_menu_item {
-    width: 50px;
-    height: 50px;
+    width: 49px;
+    height: 49px;
   }
 
   .top_menu_item img {
-    width: 28px;
-    height: 28px;
+    width: 27px;
+    height: 27px;
   }
 
   .navigation {
-    height: 107px;
+    height: 105px;
     box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    width: 128px;
-    gap: 1px;
+    width: 126px;
+    gap: 7px;
   }
 
   .navigation_item img {
-    width: 43px;
-    height: 43px;
+    width: 42px;
+    height: 42px;
   }
 
   .navigation_item_active {
@@ -392,8 +386,8 @@
   }
 
   .ai {
-    width: 128px;
-    height: 107px;
+    width: 126px;
+    height: 105px;
   }
 
   .one_handed_mode {
@@ -401,26 +395,23 @@
   }
 }
 
-/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 0.783 */
+/* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 */
 @media (min-width: 600px) and (max-width: 767px) {
   .full_mode {
     display: none;
   }
 
-  .scroll {
-    padding-bottom: 170px;
-    height: 100%;
-    overflow: scroll;
-    transition: height 2s ease;
+  .main_content {
+    height: 790px;
   }
 
   .header {
-    padding: 21px 36px 21px 36px;
-    height: 78px;
+    padding: 15px 25px 15px 25px;
+    height: 54px;
   }
 
   .title {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .date_and_time {
@@ -428,55 +419,56 @@
   }
 
   .time {
-    font-size: 28px;
-    line-height: 28px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.49px;
   }
 
   .date {
-    font-size: 9px;
+    font-size: 6px;
+    letter-spacing: -0.15px;
   }
 
   .top_menu {
-    gap: 7px;
+    gap: 5px;
   }
 
   .top_menu_item {
-    width: 50px;
-    height: 50px;
+    width: 34px;
+    height: 34px;
   }
 
   .top_menu_item img {
-    width: 28px;
-    height: 28px;
+    width: 19px;
+    height: 19px;
   }
 
   .navigation {
-    height: 107px;
-    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
+    height: 74px;
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    width: 128px;
-    gap: 1px;
+    width: 88px;
+    gap: 5px;
   }
 
   .navigation_item img {
-    width: 43px;
-    height: 43px;
+    width: 29px;
+    height: 29px;
   }
 
   .navigation_item_active {
-    font-size: 11px;
+    font-size: 8px;
   }
 
   .navigation_item div {
-    font-size: 11px;
+    font-size: 8px;
   }
 
   .ai {
-    width: 128px;
-    height: 107px;
+    width: 88px;
+    height: 74px;
   }
 
   .one_handed_mode {
@@ -484,26 +476,23 @@
   }
 }
 
-/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 0.8 */
+/* 모바일 (가로) - 화면 크기 480px 이상 599px 이하 */
 @media (min-width: 480px) and (max-width: 599px) {
   .full_mode {
     display: none;
   }
 
-  .scroll {
-    padding-bottom: 140px;
-    height: 100%;
-    overflow: scroll;
-    transition: height 2s ease;
+  .main_content {
+    height: 553px;
   }
 
   .header {
-    padding: 17px 29px 17px 29px;
-    height: 62px;
+    padding: 11px 18px 11px 18px;
+    height: 38px;
   }
 
   .title {
-    font-size: 13px;
+    font-size: 8px;
   }
 
   .date_and_time {
@@ -511,96 +500,14 @@
   }
 
   .time {
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: 1px;
-  }
-
-  .date {
-    font-size: 7px;
-  }
-
-  .top_menu {
-    gap: 6px;
-  }
-
-  .top_menu_item {
-    width: 27px;
-    height: 27px;
-  }
-
-  .top_menu_item img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .navigation {
-    height: 86px;
-    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
-  }
-
-  .navigation_item {
-    width: 102px;
-    gap: 1px;
-  }
-
-  .navigation_item img {
-    width: 34px;
-    height: 34px;
-  }
-
-  .navigation_item_active {
-    font-size: 9px;
-  }
-
-  .navigation_item div {
-    font-size: 9px;
-  }
-
-  .ai {
-    width: 102px;
-    height: 86px;
-  }
-
-  .one_handed_mode {
-    display: none;
-  }
-}
-
-/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 0.7 */
-@media (max-width: 479px) {
-  .full_mode {
-    display: none;
-  }
-
-  .scroll {
-    padding-bottom: 100px;
-    height: 100%;
-    overflow: scroll;
-    transition: height 2s ease;
-  }
-
-  .header {
-    padding: 12px 20px 14px 20px;
-    height: 43px;
-  }
-
-  .title {
-    font-size: 9px;
-  }
-
-  .date_and_time {
-    gap: 1px;
-  }
-
-  .time {
-    font-size: 15px;
-    line-height: 15px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.34px;
   }
 
   .date {
     font-size: 4px;
+    letter-spacing: -0.11px;
   }
 
   .top_menu {
@@ -608,8 +515,8 @@
   }
 
   .top_menu_item {
-    width: 19px;
-    height: 19px;
+    width: 24px;
+    height: 24px;
   }
 
   .top_menu_item img {
@@ -618,18 +525,18 @@
   }
 
   .navigation {
-    height: 60px;
-    box-shadow: 0 -1px 14px 0 rgba(0, 0, 0, 0.10);
+    height: 52px;
+    box-shadow: 0 -1px 7px 0 rgba(0, 0, 0, 0.10);
   }
 
   .navigation_item {
-    width: 71px;
-    gap: 1px;
+    width: 62px;
+    gap: 4px;
   }
 
   .navigation_item img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 
   .navigation_item_active {
@@ -641,8 +548,89 @@
   }
 
   .ai {
-    width: 71px;
-    height: 60px;
+    width: 62px;
+    height: 52px;
+  }
+
+  .one_handed_mode {
+    display: none;
+  }
+}
+
+/* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 */
+@media (max-width: 479px) {
+  .full_mode {
+    display: none;
+  }
+
+  .main_content {
+    height: 387px;
+  }
+
+  .header {
+    padding: 8px 13px 8px 13px;
+    height: 27px;
+  }
+
+  .title {
+    font-size: 6px;
+  }
+
+  .date_and_time {
+    gap: 1px;
+  }
+
+  .time {
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 0.24px;
+  }
+
+  .date {
+    font-size: 3px;
+    letter-spacing: -0.08px;
+  }
+
+  .top_menu {
+    gap: 3px;
+  }
+
+  .top_menu_item {
+    width: 17px;
+    height: 17px;
+  }
+
+  .top_menu_item img {
+    width: 9px;
+    height: 9px;
+  }
+
+  .navigation {
+    height: 36px;
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.10);
+  }
+
+  .navigation_item {
+    width: 43px;
+    gap: 3px;
+  }
+
+  .navigation_item img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .navigation_item_active {
+    font-size: 4px;
+  }
+
+  .navigation_item div {
+    font-size: 4px;
+  }
+
+  .ai {
+    width: 43px;
+    height: 36px;
   }
 
   .one_handed_mode {
