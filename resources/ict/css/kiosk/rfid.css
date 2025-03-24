@@ -90,6 +90,48 @@
   }
 }
 
+.popup_content_description {
+  color: #242424;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 91px;
+  margin-bottom: 60px;
+}
+
+.rfid_password_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 38px;
+  padding: 30px 0;
+}
+
+.rfid_password_wrapper input {
+  border-radius: 32px;
+  border: 2px solid #000;
+  width: 120px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 91px;
+  padding-top: 27px;
+}
+
+.rfid_password_wrapper input:hover,
+.rfid_password_wrapper input:focus {
+  outline: none;
+}
+
 @media (width: 1080px) {
   .rfid_content {
     padding-bottom: 50px;
@@ -146,4 +188,27 @@
       transform: translateX(-10px) scaleX(-1);
     }
   }
+
+  .popup_content_description {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+
+  .rfid_password_wrapper {
+    width: 100%;
+    gap: 19px;
+    padding: 15px 0;
+  }
+
+  .rfid_password_wrapper input {
+    border-radius: 16px;
+    border: 1px solid #000;
+    width: 60px;
+    height: 80px;
+    font-size: 30px;
+    line-height: 46px;
+    padding-top: 14px;
+  }
 }
+

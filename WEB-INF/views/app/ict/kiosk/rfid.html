@@ -93,6 +93,33 @@
 					<img src="/resources/ict/img/kiosk/one_handed_mode_handle.svg" alt="" />
 				</div>
 			</div>
+
+			<!-- 팝업 -->
+			<div class="overlay"></div>
+			<!--	 보여주기 위해 인라인 스타일에 디스플레이 블록 처리해놨습니다. 실제 사용시 해당 라인에 "block"을 "none"으로 바꿔주세요		-->
+			<div class="popup" style="display: block">
+				<div class="popup_content">
+					<div class="popup_content_description">비밀번호 입력</div>
+					<div class="rfid_password_wrapper">
+						<input type="text" class="password-input" maxlength="1" />
+						<input type="text" class="password-input" maxlength="1" />
+						<input type="text" class="password-input" maxlength="1" />
+						<input type="text" class="password-input" maxlength="1" />
+					</div>
+				</div>
+				<div class="action_wrapper">
+					<button class="popup_close">확인</button>
+				</div>
+			</div>
 		</div>
+		<script>
+			$(document).ready(function () {
+				// 팝업 닫기
+				$('.popup_close').on('click', function () {
+					$('.popup').fadeOut();
+					$('.overlay').fadeOut();
+				});
+			});
+		</script>
 	</body>
 </html>
