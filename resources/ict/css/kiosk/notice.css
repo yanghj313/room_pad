@@ -29,6 +29,7 @@
   width: 1600px;
   height: 2275px;
   border-radius: 80px;
+  border: 6px solid #755941;
 }
 
 .notice_slide .slick-dots {
