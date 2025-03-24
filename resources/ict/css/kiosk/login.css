@@ -4,11 +4,178 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../../ict/img/kiosk/recommendedBooks_bg.png") no-repeat center center;
+  background: url("../../../ict/img/kiosk/login_bg.png") no-repeat center center;
   background-size: cover;
   transition: top 0.8s ease-in-out;
 }
 
-@media (width: 1080px) {
+.login_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 240px;
+}
 
+.login_character {
+  margin-top: 60px;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 80px;
+}
+
+.login_title {
+  color: #121212;
+  text-align: center;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -2.8px;
+  margin-bottom: 160px;
+}
+
+.login_wrapper label {
+  position: relative;
+  width: 100%;
+}
+
+.login_wrapper label img {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 152px;
+  height: 152px;
+}
+
+.login_wrapper label input {
+  width: 100%;
+  height: 272px;
+  padding: 0 60px 0 252px;
+  border-radius: 80px;
+  border: 4px solid #755941;
+  background: #FFF;
+  color: #121212;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.36px;
+  margin-bottom: 32px;
+}
+
+.login_wrapper label input::placeholder {
+  color: #7A7A7A;
+}
+
+.login_wrapper label input:focus,
+.login_wrapper label input:hover {
+  outline: none;
+}
+
+.login_btn {
+  margin-top: 88px;
+  margin-bottom: 548px;
+  width: 100%;
+  border-radius: 80px;
+  background: #7F756A;
+  display: flex;
+  height: 272px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.36px;
+}
+
+.login_caption {
+  color: #121212;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  margin-bottom: 72px;
+}
+
+.move_to_rfid {
+  width: 100%;
+  border-radius: 80px;
+  background: #FF8737;
+  display: flex;
+  height: 272px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.36px;
+}
+
+@media (width: 1080px) {
+  .login_wrapper {
+    padding: 0 120px;
+  }
+
+  .login_character {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+
+  .login_title {
+    font-size: 70px;
+    letter-spacing: -1.4px;
+    margin-bottom: 80px;
+  }
+
+  .login_wrapper label img {
+    top: 30px;
+    left: 30px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .login_wrapper label input {
+    height: 136px;
+    padding: 0 30px 0 126px;
+    border-radius: 40px;
+    border: 2px solid #755941;
+    font-size: 34px;
+    letter-spacing: -0.68px;
+    margin-bottom: 16px;
+  }
+
+  .login_btn {
+    margin-top: 44px;
+    margin-bottom: 274px;
+    border-radius: 40px;
+    height: 136px;
+    font-size: 34px;
+    letter-spacing: -0.68px;
+  }
+
+  .login_caption {
+    font-size: 30px;
+    letter-spacing: -0.6px;
+    margin-bottom: 36px;
+  }
+
+  .move_to_rfid {
+    border-radius: 40px;
+    height: 136px;
+    font-size: 34px;
+    letter-spacing: -0.68px;
+  }
 }
