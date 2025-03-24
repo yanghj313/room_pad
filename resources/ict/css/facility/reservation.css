@@ -715,6 +715,99 @@ form {
   cursor: pointer;
 }
 
+.share_info_popup, .third_party_popup, .facility_info_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1400px;
+  background: #fff;
+  border-radius: 40px;
+  z-index: 1000;
+}
+
+.reservation_popup_header {
+  border-radius: 40px 40px 0 0;
+  background: #8B95A1;
+  height: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -1.3px;
+}
+
+.share_info_popup_content, .third_party_content, .facility_info_popup_content {
+  color: #191F28;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -1px;
+  padding: 100px 80px 20px 80px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-height: 645px;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup_content_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup_content_wrapper div:first-child {
+  color: #6B7684;
+  text-align: center;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -1.3px;
+}
+
+.popup_content_wrapper div:nth-child(2) {
+  color: #333D4B;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -1.3px;
+}
+
+.reservation_popup_close {
+  width: 100%;
+  height: 160px;
+  margin: 0 80px 60px 80px;
+  border-radius: 24px;
+  background: #191F28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
 @media (width: 1080px) {
   .box {
     border-radius: 15px;
@@ -1013,6 +1106,7 @@ form {
     letter-spacing: -0.55px;
     background: url("../../img/facility/select_arrow.svg") no-repeat right 20px center;
     background-size: 36px;
+    border: 1px solid #B8B8B8;
   }
 
   #name {
@@ -1022,12 +1116,14 @@ form {
     border-radius: 10px;
     font-size: 22px;
     letter-spacing: -0.55px;
+    border: 1px solid #B8B8B8;
   }
 
   .personnel_wrapper {
     width: 783px;
     height: 70px;
     border-radius: 10px;
+    border: 1px solid #B8B8B8;
   }
 
   .minus {
@@ -1046,6 +1142,8 @@ form {
     padding: 20px;
     font-size: 22px;
     letter-spacing: -0.55px;
+    border-right: 1px solid #B1B1B1;
+    border-left: 1px solid #B1B1B1;
   }
 
   .plus {
@@ -1070,6 +1168,7 @@ form {
     border-radius: 10px;
     font-size: 22px;
     letter-spacing: -0.55px;
+    border: 1px solid #B1B1B1;
   }
 
   .prev {
@@ -1084,6 +1183,45 @@ form {
     width: 74px;
     top: 803px;
     right: -50px;
+  }
+
+  .share_info_popup, .third_party_popup, .facility_info_popup {
+    width: 700px;
+    border-radius: 20px;
+  }
+
+  .reservation_popup_header {
+    border-radius: 20px 20px 0 0;
+    height: 77px;
+    font-size: 26px;
+    letter-spacing: -1px;
+  }
+
+  .share_info_popup_content, .third_party_content, .facility_info_popup_content {
+    font-size: 20px;
+    letter-spacing: -1px;
+    padding: 50px 40px 10px 40px;
+    min-height: 323px;
+    max-height: 500px;
+    gap: 10px;
+  }
+
+  .popup_content_wrapper div:first-child {
+    font-size: 26px;
+    letter-spacing: -1px;
+  }
+
+  .popup_content_wrapper div:nth-child(2) {
+    font-size: 26px;
+    letter-spacing: -1px;
+  }
+
+  .reservation_popup_close {
+    height: 80px;
+    margin: 0 40px 30px 40px;
+    border-radius: 12px;
+    font-size: 26px;
+    line-height: 20px;
   }
 }
 
@@ -1472,6 +1610,45 @@ form {
     top: 562px;
     right: -35px;
   }
+
+  .share_info_popup, .third_party_popup, .facility_info_popup {
+    width: 490px;
+    border-radius: 14px;
+  }
+
+  .reservation_popup_header {
+    border-radius: 14px 14px 0 0;
+    height: 54px;
+    font-size: 18px;
+    letter-spacing: -1px;
+  }
+
+  .share_info_popup_content, .third_party_content, .facility_info_popup_content {
+    font-size: 14px;
+    letter-spacing: -1px;
+    padding: 35px 28px 7px 28px;
+    min-height: 226px;
+    max-height: 350px;
+    gap: 7px;
+  }
+
+  .popup_content_wrapper div:first-child {
+    font-size: 18px;
+    letter-spacing: -1px;
+  }
+
+  .popup_content_wrapper div:nth-child(2) {
+    font-size: 18px;
+    letter-spacing: -1px;
+  }
+
+  .reservation_popup_close {
+    height: 56px;
+    margin: 0 28px 21px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 14px;
+  }
 }
 
 /* 태블릿 (세로) - 화면 크기 600px 이상 767px 이하 */
@@ -1587,7 +1764,7 @@ form {
     letter-spacing: -0.2px;
   }
 
-  Today {
+  .today {
     border: 1px solid #121212;
     width: 100%;
     height: 40px;
@@ -1858,6 +2035,45 @@ form {
     width: 36px;
     top: 393px;
     right: -25px;
+  }
+
+  .share_info_popup, .third_party_popup, .facility_info_popup {
+    width: 343px;
+    border-radius: 10px;
+  }
+
+  .reservation_popup_header {
+    border-radius: 10px 10px 0 0;
+    height: 38px;
+    font-size: 13px;
+    letter-spacing: -1px;
+  }
+
+  .share_info_popup_content, .third_party_content, .facility_info_popup_content {
+    font-size: 10px;
+    letter-spacing: -1px;
+    padding: 25px 20px 5px 20px;
+    min-height: 158px;
+    max-height: 245px;
+    gap: 5px;
+  }
+
+  .popup_content_wrapper div:first-child {
+    font-size: 13px;
+    letter-spacing: -1px;
+  }
+
+  .popup_content_wrapper div:nth-child(2) {
+    font-size: 13px;
+    letter-spacing: -1px;
+  }
+
+  .reservation_popup_close {
+    height: 39px;
+    margin: 0 20px 15px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 10px;
   }
 }
 
@@ -2246,6 +2462,45 @@ form {
     top: 275px;
     right: -18px;
   }
+
+  .share_info_popup, .third_party_popup, .facility_info_popup {
+    width: 240px;
+    border-radius: 7px;
+  }
+
+  .reservation_popup_header {
+    border-radius: 7px 7px 0 0;
+    height: 27px;
+    font-size: 9px;
+    letter-spacing: -1px;
+  }
+
+  .share_info_popup_content, .third_party_content, .facility_info_popup_content {
+    font-size: 7px;
+    letter-spacing: -1px;
+    padding: 18px 14px 4px 14px;
+    min-height: 111px;
+    max-height: 172px;
+    gap: 4px;
+  }
+
+  .popup_content_wrapper div:first-child {
+    font-size: 9px;
+    letter-spacing: -1px;
+  }
+
+  .popup_content_wrapper div:nth-child(2) {
+    font-size: 9px;
+    letter-spacing: -1px;
+  }
+
+  .reservation_popup_close {
+    height: 27px;
+    margin: 0 14px 11px 14px;
+    border-radius: 4px;
+    font-size: 9px;
+    line-height: 7px;
+  }
 }
 
 /* 모바일 (세로) - 화면 크기 320px 이상 479px 이하 */
@@ -2632,5 +2887,44 @@ form {
     width: 18px;
     top: 193px;
     right: -13px;
+  }
+
+  .share_info_popup, .third_party_popup, .facility_info_popup {
+    width: 168px;
+    border-radius: 5px;
+  }
+
+  .reservation_popup_header {
+    border-radius: 5px 5px 0 0;
+    height: 19px;
+    font-size: 6px;
+    letter-spacing: -1px;
+  }
+
+  .share_info_popup_content, .third_party_content, .facility_info_popup_content {
+    font-size: 5px;
+    letter-spacing: -1px;
+    padding: 13px 10px 3px 10px;
+    min-height: 78px;
+    max-height: 120px;
+    gap: 3px;
+  }
+
+  .popup_content_wrapper div:first-child {
+    font-size: 6px;
+    letter-spacing: -1px;
+  }
+
+  .popup_content_wrapper div:nth-child(2) {
+    font-size: 6px;
+    letter-spacing: -1px;
+  }
+
+  .reservation_popup_close {
+    height: 19px;
+    margin: 0 10px 8px 10px;
+    border-radius: 3px;
+    font-size: 6px;
+    line-height: 5px;
   }
 }

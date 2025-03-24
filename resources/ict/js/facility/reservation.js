@@ -130,4 +130,27 @@ $(document).ready(function () {
 			$(this).val(8);
 		}
 	});
+
+	// 팝업 오픈 & 클로즈 컨트롤
+	$('.overlay').hide();
+
+	// 팝업 열기
+	$('[data-popup]').on('click', function () {
+		var popupTarget = $(this).data('popup');
+		$('.overlay').fadeIn();
+		$('.' + popupTarget + '_popup').fadeIn();
+	});
+
+	// 팝업 닫기
+	$('.reservation_popup_close').on('click', function () {
+		var popupTarget = $(this).data('target');
+		$('.overlay').fadeOut();
+		$('.' + popupTarget + '_popup').fadeOut();
+	});
+
+	// 오버레이 클릭 시 모든 팝업 닫기
+	$('.overlay').on('click', function () {
+		$('.overlay').fadeOut();
+		$('.share_info_popup, .third_party_popup, .facility_info_popup').fadeOut();
+	});
 });

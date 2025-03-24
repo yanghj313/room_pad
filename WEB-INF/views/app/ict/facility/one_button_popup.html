@@ -114,7 +114,7 @@
 
 			<!-- 팝업 -->
 			<div class="overlay"></div>
-			<!--	 보여주기 위해 인라인 스타일에 디스플레이 블락 처리해놨습니다. 실제 사용시 해당 라인에 "block"을 "none"으로 바꿔주세요		-->
+			<!--	 보여주기 위해 인라인 스타일에 디스플레이 블록 처리해놨습니다. 실제 사용시 해당 라인에 "block"을 "none"으로 바꿔주세요		-->
 			<div class="popup" style="display: block">
 				<div class="popup_content">남바다님 로그인 되었습니다.</div>
 				<div class="action_wrapper">
@@ -127,8 +127,8 @@
 			$(document).ready(function () {
 				// 팝업 닫기
 				$('.popup_close').on('click', function () {
-					$('.popup').hide();
-					$('.overlay').hide();
+					$('.popup').fadeOut();
+					$('.overlay').fadeOut();
 				});
 			});
 		</script>

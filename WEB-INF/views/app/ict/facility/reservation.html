@@ -81,7 +81,7 @@
 									<div class="Personal_data_consent_wrapper">
 										<div class="Personal_data_consent_left">
 											<div class="Personal_data_consent_label"><span>•</span>개인정보 공동이용(제공) 내역</div>
-											<div class="Personal_data_consent_more">
+											<div class="Personal_data_consent_more" data-popup="share_info">
 												<div>내용보기</div>
 												<img src="/resources/ict/img/facility/more.svg" alt="" />
 											</div>
@@ -94,7 +94,7 @@
 									<div class="Personal_data_consent_wrapper">
 										<div class="Personal_data_consent_left">
 											<div class="Personal_data_consent_label"><span>•</span>개인정보 제3자 제공 내역</div>
-											<div class="Personal_data_consent_more">
+											<div class="Personal_data_consent_more" data-popup="third_party">
 												<div>내용보기</div>
 												<img src="/resources/ict/img/facility/more.svg" alt="" />
 											</div>
@@ -111,7 +111,7 @@
 								<div class="facility_slide_item">
 									<div class="facility_slide_title">웹툰창작체험실</div>
 									<img class="bubble" src="/resources/ict/img/facility/bubble.png" alt="" />
-									<img class="facility_info" src="/resources/ict/img/facility/facility_info.png" alt="" />
+									<img data-popup="facility_info" class="facility_info" src="/resources/ict/img/facility/facility_info.png" alt="" />
 									<img class="slide_img" src="/resources/ict/img/facility/dummy.svg" alt="" />
 								</div>
 							</div>
@@ -187,6 +187,55 @@
 						<div>추천도서</div>
 					</div>
 					<img class="ai" src="/resources/ict/img/facility/nav_6.png" alt="" />
+				</div>
+			</div>
+
+			<!--		개인정보 공동이용(제공) 내역 팝업 	-->
+			<div class="overlay"></div>
+			<div class="share_info_popup" style="display: none">
+				<div class="reservation_popup_header">개인정보 공동이용(제공) 내역</div>
+				<div class="share_info_popup_content">개인정보 공동이용(제공) 내역</div>
+				<div class="action_wrapper">
+					<button class="reservation_popup_close" data-target="share_info">확인</button>
+				</div>
+			</div>
+
+			<!--  개인정보 제3자 제공 내역 팝업  -->
+			<div class="third_party_popup" style="display: none">
+				<div class="reservation_popup_header">개인정보 제3자 제공 내역</div>
+				<div class="third_party_content">개인정보 제3자 제공 내역</div>
+				<div class="action_wrapper">
+					<button class="reservation_popup_close" data-target="third_party">확인</button>
+				</div>
+			</div>
+
+			<!--		시설 상세 팝업	-->
+			<div class="facility_info_popup" style="display: none">
+				<div class="reservation_popup_header">동아리실</div>
+				<div class="facility_info_popup_content">
+					<div class="popup_content_wrapper">
+						<div>수용인원</div>
+						<div>30명</div>
+					</div>
+					<div class="popup_content_wrapper">
+						<div>운영시간</div>
+						<div>09:00 ~ 23:59</div>
+					</div>
+					<div class="popup_content_wrapper">
+						<div>예약 시작시간</div>
+						<div>09:30</div>
+					</div>
+					<div class="popup_content_wrapper">
+						<div>예약 종료시간</div>
+						<div>23:59</div>
+					</div>
+					<div class="popup_content_wrapper">
+						<div>문의전화</div>
+						<div>053-123-4567</div>
+					</div>
+				</div>
+				<div class="action_wrapper">
+					<button class="reservation_popup_close" data-target="facility_info">확인</button>
 				</div>
 			</div>
 		</div>
