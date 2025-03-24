@@ -56,17 +56,23 @@ $(document).ready(function () {
 	const currentPath = window.location.pathname.toLowerCase();
 
 	$('.navigation_item').each(function () {
-		var img = $(this).find('img');
-		var text = $(this).find('div');
-		var imgSrc = img.attr('src');
+		const img = $(this).find('img');
+		const text = $(this).find('div');
+		const imgSrc = img.attr('src');
 
 		if (!imgSrc) return;
 
-		var iconName = imgSrc.split('/').pop().replace('.svg', '').toLowerCase();
+		const iconName = imgSrc.split('/').pop().replace('.svg', '').toLowerCase();
+		const basePath = imgSrc.substring(0, imgSrc.lastIndexOf('/') + 1);
+		const originalIcon = iconName + '.svg';
+		const activeIcon = iconName + '_active.svg';
 
 		if (currentPath.includes(iconName)) {
-			img.css('filter', 'brightness(0) invert(11%)');
-			text.css('color', '#121212');
+			text.css('color', '#98903B');
+			img.attr('src', basePath + activeIcon);
+		} else {
+			img.attr('src', basePath + originalIcon);
+			text.css('color', '#BDB2A7');
 		}
 	});
 });

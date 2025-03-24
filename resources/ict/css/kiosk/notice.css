@@ -4,11 +4,85 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../../ict/img/kiosk/recommendedBooks_bg.png") no-repeat center center;
+  background: url("../../../ict/img/kiosk/notice_bg.png") no-repeat center center;
   background-size: cover;
   transition: top 0.8s ease-in-out;
 }
 
-@media (width: 1080px) {
+.notice_slide {
+  width: 1600px;
+  height: 2275px;
+  border-radius: 80px;
+  margin-top: 249px;
+  margin-left: 280px;
+}
 
+.notice_slide div {
+  width: 1600px;
+  height: 2275px;
+  border-radius: 80px;
+  box-shadow: 20px 50px 60px 10px rgba(170, 170, 170, 0.50);
+}
+
+.notice_slide img {
+  object-fit: cover;
+  width: 1600px;
+  height: 2275px;
+  border-radius: 80px;
+}
+
+.notice_slide .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  bottom: -164px;
+}
+
+.notice_slide .slick-dots li button:before {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.20);
+  opacity: 1;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.notice_slide .slick-dots li.slick-active button:before {
+  color: #FE9322;
+}
+
+@media (width: 1080px) {
+  .notice_slide {
+    width: 800px;
+    height: 1138px;
+    border-radius: 40px;
+    margin-top: 125px;
+    margin-left: 140px;
+  }
+
+
+  .notice_slide div {
+    width: 800px;
+    height: 1138px;
+    border-radius: 40px;
+    box-shadow: 10px 25px 30px 5px rgba(170, 170, 170, 0.50);
+  }
+
+  .notice_slide img {
+    width: 800px;
+    height: 1138px;
+    border-radius: 40px;
+  }
+
+  .notice_slide .slick-dots {
+    gap: 16px;
+    bottom: -82px;
+  }
+
+  .notice_slide .slick-dots li button:before {
+    font-size: 12px;
+    line-height: 12px;
+    width: 12px;
+    height: 12px;
+  }
 }
