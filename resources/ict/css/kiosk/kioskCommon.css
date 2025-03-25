@@ -300,6 +300,10 @@
     height: 1520px;
   }
 
+  .scroll {
+    padding-bottom: 100px;
+  }
+
   .status {
     padding: 9px;
     border-radius: 250px;
