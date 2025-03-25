@@ -131,7 +131,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 0 100px 100px 0;
-  background: rgba(255, 255, 255, 0.50);
+  background: rgba(0, 0, 0, 0.40);;
   width: 180px;
   height: 200px;
   flex-shrink: 0;
@@ -149,7 +149,7 @@
 }
 
 .back div {
-  color: #7A7A7A;
+  color: #FFFFFF;
   font-family: Pretendard-Bold, sans-serif;
   font-size: 48px;
   font-style: normal;
