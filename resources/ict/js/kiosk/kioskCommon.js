@@ -68,11 +68,11 @@ $(document).ready(function () {
 		const activeIcon = iconName + '_active.svg';
 
 		if (currentPath.includes(iconName)) {
-			text.css('color', '#98903B');
+			text.css('color', '#121212');
 			img.attr('src', basePath + activeIcon);
 		} else {
 			img.attr('src', basePath + originalIcon);
-			text.css('color', '#BDB2A7');
+			text.css('color', 'rgba(0, 0, 0, 0.30)');
 		}
 	});
 });

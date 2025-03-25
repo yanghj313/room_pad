@@ -49,7 +49,21 @@
 
 				<div class="main_content">
 					<div class="scroll">
-						<!--			작업공간 : rfid.html 참고			-->
+						<div class="facility_content">
+							<div class="map"></div>
+							<div class="current_floor">1F</div>
+							<div class="box">
+								<div class="filter">
+									<div class="current_filter">1F</div>
+									<div>2F</div>
+									<div>3F</div>
+									<div>4F</div>
+								</div>
+								<div class="slide_wrapper">
+									<div class="facility_slide"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -82,6 +96,31 @@
 				<!--		한손모드		-->
 				<div class="one_handed_mode">
 					<img src="/resources/ict/img/kiosk/one_handed_mode_handle.svg" alt="" />
+				</div>
+			</div>
+
+			<div class="overlay"></div>
+			<div class="detail_popup" style="display: none">
+				<div class="detail_popup_header">
+					<div></div>
+					<img src="/resources/ict/img/kiosk/kids_logo.png" alt="" />
+				</div>
+				<div class="detail_popup_content">
+					<img class="detail_popup_facility_img" src="/resources/ict/img/kiosk/dummy.svg" alt="" />
+					<div class="facility_description">
+						<div class="facility_description_item">
+							<img src="/resources/ict/img/kiosk/index.png" alt="" />
+							<div></div>
+						</div>
+						<div class="facility_description_item">
+							<img src="/resources/ict/img/kiosk/index.png" alt="" />
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail_popup_close">
+					<img src="/resources/ict/img/kiosk/popup_close.svg" alt="" />
+					<div>닫기</div>
 				</div>
 			</div>
 		</div>

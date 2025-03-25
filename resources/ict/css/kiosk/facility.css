@@ -4,11 +4,491 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../../ict/img/kiosk/recommendedBooks_bg.png") no-repeat center center;
+  background: url("../../../ict/img/kiosk/facility_bg.png") no-repeat center center;
   background-size: cover;
   transition: top 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.map {
+  position: absolute;
+  top: -1800px;
+  left: -60px;
+  width: 2245px;
+  height: 2174px;
+  background: url("../../../ict/img/kiosk/map1F.png") no-repeat center center;
+  background-size: cover;
+}
+
+.current_floor {
+  position: absolute;
+  top: -280px;
+  right: 160px;
+  color: #121212;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 300px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 212px;
+  display: flex;
+  align-items: center;
+}
+
+.facility_content {
+  margin-top: 1364px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.box {
+  border-radius: 80px;
+  border: 6px solid #121212;
+  width: 1840px;
+  height: 1520px;
+  background: #FFF;
+  z-index: 1;
+  filter: drop-shadow(20px 50px 60px rgba(170, 170, 170, 0.50));
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 180px;
+}
+
+.filter div {
+  cursor: pointer;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #FFF;
+  background: #E9E6E1;
+  color: #121212;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.filter div:first-child {
+  border-top: none;
+  border-radius: 70px 0 0 0;
+}
+
+.filter div:last-child {
+  border-radius: 0 0 0 70px;
+}
+
+.current_filter {
+  background: #755941 !important;
+  color: #FFF !important;
+  font-family: "Pretendard-Bold", sans-serif !important;
+  font-weight: 700 !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.slide_wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 146px;
+}
+
+.facility_slide {
+  width: 1360px;
+  height: 1180px;
+}
+
+.slide_item {
+  display: flex !important;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.slide_item .slide_item_wrapper {
+  width: 1360px;
+  height: 560px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.slide_item .slide_item_wrapper .facility_img {
+  width: 1360px;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.facility_name_wrapper {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  height: 128px;
+  border-radius: 500px;
+  background: #121212;
+  padding: 24px 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.index {
+  background: url("../../../ict/img/kiosk/mark.svg") no-repeat center center;
+  background-size: cover;
+  width: 60px;
+  height: 80px;
+  position: relative;
+}
+
+.index div {
+  color: #191F28;
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+  left: 24px;
+}
+
+.facility_name {
+  color: #FFF;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+}
+
+.facility_slide .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  bottom: -84px;
+}
+
+.facility_slide .slick-dots li {
+  margin: 0 !important;
+}
+
+.facility_slide .slick-dots li button {
+  padding: 0 !important;
+}
+
+.facility_slide .slick-dots li button:before {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.20);
+  opacity: 1;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.facility_slide .slick-dots li.slick-active button:before {
+  color: #121212;
+}
+
+.detail_popup {
+  width: 1800px;
+  height: 2478px;
+  border-radius: 60px;
+  background: #FFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.detail_popup_header {
+  border-radius: 60px 60px 0 0;
+  background: #A6A6A6;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail_popup_header div {
+  color: #FFF;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.7px;
+  text-transform: uppercase;
+}
+
+.detail_popup_header img {
+  width: 320px;
+  height: 120px;
+  display: none;
+}
+
+.detail_popup_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 124px 90px 168px 90px;
+}
+
+.detail_popup_facility_img {
+  width: 1500px;
+  height: 935px;
+  border-radius: 36px;
+  margin-bottom: 80px;
+  object-fit: cover;
+}
+
+.facility_description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 0 28px 12px 28px;
+}
+
+.facility_description_item {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+
+.facility_description_item img {
+  width: 72px;
+  height: 72px;
+  margin-top: 4px;
+}
+
+.facility_description_item div {
+  color: #121212;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -1.5px;
+}
+
+.detail_popup_close {
+  border-top: 2px solid #E5E8EB;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 198px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  cursor: pointer;
+}
+
+.detail_popup_close img {
+  width: 76px;
+  height: 76px;
+}
+
+.detail_popup_close div {
+  color: #121212;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 @media (width: 1080px) {
+  .map {
+    top: -900px;
+    left: -30px;
+    width: 1123px;
+    height: 1087px;
+  }
 
+  .current_floor {
+    top: -140px;
+    right: 80px;
+    font-size: 150px;
+    height: 106px;
+  }
+
+  .facility_content {
+    margin-top: 682px;
+  }
+
+  .box {
+    border-radius: 40px;
+    border: 3px solid #121212;
+    width: 920px;
+    height: 760px;
+    filter: drop-shadow(10px 25px 30px rgba(170, 170, 170, 0.50));
+  }
+
+  .filter {
+    width: 90px;
+  }
+
+  .filter div {
+    border-top: 1px solid #FFF;
+    font-size: 30px;
+    letter-spacing: -0.75px;
+  }
+
+  .filter div:first-child {
+    border-top: none;
+    border-radius: 35px 0 0 0;
+  }
+
+  .filter div:last-child {
+    border-radius: 0 0 0 35px;
+  }
+
+  .slide_wrapper {
+    margin-left: 73px;
+  }
+
+  .facility_slide {
+    width: 680px;
+    height: 590px;
+  }
+
+  .slide_item {
+    gap: 30px;
+  }
+
+  .slide_item .slide_item_wrapper {
+    width: 680px;
+    height: 280px;
+    border-radius: 20px;
+  }
+
+  .slide_item .slide_item_wrapper .facility_img {
+    width: 680px;
+    height: 280px;
+    border-radius: 20px;
+  }
+
+  .facility_name_wrapper {
+    bottom: 20px;
+    right: 20px;
+    height: 64px;
+    border-radius: 250px;
+    padding: 12px 30px;
+    gap: 12px;
+  }
+
+  .index {
+    width: 30px;
+    height: 40px;
+  }
+
+  .index div {
+    font-size: 12px;
+    top: 8px;
+    left: 12px;
+  }
+
+  .facility_name {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+  }
+
+  .facility_slide .slick-dots {
+    gap: 16px;
+    bottom: -42px;
+  }
+
+  .facility_slide .slick-dots li button:before {
+    font-size: 12px;
+    line-height: 12px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .detail_popup {
+    width: 900px;
+    height: 1239px;
+    border-radius: 30px;
+  }
+
+  .detail_popup_header {
+    border-radius: 30px 30px 0 0;
+    height: 150px;
+    padding: 0 50px;
+  }
+
+  .detail_popup_header div {
+    font-size: 34px;
+    letter-spacing: -0.85px;
+  }
+
+  .detail_popup_header img {
+    width: 160px;
+    height: 60px;
+  }
+
+  .detail_popup_content {
+    padding: 62px 45px 84px 45px;
+  }
+
+  .detail_popup_facility_img {
+    width: 750px;
+    height: 468px;
+    border-radius: 18px;
+    margin-bottom: 40px;
+  }
+
+  .facility_description {
+    gap: 10px;
+    padding: 0 14px 6px 14px;
+  }
+
+  .facility_description_item {
+    gap: 16px;
+  }
+
+  .facility_description_item img {
+    width: 36px;
+    height: 36px;
+    margin-top: 2px;
+  }
+
+  .facility_description_item div {
+    font-size: 30px;
+    letter-spacing: -0.75px;
+  }
+
+  .detail_popup_close {
+    border-top: 1px solid #E5E8EB;
+    height: 99px;
+    gap: 10px;
+  }
+
+  .detail_popup_close img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .detail_popup_close div {
+    font-size: 30px;
+  }
 }
