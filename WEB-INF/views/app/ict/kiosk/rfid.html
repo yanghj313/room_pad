@@ -23,7 +23,7 @@
 				<div>화면을 올려보세요</div>
 			</div>
 			<div class="content">
-				<!--		헤더		-->
+				<!--		공통 헤더		-->
 				<div class="header">
 					<!--		 로그인 & 여성			-->
 					<!--	<div class="status">-->
@@ -64,7 +64,7 @@
 					<img src="/resources/ict/img/kiosk/back.svg" alt="" />
 					<div>이전</div>
 				</div>
-				<!--		네비게이션바	(url에 html 이름이 포함되어있으면 자동으로 각 아이콘이 페이지에 맞춰 액티브 됩니다. jsp 파일명을 현재 html 명과 맞춰주세요	-->
+				<!--		공통 네비게이션바	(url에 html 이름이 포함되어있으면 자동으로 각 아이콘이 페이지에 맞춰 액티브 됩니다. jsp 파일명을 현재 html 명과 맞춰주세요	-->
 				<div class="navigation">
 					<div class="navigation_item">
 						<img src="/resources/ict/img/kiosk/notice.svg" alt="" />
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 
-			<!-- 팝업 -->
+			<!-- 비밀번호 입력 팝업 -->
 			<!--	 보여주기 위해 인라인 스타일에 디스플레이 블록 처리해놨습니다. 실제 사용시 해당 라인에 "block"을 "none"으로 바꿔주세요		-->
 			<div class="overlay" style="display: block"></div>
 			<div class="popup" style="display: block">
@@ -116,7 +116,7 @@
 		</div>
 		<script>
 			$(document).ready(function () {
-				// 팝업 닫기
+				// 팝업 닫기, 팝업이 열릴땐 패이드인을 사용해주세요
 				$('.popup_close').on('click', function () {
 					$('.popup').fadeOut();
 					$('.overlay').fadeOut();
