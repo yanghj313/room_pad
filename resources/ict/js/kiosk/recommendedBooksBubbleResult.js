@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	// 3X3 그리드 슬라이드
 	const $bookItems = $('.book_item');
 	const itemsPerGrid = 9;
 

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	// 페이지네이션 액티브 처리
 	$('.pagination div').eq(0).addClass('current_page');
 
 	let $pageNumbers = $('.pagination div');

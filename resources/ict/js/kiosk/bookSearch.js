@@ -1,10 +1,9 @@
 $(document).ready(function () {
-	$(document).ready(function () {
-		$('.filter_item').first().addClass('active_filter');
+	// 검색 필터 버튼 액티브 처리
+	$('.filter_item').first().addClass('active_filter');
 
-		$('.filter_item').click(function () {
-			$('.filter_item').removeClass('active_filter');
-			$(this).addClass('active_filter');
-		});
+	$('.filter_item').click(function () {
+		$('.filter_item').removeClass('active_filter');
+		$(this).addClass('active_filter');
 	});
 });

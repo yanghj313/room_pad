@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	// 버블차트 구현
 	const data = [
 		{ id: '소설원작' },
 		{ id: '일본' },
