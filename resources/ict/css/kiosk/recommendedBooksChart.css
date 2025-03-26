@@ -1,0 +1,273 @@
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../../ict/img/kiosk/recommendedBooks_bg.png") no-repeat center center;
+  background-size: cover;
+  transition: top 0.8s ease-in-out;
+}
+
+.chart_title {
+  margin-top: 40px;
+  width: 100%;
+  color: #242424;
+  text-align: center;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -3px;
+  margin-bottom: 28px;
+}
+
+.chart_description {
+  width: 100%;
+  color: #121212;
+  text-align: center;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  margin-bottom: 60px;
+}
+
+.bubble_chart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1500px;
+  position: relative;
+  margin-bottom: 86px;
+}
+
+.bubble_chart svg {
+  overflow: visible;
+}
+
+.change {
+  width: 375px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 26px;
+  margin: 0 auto 80px;
+  cursor: pointer;
+}
+
+.change img {
+  width: 74px;
+  height: 74px;
+}
+
+.change div {
+  color: #121212;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.3px;
+}
+
+.selected_keyword_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 172px;
+  margin-bottom: 116px;
+  color: #7A7A7A;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.keyword {
+  box-shadow: 20px 30px 40px rgba(170, 170, 170, 0.50);
+  height: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 80px 0 96px;
+  border-radius: 120px;
+  border: 4px solid #7964C4;
+  background: #FFF;
+}
+
+.keyword div {
+  color: #7964C4;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.keyword img {
+  width: 68px;
+  height: 68px;
+  cursor: pointer;
+}
+
+.select_box_wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.select_box {
+  position: relative;
+}
+
+.select_box label {
+  position: absolute;
+  top: 54px;
+  left: 96px;
+  color: #7A7A7A;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.select_box select {
+  padding: 0 200px 0 373px;
+  border-radius: 60px;
+  border: 4px solid #121212;
+  display: flex;
+  width: 830px;
+  height: 180px;
+  align-items: center;
+  color: #121212;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  appearance: none;
+  background: #fff url("../../img/kiosk/select_arrow.svg") no-repeat right 96px center;
+  background-size: 60px;
+}
+
+.move_to_result {
+  cursor: pointer;
+  margin: 40px auto 0;
+  border-radius: 80px;
+  background: #121212;
+  display: flex;
+  width: 1680px;
+  height: 260px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.36px;
+}
+
+@media (width: 1080px) {
+  .chart_title {
+    margin-top: 20px;
+    font-size: 60px;
+    letter-spacing: -2px;
+    margin-bottom: 14px;
+  }
+
+  .chart_description {
+    font-size: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+  }
+
+  .bubble_chart {
+    height: 750px;
+    margin-bottom: 43px;
+  }
+
+  .change {
+    width: 188px;
+    gap: 13px;
+    margin: 0 auto 40px;
+  }
+
+  .change img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .change div {
+    font-size: 26px;
+    letter-spacing: -1px;
+  }
+
+  .selected_keyword_list {
+    gap: 20px;
+    height: 86px;
+    margin-bottom: 58px;
+    font-size: 30px;
+  }
+
+  .keyword {
+    box-shadow: 10px 15px 20px rgba(170, 170, 170, 0.50);
+    height: 86px;
+    gap: 20px;
+    padding: 0 40px 0 48px;
+    border-radius: 60px;
+    border: 2px solid #7964C4;
+  }
+
+  .keyword div {
+    font-size: 26px;
+  }
+
+  .keyword img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .select_box_wrapper {
+    gap: 10px;
+  }
+
+  .select_box label {
+    top: 27px;
+    left: 48px;
+    font-size: 30px;
+  }
+
+  .select_box select {
+    padding: 0 100px 0 187px;
+    border-radius: 30px;
+    border: 2px solid #121212;
+    width: 415px;
+    height: 90px;
+    font-size: 30px;
+    background: #fff url("../../img/kiosk/select_arrow.svg") no-repeat right 48px center;
+    background-size: 30px;
+  }
+
+  .move_to_result {
+    margin: 20px auto 0;
+    border-radius: 40px;
+    width: 840px;
+    height: 130px;
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+}

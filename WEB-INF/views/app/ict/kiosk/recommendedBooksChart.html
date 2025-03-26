@@ -15,8 +15,10 @@
 		<script src="../../../../../resources/ict/js/kiosk/kioskCommon.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<link href="../../../../../resources/ict/css/kiosk/bubble.css" rel="stylesheet" type="text/css" />
-		<script src="../../../../../resources/ict/js/kiosk/bubble.js" type="text/javascript"></script>
+		<link href="../../../../../resources/ict/css/kiosk/recommendedBooksChart.css" rel="stylesheet" type="text/css" />
+		<script src="../../../../../resources/ict/js/kiosk/recommendedBooksChart.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://d3js.org/d3.v7.min.js"></script>
 		<div class="container">
 			<!--		전체모드		-->
 			<div class="full_mode">
@@ -49,7 +51,32 @@
 
 				<div class="main_content">
 					<div class="scroll">
-						<!--			작업공간 : rfid.html 참고			-->
+						<div class="chart_title">회원님의 관심사는 무엇인가요?</div>
+						<div class="chart_description">관심 키워드를 분석해 알맞은 책을 추천해드려요</div>
+
+						<div class="bubble_chart"></div>
+						<div class="change">
+							<img src="/resources/ict/img/kiosk/reset.svg" alt="" />
+							<div>키워드 바꾸기</div>
+						</div>
+						<div class="selected_keyword_list"></div>
+
+						<div class="select_box_wrapper">
+							<div class="select_box">
+								<label for="gender">성별 선택</label>
+								<select id="gender">
+									<option>여성</option>
+									<option>남성</option>
+								</select>
+							</div>
+							<div class="select_box">
+								<label for="age">나이 선택</label>
+								<select id="age">
+									<option>30대 이상</option>
+								</select>
+							</div>
+						</div>
+						<div class="move_to_result">도서추천받기</div>
 					</div>
 				</div>
 
