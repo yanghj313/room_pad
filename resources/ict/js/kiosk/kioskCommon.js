@@ -22,11 +22,6 @@ $(document).ready(function () {
 		const isAtTargetTop = parseInt(content.css('top')) === targetTop;
 		content.css({ top: isAtTargetTop ? '0px' : targetTop + 'px' });
 
-		image.css({
-			transform: isAtTargetTop ? 'rotate(0deg)' : 'rotate(180deg)',
-			transition: 'transform 0.3s ease',
-		});
-
 		if (!isAtTargetTop) {
 			scroll.css({
 				'overflow-y': 'scroll',

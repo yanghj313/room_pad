@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../../ict/img/kiosk/recommendedBooks_bg.png") no-repeat center center;
+  background: url("../../../ict/img/kiosk/detail_bg.png") no-repeat center center;
   background-size: cover;
   transition: top 0.8s ease-in-out;
 }
