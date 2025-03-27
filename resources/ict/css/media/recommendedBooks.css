@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   background: url("../../img/media/recommended_bg.png") no-repeat center center/cover;
+  overflow: hidden;
 }
 
 .book_list {
