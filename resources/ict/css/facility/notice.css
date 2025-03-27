@@ -356,7 +356,7 @@
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -1.1px;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
   max-height: 480px;
 }
