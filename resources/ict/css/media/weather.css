@@ -257,7 +257,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(-300px, 600px);
+    transform: translate(-300px, 400px);
     opacity: 0;
   }
 }
