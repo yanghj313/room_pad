@@ -60,9 +60,12 @@
 .active_filter {
   border: 4px solid #121212 !important;
   background: #121212 !important;
+  transition: all 0.3s ease;
+}
+
+.active_filter div {
   font-weight: 700 !important;
   font-family: "Pretendard-Bold", sans-serif !important;
-  transition: all 0.3s ease;
 }
 
 .search_bar {

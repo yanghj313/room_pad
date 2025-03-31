@@ -81,6 +81,19 @@
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 28px;
+  width: 720px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book_detail div:nth-child(2),
+.book_detail div:nth-child(3) {
+  letter-spacing: -0.72px;
+}
+
+.book_detail div:nth-child(5) {
+  letter-spacing: -1.08px;
 }
 
 .book_detail div:nth-child(2),
@@ -93,7 +106,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -0.72px;
   text-transform: uppercase;
 }
 
@@ -219,6 +231,16 @@
   .book_detail div:first-child {
     font-size: 23px;
     margin-bottom: 14px;
+    width: 360px;
+  }
+
+  .book_detail div:nth-child(2),
+  .book_detail div:nth-child(3) {
+    letter-spacing: -0.36px;
+  }
+
+  .book_detail div:nth-child(5) {
+    letter-spacing: -0.54px;
   }
 
   .book_detail div:nth-child(2),
@@ -226,7 +248,6 @@
   .book_detail div:nth-child(4),
   .book_detail div:nth-child(5) {
     font-size: 18px;
-    letter-spacing: -0.36px;
   }
 
   .book_detail div:nth-child(2) span,

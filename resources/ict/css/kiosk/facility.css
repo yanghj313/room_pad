@@ -12,7 +12,7 @@
 
 .map {
   position: absolute;
-  top: -1800px;
+  top: -1829px;
   left: -60px;
   width: 2245px;
   height: 2174px;
@@ -318,7 +318,7 @@
 
 @media (width: 1080px) {
   .map {
-    top: -900px;
+    top: -915px;
     left: -30px;
     width: 1123px;
     height: 1087px;
@@ -415,6 +415,18 @@
   .facility_slide .slick-dots {
     gap: 16px;
     bottom: -42px;
+  }
+
+  .facility_slide .slick-dots li button {
+    padding: 0 !important;
+    width: 12px;
+    height: 12px;
+  }
+
+  .facility_slide .slick-dots li {
+    margin: 0 !important;
+    width: 12px;
+    height: 12px;
   }
 
   .facility_slide .slick-dots li button:before {
