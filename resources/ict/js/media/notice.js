@@ -1,13 +1,14 @@
 // 공지사항 슬라이드 설정
 $(document).ready(function () {
-	$('.center').slick({
-		centerMode: true,
-		slidesToShow: 1,
+	$('.owl-carousel').owlCarousel({
+		stagePadding: 200,
+		loop: true,
+		items: 1,
+		lazyLoad: true,
 		autoplay: true,
-		autoplaySpeed: 10000,
-		arrows: false,
+		autoplaySpeed: 2000,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
 		dots: true,
-		swipe: false,
-		infinite: true,
 	});
 });
