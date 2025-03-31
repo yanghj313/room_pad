@@ -291,6 +291,36 @@
   z-index: 999;
 }
 
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #262626;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .nodata {
   position: absolute;
   top: 1238px;
@@ -318,6 +348,58 @@
   width: 899px;
   height: 1082px;
   object-fit: contain;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1240px;
+  background: #fff;
+  border-radius: 60px;
+  z-index: 1000;
+  padding: 160px 120px 100px 120px;
+}
+
+.popup_content {
+  color: #454545;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -1.04px;
+}
+
+.action_wrapper {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  margin-top: 80px;
+}
+
+.first_btn {
+  background: #FFF !important;
+  color: #7A7A7A !important;
+  border: 2px solid #D6D6D6 !important;
+}
+
+.popup_close {
+  border-radius: 24px;
+  background: #242424;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media (width: 1080px) {
@@ -480,6 +562,13 @@
     font-size: 26px;
   }
 
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #262626;
+    width: 150px;
+    height: 150px;
+  }
+
   .nodata {
     position: absolute;
     top: 619px;
@@ -507,5 +596,31 @@
     width: 450px;
     height: 541px;
     object-fit: contain;
+  }
+
+  .popup {
+    width: 620px;
+    border-radius: 30px;
+    padding: 80px 60px 50px 60px;
+  }
+
+  .popup_content {
+    font-size: 26px;
+    letter-spacing: -0.52px;
+  }
+
+  .action_wrapper {
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .first_btn {
+    border: 1px solid #D6D6D6 !important;
+  }
+
+  .popup_close {
+    border-radius: 12px;
+    height: 80px;
+    font-size: 26px;
   }
 }
