@@ -80,11 +80,25 @@ $(document).ready(function () {
 
 	nodes
 		.append('text')
-		.text(d => d.id)
 		.attr('text-anchor', 'middle')
-		.attr('dy', '.35em')
+		.attr('dominant-baseline', 'middle')
 		.style('font-size', fontSize + 'px')
-		.style('fill', 'white');
+		.style('fill', 'white')
+		.style('pointer-events', 'none')
+		.each(function (d) {
+			const text = d3.select(this);
+			const words = d.id.match(/.{1,4}/g) || [d.id];
+			const totalLines = words.length;
+			const startY = -((totalLines - 1) * fontSize) / 2;
+
+			words.forEach((word, i) => {
+				text
+					.append('tspan')
+					.attr('x', 0)
+					.attr('dy', i === 0 ? startY : fontSize)
+					.text(word);
+			});
+		});
 
 	function ticked() {
 		nodes.attr('transform', d => {
@@ -119,9 +133,10 @@ $(document).ready(function () {
 			keywordList.append('<div>키워드는 최대 3개까지 선택이 가능해요</div>');
 		} else {
 			selectedBubbles.forEach(keyword => {
+				const displayKeyword = keyword.match(/.{1,4}/g)?.join(' ') || keyword;
 				const keywordDiv = $(`
                     <div class="keyword">
-                        <div>${keyword}</div>
+                        <div>${displayKeyword}</div>
                         <img src="/resources/ict/img/kiosk/delete_keyword.svg" alt="삭제" />
                     </div>
                 `);
