@@ -1,0 +1,6 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("../../../ict/img/kiosk/main_bg.png") no-repeat center center;
+  background-size: cover;
+}
