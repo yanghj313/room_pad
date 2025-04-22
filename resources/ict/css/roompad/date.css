@@ -1,25 +1,17 @@
 .container_date {
   width: 100%;
   height: 100vh;
-  background: #182852;
+  background: url('../../img/roompad/main_bg.jpg');
   background-size: cover;
   overflow: hidden;
 }
 
 /*시계*/
-.container_date {
-  width: 100%;
-  height: 100vh;
-  background: #182852;
-  background-size: cover;
-  overflow: hidden;
-}
 
 .container_date .left-sec {
   width: 34%;
   height: 100%;
-  flex-shrink: 0;
-  background: #23376B;
+  background: #262081;
   box-shadow: 15px 0px 75px 0px rgba(0, 0, 0, 0.15);
   float: left;
 }
@@ -29,12 +21,9 @@
   width: 66%;
   height: 100%;
   flex-shrink: 0;
-  background: #182852;
   box-shadow: 15px 0px 75px 0px rgba(0, 0, 0, 0.15);
   float: right;
 }
-
-
 
 
 .container_date .contents {
@@ -81,20 +70,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 330px;
+  height: 330px;
+  margin: 80px auto 0;
   background: url('../../img/roompad/analogclock-bg-3840.png') no-repeat center center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  background-size: cover;
 }
 
 .container_date .left-sec .clock::before {
   position: absolute;
   z-index: 100000;
-  content: '';
-  border: 3px solid #fff;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #fff;
   border-radius: 50%;
-  background: #2f363e;
+  border-radius: 50%;
 }
 
 .container_date .left-sec .clock span {
@@ -108,6 +102,7 @@
 }
 
 .container_date .left-sec .clock span b {
+  font-size: 2em;
   font-weight: 600;
   display: inline-block;
   -ms-transform: rotate(calc(-30deg * var(--i)));
@@ -124,6 +119,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -131,6 +128,7 @@
 
 .container_date .left-sec .clock .circle i {
   position: absolute;
+  width: 3px;
   height: 50%;
   -ms-transform: scaleY(0.5);
   -webkit-transform: scaleY(0.5);
@@ -142,10 +140,31 @@
   background: var(--clr);
 }
 
+.container_date .left-sec .clock .circle:nth-child(1) i {
+  width: 3px;
+}
 
+.container_date .left-sec .clock .circle:nth-child(2) i {
+  width: 3px;
+}
+
+.container_date .left-sec .clock .circle2 {
+  z-index: 9;
+  width: 285px;
+  height: 285px;
+}
+
+.container_date .left-sec .clock .circle3 {
+  z-index: 8;
+  width: 230px;
+  height: 23px;
+}
 
 .container_date .left-sec .clock .circle::before {
   position: absolute;
+  top: -4.25px;
+  width: 5px;
+  height: 10px;
   content: '';
   border-radius: 50%;
   background: var(--clr);
@@ -159,6 +178,9 @@
 
 .container_date .left-sec .clock .circle2::before {
   position: absolute;
+  top: 22.5px;
+  width: 5px;
+  height: 5px;
   content: '';
   border-radius: 50%;
   background: var(--clr);
@@ -169,6 +191,38 @@
     0 0 20px var(--clr),
     0 0 60px var(--clr);
 }
+
+.container_date .left-sec .time-txt div:nth-child(1)::after {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  content: ':';
+  -webkit-animation: animate 1s steps(1) infinite;
+  animation: animate 1s steps(1) infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
 
 .container_date .left-sec .date-txt {
   text-align: center;
@@ -198,34 +252,6 @@
   color: var(--clr);
 }
 
-.container_date .left-sec .time-txt div:nth-child(1)::after {
-  position: absolute;
-  content: ':';
-  -webkit-animation: animate 1s steps(1) infinite;
-  animation: animate 1s steps(1) infinite;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes animate {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-
 
 
 .container_date .logo_top {
@@ -246,56 +272,6 @@
   margin-top: 76px;
 }
 
-.container_date .left-sec .clock {
-  width: 330px;
-  height: 330px;
-  margin: 54px auto 0;
-  background-size: cover;
-}
-
-.container_date .left-sec .clock::before {
-  width: 4px;
-  height: 4px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.container_date .left-sec .clock .circle {
-  width: 230px;
-  height: 230px;
-}
-
-.container_date .left-sec .clock .circle:nth-child(1) i {
-  width: 3px;
-}
-
-.container_date .left-sec .clock .circle:nth-child(2) i {
-  width: 3px;
-}
-
-.container_date .left-sec .clock .circle2 {
-  z-index: 9;
-  width: 318px;
-  height: 450px;
-}
-
-.container_date .left-sec .clock .circle3 {
-  FONT-VARIANT: JIS83;
-  width: 245px;
-  height: 245px;
-}
-
-.container_date .left-sec .clock .circle::before {
-  top: -39.5px;
-  width: 5px;
-  height: 5px;
-}
-
-.container_date .left-sec .clock .circle2::before {
-  top: 63.5px;
-  width: 5px;
-  height: 5px;
-}
 
 .container_date .left-sec .date-txt {
   color: #FFF;
@@ -435,13 +411,11 @@
 
 .container_date .card {
   border-radius: 24px;
-  background: #2D3D66;
+  background: rgba(0, 0, 0, 0.30);
   display: inline-flex !important;
   padding: 65px 62px 65px 62px;
   justify-content: center;
   align-items: center;
-  /* margin-left: 22px; */
-  /* margin-bottom: 24px; */
   flex-direction: column;
 }
 
@@ -456,7 +430,7 @@
 
 .container_date .card.active {
   border-radius: 24px;
-  background: #264289;
+  background: #5036E7;
 }
 
 .container_date .card.active .status {

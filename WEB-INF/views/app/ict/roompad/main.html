@@ -41,6 +41,7 @@
 					<script>
 						let hr = document.querySelector('#hr');
 						let mn = document.querySelector('#mn');
+						let sc = document.querySelector('#sc');
 
 						setInterval(() => {
 							var day = new Date();
@@ -51,6 +52,7 @@
 							let hr = hh + mm / 12;
 							$('#hr').css('transform', 'rotateZ(' + hr + 'deg)');
 							$('#mn').css('transform', 'rotateZ(' + mm + 'deg)');
+							$('#sc').css('transform', 'rotateZ(' + ss + 'deg)');
 
 							let hours = document.getElementById('hours');
 							let minutes = document.getElementById('minutes');
